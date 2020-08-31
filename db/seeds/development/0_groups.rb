@@ -20,6 +20,29 @@ if root.address.blank?
   end
 end
 
-# TODO: define more groups
+Group::Unassigned.seed(:name, :parent_id,
+  {
+    name: 'Nicht Zugeordnet',
+    address: "Mühlendamm 3",
+    zip_code: "10178",
+    town: "Berlin",
+    country: "DE",
+    email: "unassigned@europeanjamboree.de",
+    parent_id: root.id
+  }
+)
+
+Group::UnitSupport.seed(:name, :parent_id,
+  {
+    name: 'Unit Betreuer',
+    address: "Mühlendamm 3",
+    zip_code: "10178",
+    town: "Berlin",
+    country: "DE",
+    email: "ub@europeanjamboree.de",
+    parent_id: root.id
+  }
+)
+
 
 Group.rebuild!

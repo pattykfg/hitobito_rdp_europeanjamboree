@@ -10,26 +10,26 @@ require Rails.root.join('db', 'seeds', 'support', 'person_seeder')
 
 class RdpEuropeanjamboreePersonSeeder < PersonSeeder
 
-  def amount(role_type)
-    case role_type.name.demodulize
-    when 'Member' then 5
-    else 1
-    end
+
+  def seed_demo_person(first, last, group, role_type)
+    attrs = { email: first.downcase + "." + last.strip.downcase + "@europeanjamboree.de",
+              first_name: first,
+              last_name: last}
+              
+    return seed_demo_person_with_attrs(attrs, group, role_type)
   end
 
-end
+  def seed_demo_person_with_attrs(attrs, group, role_type)
 
-puzzlers = ['Pascal Zumkehr',
-            'Pierre Fritsch',
-            'Andreas Maierhofer',
-            'Mathis Hofer',
-            'Andre Kunz',
-            'Pascal Simon',
-            'Roland Studer']
+    Person.seed_once(:email, attrs)
+    person = Person.find_by_email(attrs[:email])
 
-devs = {'Customer Name' => 'customer@email.com'}
-puzzlers.each do |puz|
-  devs[puz] = "#{puz.split.last.downcase}@puzzle.ch"
+    role_attrs = { person_id: person.id, group_id: group.id, type: role_type.sti_name }
+    Role.seed_once(*role_attrs.keys, role_attrs)
+
+    return person
+  end
+
 end
 
 seeder = RdpEuropeanjamboreePersonSeeder.new
@@ -37,6 +37,16 @@ seeder = RdpEuropeanjamboreePersonSeeder.new
 seeder.seed_all_roles
 
 root = Group.root
-devs.each do |name, email|
-  seeder.seed_developer(name, email, root, Group::Root::Leader)
-end
+
+peter_attrs = { email: "peter.neubauer@europeanjamboree.de",
+  first_name: "Peter",
+  last_name: "Neubauer",
+  encrypted_password: BCrypt::Password.create("jamb2021", cost: 1)
+}
+seeder.seed_demo_person_with_attrs(peter_attrs, root, Group::Root::Administrator)
+
+seeder.seed_demo_person("Anja", "Administrator", root, Group::Root::Administrator)
+seeder.seed_demo_person("Karl", "Kontingentsleitung", root, Group::Root::HeadOfContingent)
+seeder.seed_demo_person("Vera", "Verwaltung", root, Group::Root::Registration)
+seeder.seed_demo_person("Fritz", "Finanzer", root, Group::Root::Finance)
+
