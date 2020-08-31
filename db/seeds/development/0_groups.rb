@@ -32,7 +32,7 @@ Group::Unassigned.seed(:name, :parent_id,
   }
 )
 
-Group::UnitSupport.seed(:name, :parent_id,
+unit_support = Group::UnitSupport.seed(:name, :parent_id,
   {
     name: 'Unit Betreuer',
     address: "Mühlendamm 3",
@@ -41,6 +41,28 @@ Group::UnitSupport.seed(:name, :parent_id,
     country: "DE",
     email: "ub@europeanjamboree.de",
     parent_id: root.id
+  }
+)
+
+unit_support = Group.find_by_name('Unit Betreuer')
+Group::Unit.seed(:name, :parent_id,
+  {
+    name: 'Unit Franken',
+    address: "Äußere Bayreuther Straße 1234",
+    zip_code: "90411",
+    town: "Nürnberg",
+    country: "DE",
+    email: "unit-franken@europeanjamboree.de",
+    parent_id: unit_support.id
+  },
+  {
+    name: 'Unit Hamburg',
+    address: "Reeperbahn 63",
+    zip_code: "20359",
+    town: "Hamburg",
+    country: "DE",
+    email: "unit-hamburg@europeanjamboree.de",
+    parent_id: unit_support.id
   }
 )
 

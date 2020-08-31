@@ -5,16 +5,16 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/smeky42/hitobito_rdp_europeanjamboree.
 
-
-class Group::UnitSupport < ::Group
-
-  children Group::Unit
+class Group::Unit < ::Group
 
   ### ROLES
-  class Member < ::Role
+  class Leader < ::Role
     self.permissions = [:group_other_roles_and_below_full]
   end
 
-  roles Member
+  class Member < ::Role
+    self.permissions = []
+  end
 
+  roles Leader, Member
 end

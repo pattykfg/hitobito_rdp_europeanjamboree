@@ -11,7 +11,6 @@ de:
       group/root:
         one: Kontingent
         other: Kontingent
-
       group/root/administrator:
         one: Administrator
         description: Administrator der Anwendung
@@ -25,18 +24,23 @@ de:
         one: Verwaltung
         description: Personen zur Verwaltung der Anmeldung. Hauptamtliche im Bundesamt.
 
-
       group/unit_support:
         one: Unit Betreuer
-
       group/unit_support/member:
         one: Unit Betreuung
         description: Verantwortlich für die Betreuung der Units.
 
-
       group/unassigned:
         one: Gruppenlos
-
       group/unassigned/member:
         one: Rollenlos
         description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
+
+      group/unit: 
+        one: Unit
+      group/unit/leader: 
+        one: Unit Leiter
+        description: Verantwortlich für eine Unit. In der Regel 4. 
+      group/unit/member: 
+        one: Teilnehmer
+        description: Teilnehmer in einer Unit. In der Regel 36.
