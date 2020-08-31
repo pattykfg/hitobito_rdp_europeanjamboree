@@ -11,23 +11,28 @@ class Group::Root < ::Group
 
   children Group::UnitSupport
   children Group::Unassigned
+  children Group::InternationalServiceTeam
 
   ### ROLES
   class Administrator < ::Role
     self.permissions = [:layer_and_below_full, :admin]
   end
 
+  class Head < ::Role
+    self.permissions = [:layer_and_below_full]
+  end
+
   class Registration < ::Role
     self.permissions = [:layer_and_below_full]
   end
   
-  class HeadOfContingent < ::Role
-    self.permissions = [:layer_and_below_full]
-  end
-
   class Finance < ::Role
     self.permissions = [:layer_and_below_full]
   end
 
-  roles Administrator, HeadOfContingent, Registration, Finance
+  class Member < ::Role
+    self.permissions = []
+  end
+
+  roles Administrator, Head, Registration, Finance
 end

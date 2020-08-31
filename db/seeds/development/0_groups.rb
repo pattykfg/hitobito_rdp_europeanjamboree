@@ -22,7 +22,7 @@ end
 
 Group::Unassigned.seed(:name, :parent_id,
   {
-    name: 'Nicht Zugeordnet',
+    name: 'Neuanmeldungen',
     address: "Mühlendamm 3",
     zip_code: "10178",
     town: "Berlin",
@@ -32,7 +32,7 @@ Group::Unassigned.seed(:name, :parent_id,
   }
 )
 
-unit_support = Group::UnitSupport.seed(:name, :parent_id,
+Group::UnitSupport.seed(:name, :parent_id,
   {
     name: 'Unit Betreuer',
     address: "Mühlendamm 3",
@@ -63,6 +63,18 @@ Group::Unit.seed(:name, :parent_id,
     country: "DE",
     email: "unit-hamburg@europeanjamboree.de",
     parent_id: unit_support.id
+  }
+)
+
+Group::InternationalServiceTeam.seed(:name, :parent_id,
+  {
+    name: 'International Service Team',
+    address: "Mühlendamm 3",
+    zip_code: "10178",
+    town: "Berlin",
+    country: "DE",
+    email: "ist@europeanjamboree.de",
+    parent_id: root.id
   }
 )
 

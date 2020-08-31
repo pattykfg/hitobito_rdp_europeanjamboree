@@ -15,7 +15,7 @@ class RdpEuropeanjamboreePersonSeeder < PersonSeeder
     attrs = { email: first.downcase + "." + last.strip.downcase + "@europeanjamboree.de",
               first_name: first,
               last_name: last}
-              
+
     return seed_demo_person_with_attrs(attrs, group, role_type)
   end
 
@@ -46,7 +46,7 @@ peter_attrs = { email: "peter.neubauer@europeanjamboree.de",
 seeder.seed_demo_person_with_attrs(peter_attrs, root, Group::Root::Administrator)
 
 seeder.seed_demo_person("Anja", "Administrator", root, Group::Root::Administrator)
-seeder.seed_demo_person("Karl", "Kontingentsleitung", root, Group::Root::HeadOfContingent)
+seeder.seed_demo_person("Karl", "Kontingentsleitung", root, Group::Root::Head)
 seeder.seed_demo_person("Vera", "Verwaltung", root, Group::Root::Registration)
 seeder.seed_demo_person("Fritz", "Finanzer", root, Group::Root::Finance)
 

@@ -9,12 +9,11 @@ de:
     models:
       ### GROUPS and ROLES
       group/root:
-        one: Kontingent
-        other: Kontingent
+        one: Kontingentsteam
       group/root/administrator:
         one: Administrator
         description: Administrator der Anwendung
-      group/root/head_of_contingent: 
+      group/root/head: 
         one: Kontingentsleitung
         description: Verantwortlich für das Gesamtkontingent.
       group/root/finance:
@@ -23,6 +22,9 @@ de:
       group/root/registration:
         one: Verwaltung
         description: Personen zur Verwaltung der Anmeldung. Hauptamtliche im Bundesamt.
+      group/root/member: 
+        one: Kontingentsteam
+        description: Mitglied im Kontingentsteam.
 
       group/unit_support:
         one: Unit Betreuer
@@ -31,16 +33,28 @@ de:
         description: Verantwortlich für die Betreuung der Units.
 
       group/unassigned:
-        one: Gruppenlos
+        one: Neuanmeldungen
+      group/unassigned/head:
+        one: Betreuung Neuanmeldungen
+        description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
       group/unassigned/member:
-        one: Rollenlos
+        one: Neuanmeldung
         description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
 
       group/unit: 
         one: Unit
-      group/unit/leader: 
+      group/unit/head: 
         one: Unit Leiter
         description: Verantwortlich für eine Unit. In der Regel 4. 
       group/unit/member: 
         one: Teilnehmer
         description: Teilnehmer in einer Unit. In der Regel 36.
+      
+      group/international_service_team: 
+        one: International Service Team
+      group/international_service_team/head: 
+        one: IST Betreuung
+        description: Verantwortlich für die ISTs.  
+      group/international_service_team/member: 
+        one: IST
+        description: Mitglied des International Service Team.
