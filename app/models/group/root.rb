@@ -5,26 +5,29 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/smeky42/hitobito_rdp_europeanjamboree.
 
-
-# TODO: rename class to specific name and change all references
 class Group::Root < ::Group
 
   self.layer = true
 
-  # TODO: define actual child group types
-  children Group::Root
+  children Group::UnitSupport
+  children Group::Unassigned
 
   ### ROLES
-
-  # TODO: define actual role types
-  class Leader < ::Role
+  class Administrator < ::Role
     self.permissions = [:layer_and_below_full, :admin]
   end
 
-  class Member < ::Role
-    self.permissions = [:group_read]
+  class Registration < ::Role
+    self.permissions = [:layer_and_below_full]
+  end
+  
+  class HeadOfContingent < ::Role
+    self.permissions = [:layer_and_below_full]
   end
 
-  roles Leader, Member
+  class Finance < ::Role
+    self.permissions = [:layer_and_below_full]
+  end
 
+  roles Administrator, HeadOfContingent, Registration, Finance
 end

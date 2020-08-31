@@ -7,19 +7,36 @@
 de:
   activerecord:
     models:
-
-      ### GROUPS
-
+      ### GROUPS and ROLES
       group/root:
-        one: Hauptgruppe
-        other: Hauptgruppen
+        one: Kontingent
+        other: Kontingent
+
+      group/root/administrator:
+        one: Administrator
+        description: Administrator der Anwendung
+      group/root/head_of_contingent: 
+        one: Kontingentsleitung
+        description: Verantwortlich für das Gesamtkontingent.
+      group/root/finance:
+        one: Finanzen
+        description: Verantwortlich für Finanzen
+      group/root/registration:
+        one: Verwaltung
+        description: Personen zur Verwaltung der Anmeldung. Hauptamtliche im Bundesamt.
 
 
-      ### ROLES
+      group/unit_support:
+        one: Unit Betreuer
 
-      group/root/leader:
-        one: Leitung
-        description: Leitungspersonen verwalten die Applikation.
-      group/root/member:
-        one: Mitglied
-        description: Mitglieder sind alle anderen.
+      group/unit_support/member:
+        one: Unit Betreuung
+        description: Verantwortlich für die Betreuung der Units.
+
+
+      group/unassigned:
+        one: Gruppenlos
+
+      group/unassigned/member:
+        one: Rollenlos
+        description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
