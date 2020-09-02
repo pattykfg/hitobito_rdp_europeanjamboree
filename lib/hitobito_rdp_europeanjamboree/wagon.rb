@@ -23,6 +23,9 @@ module HitobitoRdpEuropeanjamboree
       # rubocop:disable SingleSpaceBeforeFirstArg
       # extend application classes here
       Group.send        :include, RdpEuropeanjamboree::Group
+      PeopleController.send :include, RdpEuropeanjamboree::PeopleController
+      # TODO if Export is needed Export::Tabular::People::PeopleAddress.send :include, RdpEuropeanjamboree::Export::Tabular::People::PeopleAddress
+      PersonSerializer.send :include, RdpEuropeanjamboree::PersonSerializer
       # rubocop:enable SingleSpaceBeforeFirstArg
     end
 

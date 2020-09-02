@@ -58,3 +58,28 @@ de:
       group/international_service_team/member: 
         one: IST
         description: Mitglied des International Service Team.
+
+    attributes:
+      person:
+        old_id: ID Alte Anmeldung
+        rdp_association: Verband
+        rdp_association_region: Land, Diözese, Bezirk
+        rdp_association_group: Stamm, Ortsgruppe
+        rdp_association_number: Mitgliedsnummer
+        role: Rolle im Kontingent
+        tour: Tour
+        sepa_name: Name 
+        sepa_address: Adresse
+        sepa_zip_code: Postleitzahl
+        sepa_town: Stadt
+        sepa_iban: IBAN
+        registration_pdf_path: Pfad zur Anmeldung
+        registration_locked: Anmeldung gesperrt
+        registration_print_date: Anmeldung gedruckt am 
+        sepa_signature: SEPA unterschrieben
+        sepa_date: SEPA unterschrieben am 
+        contract_signature: Anmeldung unterschrieben
+        media_agreement: Zustimmung Medienverwendung
+        registration_accepted_date: Anmeldung geprüft am
+        payment_problem: Zahlungsprobleme
+        payment_recieved: Zahlung vollständig erhalten
