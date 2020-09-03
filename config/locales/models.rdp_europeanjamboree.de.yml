@@ -61,6 +61,9 @@ de:
 
     attributes:
       person:
+        first_name_dummy: Baden
+        last_name_dummy: Powell
+        email_dummy: baden.powell@europeanjamboree.de
         old_id: ID Alte Anmeldung
         rdp_association: Verband
         rdp_association_region: Land, Diözese, Bezirk
@@ -83,3 +86,17 @@ de:
         registration_accepted_date: Anmeldung geprüft am
         payment_problem: Zahlungsprobleme
         payment_recieved: Zahlung vollständig erhalten
+        type: Teilnehmen als
+  
+    header:
+      registration_header: Für die Anmeldung zum European Jamboree hier registrieren
+
+    button:
+      register: Registrieren
+
+    text:
+      registration_end: Der Anmeldeschluss war am
+      no_more_register: Wir können leider keine weiteren Registrierungen mehr annehmen.
+      more_info: Mehr Informationen zu unserem Anmeldeschluss findest du auf unserer
+      homepage: Homepage
+      homepage_link: https://www.europeanjamboree.de/

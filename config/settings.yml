@@ -16,4 +16,15 @@ application:
 # not the customers.
 # Initially, a password reset token may be mailed from the application
 # to this address to set a password.
-root_email: hitobito-rdp-europeanjamboree@puzzle.ch
+root_email: development@smeky.de
+
+
+person:
+  type:
+    - Teilnehmer
+    - Unit Leitung
+    - IST
+    - Kontingentsteam
+
+date:
+  registration_end: 2020-10-15T23:59:59

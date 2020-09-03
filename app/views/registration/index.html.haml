@@ -1,0 +1,29 @@
+%html
+%head
+
+%h1= t('activerecord.header.registration_header')
+
+-if @registration_online
+  = form_tag '/registration', :method => :post do
+    = field_set_tag do
+      = label_tag :fristname, t('activerecord.attributes.person.first_name')
+      = text_field_tag :firstname, nil, placeholder: t('activerecord.attributes.person.first_name_dummy')
+      = label_tag :name, t('activerecord.attributes.person.last_name')
+      = text_field_tag :name, nil, placeholder: t('activerecord.attributes.person.last_name_dummy')
+      = label_tag :mail, t('activerecord.attributes.person.email')
+      = email_field_tag :mail, nil, placeholder: t('activerecord.attributes.person.email_dummy')
+      = label_tag :type, t('activerecord.attributes.person.type')
+      = select_tag(:type,
+                   options_for_select(@possible_types))
+      %br
+      = submit_tag t('activerecord.button.register'), class: "btn btn-primary"
+-else
+  = "Test"
+= t('activerecord.text.registration_end')
+= @registration_end_date
+%br
+= t('activerecord.text.no_more_register')
+%br
+= t('activerecord.text.more_info')
+=link_to t('activerecord.text.homepage'), t('activerecord.text.homepage_link')
+
