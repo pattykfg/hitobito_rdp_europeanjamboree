@@ -40,6 +40,18 @@ de:
       group/unassigned/member:
         one: Neuanmeldung
         description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
+      group/unassigned/unit_member:
+        one: Neuanmeldung Teilnehmer
+        description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
+      group/unassigned/unit_head:
+        one: Neuanmeldung Unit Leitung
+        description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
+      group/unassigned/ist:
+        one: Neuanmeldung IST
+        description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
+      group/unassigned/cmt:
+        one: Neuanmeldung Kontingentsteam
+        description: Jeder der nach seiner Registrierung noch keiner Rolle zugeordnet ist.
 
       group/unit: 
         one: Unit
@@ -100,3 +112,9 @@ de:
       more_info: Mehr Informationen zu unserem Anmeldeschluss findest du auf unserer
       homepage: Homepage
       homepage_link: https://www.europeanjamboree.de/
+    
+    failure:
+      first_name: Bitte gib deinen vollständigen Vornamen ein.
+      last_name:  Bitte gib deinen vollständigen Nachnamen ein.
+      email: Bitte gib deine Mailadresse ein.
+      email_exists: Es existiert schon ein Account mit dieser e-Mail Adresse. Du kannst dein Passwort über 'Passwort vergessen?' zurücksetzen.

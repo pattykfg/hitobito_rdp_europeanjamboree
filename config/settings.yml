@@ -28,3 +28,6 @@ person:
 
 date:
   registration_end: 2020-10-15T23:59:59
+
+group:
+  registration: Neuanmeldungen

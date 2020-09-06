@@ -16,6 +16,22 @@ class Group::Unassigned < ::Group
     self.permissions = []
   end
 
-  roles Member, Head
+  class UnitMember < ::Role
+    self.permissions = []
+  end
+
+  class UnitHead < ::Role
+    self.permissions = []
+  end
+
+  class Ist < ::Role
+    self.permissions = []
+  end
+
+  class Cmt < ::Role
+    self.permissions = []
+  end
+
+  roles Member, Head, UnitMember, UnitHead, Ist, Cmt 
 end
   

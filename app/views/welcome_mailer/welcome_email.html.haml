@@ -1,0 +1,15 @@
+%p Hallo #{@resource.first_name},
+
+%p du hast den ersten Schritt zur Anmeldung für das deutsche Kontingent zum European Jamboree 2021 in Polen gemacht.
+
+%p Bitte lege dein Passwort fest und stell deine Anmeldung fertig unter:
+%p= link_to edit_password_url(@resource, reset_password_token: @token),
+            edit_password_url(@resource, reset_password_token: @token)
+
+
+%p Mit der Emailadresse #{@resource.email} bist du jetzt registriert. Alle weiteren Informationen wirst du auf diese Emailadresse geschickt bekommen.
+
+%p Mehr Informationen zu unserer Unternehmung findest du unter https://europeanjamboree.de !
+
+%p Wir freuen uns auf dich!
+%p Deine Kontingentsleitung

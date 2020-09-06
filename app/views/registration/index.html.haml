@@ -18,12 +18,11 @@
       %br
       = submit_tag t('activerecord.button.register'), class: "btn btn-primary"
 -else
-  = "Test"
-= t('activerecord.text.registration_end')
-= @registration_end_date
-%br
-= t('activerecord.text.no_more_register')
-%br
-= t('activerecord.text.more_info')
-=link_to t('activerecord.text.homepage'), t('activerecord.text.homepage_link')
+  = t('activerecord.text.registration_end')
+  = @registration_end_date
+  %br
+  = t('activerecord.text.no_more_register')
+  %br
+  = t('activerecord.text.more_info')
+  =link_to t('activerecord.text.homepage'), t('activerecord.text.homepage_link')
 
