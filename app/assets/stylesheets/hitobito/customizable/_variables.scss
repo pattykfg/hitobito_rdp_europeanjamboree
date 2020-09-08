@@ -1,0 +1,117 @@
+//  Copyright (c) 2012-2014, Puzzle ITC GmbH. This file is part of
+//  hitobito_generic and licensed under the Affero General Public License version 3
+//  or later. See the COPYING file at the top-level directory or at
+//  https://github.com/hitobito/hitobito_generic.
+
+/* Bootstrap variable definition here */
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+
+// WSJ Colors
+//----------------------------
+
+$rot:                     #a11e25;
+$gelb:                    #fec800;
+$gruen:                   #006946;
+$lila:                    #893b8e;
+$lilaHell:                #b07db4;
+$blau:                    #312764;
+$blauHell:                #006db5;
+
+$rotTrans:                rgba(161,30,37, 0.8);
+$gelbTrans:               rgba(254,200,0, 0.9);
+$gruenTrans:              rgba(0,105,70, 0.8);
+$lilaTrans:               rgba(137,59,142, 0.9);
+$lilaHellTrans:           rgba(176,125,180, 0.8);
+$blauTrans:               rgba(49,39,100, 0.9);
+$blauHellTrans:           rgba(0,109,181, 0.8);
+
+
+// Grays
+// -------------------------
+$black:                 #474E5D !default;
+$grayDarker:            #797E89 !default;
+$grayDark:              #8b8b8b !default;
+$gray:                  #979CA6 !default;
+$grayLight:             #E8EBF0 !default;
+$grayLighter:           #F8F9FA !default;
+$white:                 #fff !default;
+
+// Colors
+// ----------------------------
+$blue:                  $blauHell;//#329897 !default;
+$blueDark:              $blau;//darken($blue, 10%) !default;
+$green:                 $gruenTrans;//#8DB850 !default;
+$greenDark:             $gruen; //darken($green, 10%) !default;
+
+$orange:                #DC795B;
+$orangeDark:            #C75B3B;
+$purple:                #925D97;
+$purpleDark:            #6A396F;
+
+$red:                   $orange !default;
+
+$textColor:             $black !default;
+$borderColor:           $grayLight !default;
+
+$pageBackground:        $green; //$rot; //lighten($green, 5%);
+$contentBackground:     $grayLight;
+$footerBackground:      $rot;//$blue;
+$bodyBackground:        $footerBackground !default;
+
+$focusColor:            $rotTrans;//$purple;
+$shadowColor:           darken($pageBackground, 10%);
+$linkColor:             $blauTrans;//$blue !default;
+$linkColorHover:        $rot; //$purpleDark !default;
+
+$footerColor:           $white;
+$footerColorHover:      $white;
+
+$tableColorHover:       lighten($rotTrans, 50%);
+
+// Typography
+// -------------------------
+$sansFontFamily:        Futura, Helvetica, Arial, sans-serif !default;
+$headingFontFamily:     Futura, 'Quicksand', $sansFontFamily !default;
+$baseFontFamily:        Futura, 'Varela Round', $sansFontFamily !default;
+$headingsFontWeight:    normal !default; // instead of browser default, bold
+
+// Decoration
+// -------------------------
+$borderRadius:           6px;
+
+// Rhythm
+// -------------------------
+$vSpace:                24px;
+
+
+// FLUID GRID
+// --------------------------------------------------
+
+// Default
+// -------------------------
+$fluidGridColumnWidth:         6.382978723% !default;
+$fluidGridGutterWidth:         2.127659574% !default;
+
+// Portrait tablet to default desktop
+// -------------------------
+$fluidGridColumnWidthTablet:   5.801104972% !default;
+$fluidGridGutterWidthTablet:   2.762430939% !default;
+
+// Large desktop and up
+// -------------------------
+$fluidGridColumnWidthLarge:    5.982905983% !default;
+$fluidGridGutterWidthLarge:    2.564102564% !default;
+
+
+// RESPONSIVE DESIGN
+// --------------------------------------------------
+
+// Media widths
+// -------------------------
+$mediaPhone:              480px !default;
+$mediaTablet:             768px !default;
+$mediaDesktop:            980px !default;
+$mediaLarge:              1200px !default; // and upper
