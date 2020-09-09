@@ -31,3 +31,32 @@ date:
 
 group:
   registration: Neuanmeldungen
+
+countries:
+  prioritized:
+    - DE
+    - CH
+    - AT
+    - LI
+    - FR
+    - IT
+
+association_tree:
+  BdP:
+    Bayern:  
+      Stamm Bdp 1:
+  DPSG:
+    München: 
+      Stamm DPSG 3:
+      Stamm DPSG 4:
+    Regensburg: 
+      Stamm DPSG 5:
+      Stamm DPSG 6:
+  VCP:
+    Bayern:
+      VCP 1:
+    Schleho:
+      VCP 2:
+      VCP 3:
+ 
+ 

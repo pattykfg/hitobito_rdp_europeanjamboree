@@ -32,6 +32,13 @@ module RdpEuropeanjamboree
         :payment_problem,
         :payment_recieved   
       ]
+      # Overide edit to fill association tree
+      # Display a form to edit an exisiting entry of this model.
+      #   GET /entries/1/edit
+      def edit(&block)
+        @association_tree = Settings.association_tree
+        respond_with(entry, &block)
+      end
     end
   end
 end
