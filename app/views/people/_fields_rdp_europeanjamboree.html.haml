@@ -1,1 +1,25 @@
-= f.labeled_input_fields :old_id, :rdp_association, :rdp_association_region, :rdp_association_group, :rdp_association_number, :role, :tour, :sepa_name, :sepa_address, :sepa_zip_code, :sepa_town, :sepa_iban, :registration_pdf_path, :registration_locked, :registration_print_date, :sepa_signature, :sepa_date, :contract_signature, :media_agreement, :registration_accepted_date, :payment_problem, :payment_recieved
+= f.labeled_input_fields :old_id,
+    :rdp_association_number,
+    :role,
+    :tour,
+    :sepa_name,
+    :sepa_address,
+    :sepa_zip_code,
+    :sepa_town,
+    :sepa_iban,
+    :registration_pdf_path,
+    :registration_locked,
+    :registration_print_date,
+    :sepa_signature,
+    :sepa_date,
+    :contract_signature,
+    :media_agreement,
+    :registration_accepted_date,
+    :payment_problem,
+    :payment_recieved
+= f.labeled_select(:rdp_association, raw("<option></option>"))
+= f.labeled_select(:rdp_association_region, raw("<option></option>"))
+= f.labeled_select(:rdp_association_group, raw("<option></option>"))
+
+:javascript
+  var association_tree = JSON.parse('#{raw @association_tree.to_json}');

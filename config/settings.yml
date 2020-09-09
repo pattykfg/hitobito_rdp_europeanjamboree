@@ -42,21 +42,2411 @@ countries:
     - IT
 
 association_tree:
-  BdP:
-    Bayern:  
-      Stamm Bdp 1:
   DPSG:
-    München: 
-      Stamm DPSG 3:
-      Stamm DPSG 4:
-    Regensburg: 
-      Stamm DPSG 5:
-      Stamm DPSG 6:
-  VCP:
+    Aachen:
+      Rheinbezirk:
+        Krefeld-Cracau:
+        Krefeld:
+        Krefeld:
+        Krefeld:
+        Meerbusch-Lank-Latum:
+        Krefeld-Uerdingen/Ostgoten:
+        Krefeld-Forstwald:
+        Krefeld-Lindenthal:
+        Krefeld-Hüls:
+        Krefeld:
+        Krefeld-Oppum:
+      Bezirk Grenzland:
+        Schiefbahn:
+        Nettetal-Breyell:
+        Kaldenkirchen:
+        Viersen:
+        Nettetal-Lobberich:
+        Grefrath-Oedt:
+        Hinsbeck:
+        Dülken:
+        Grefrath:
+        Kempen:
+        Tönisvorst:
+        Kempen:
+        Willich-Wekeln:
+      Bezirk Mönchengladbach:
+        Mönchengladbach:
+        Mönchengladbach:
+        Mönchengladbach:
+        Mönchengladbach-Rheydt:
+        Mönchengladbach:
+        Jüchen-Bedburdyck:
+        Mönchengladbach:
+        Mönchengladbach:
+        Mönchengladbach-Holt:
+        Mönchengladbach-Eicken:
+        Stamm Otzenrath:
+        Stamm Salier Meerkamp eV:
+        Hochneukirch:
+        Mönchengladbach-Rheydt:
+      Bezirk Heinsberg:
+        Gangelt:
+        Hückelhoven-Doveren:
+        Heinsberg-Schafhausen:
+        Wegberg:
+        Wegberg-Dalheim:
+        Erkelenz-Mitte:
+      Bezirk Düren:
+        Langerwehe:
+        Merzenich:
+        Jülich:
+        Linnich:
+        Siersdorf:
+        Düren-Arnoldsweiler:
+        Düren:
+      Bezirk Aachen-Land:
+        Eschweiler-Roehe:
+        Dürwiss:
+        Eschweiler-Röthgen:
+        Stolberg:
+        Stolberg-Schevenh.:
+        Stolberg-Breinig/Dorff:
+        Herzogenrath-Kohlscheid:
+        Würselen:
+        Herzogenrath:
+        Alsdorf-Mariadorf:
+      Bezirk Eifel:
+        Blankenheim-Bl.dorf:
+        Hellenthal:
+        Kall / Eifel:
+        Blankenheim-Rohr:
+        Simmerath-Lammersd.:
+        Hürtgenwald-Vossenack:
+      Bezirk Aachen-Stadt:
+        Grenzlandfalken:
+        Stamm Jakobiner:
+        Aachen:
+        Stamm Heilig Kreuz:
+        Aachen-Brand:
+        Aachen-Eilendorf:
+        Aachen-Laurensberg:
+        Stamm Westwind:
+        Aachen-Oberforst.:
+        Aachen-Innenstadt:
+    Augsburg:
+      Bezirk Donau-Ries:
+        Dillingen:
+        Donauwörth:
+        Gundelfingen:
+        Nördlingen:
+        Wallerstein:
+        Neuburg a.d.Donau:
+      Bezirk Augsburg:
+        Aichach:
+        Augsburg:
+        Augsburg-Hochzoll:
+        Augsburg-Universitätsviertel:
+        Augsburg:
+        Augsburg:
+        Friedberg:
+        Augsburg-Haunst.:
+        Kissing:
+        Neusäß:
+      Bezirk Rochus Spiecker:
+        Landsberg:
+        Kaufering:
+      Bezirk Allgäu:
+        Buxheim:
+        Kaufbeuren:
+        Kempten:
+        Lindenberg:
+        Memmingen:
+        Ottobeuren:
+        Marktoberdorf:
+      Bezirk Iller:
+        Burgau:
+        Holzheim:
+        Ichenhausen:
+        Krumbach:
+        Oberelchingen:
+        Vöhringen:
+        Weißenhorn:
+        Obergessertshausen:
+    Bamberg:
+      Bezirk Nürnberg/Fürth:
+        St. Ludwig Nürnberg:
+        Nürnberg:
+        Nürnberg-Laufamholz:
+        Fürth - Mannhof:
+        Nürnberg-Sebald:
+        Nürnberg:
+      Bezirk 2:
+        Höchstadt-Hohestete:
+        Bamberg:
+        Uffenheim:
+        Hirschaid:
+        Neustadt a.d.Aisch:
+        Bamberg:
+      Bezirk Obermain:
+        Altenkunstadt:
+        Lichtenfels:
+        Bad Staffelstein:
+        Kronach-Friesen:
+        Bayreuth:
+      Bezirk Schwabachgrund:
+        Erlangen-Sieglitzhof:
+        Erlangen:
+        Uttenreuth:
+        Erlangen:
+        Stamm Tennenlohe:
+        Aurachtal - Herzogenaurach:
+        Erlangen-Bruck:
+        Bubenreuth:
+        Erlangen-Alterlangen:
+    Berlin:
+      Berlin-Moabit:
+      Berlin-Neukölln (Gropiusstadt):
+      Berlin-Lankwitz:
+      Berlin-Charlottenburg:
+      Berlin:
+      Berlin-Zehlendorf:
+      Berlin:
+      Berlin-Spandau:
+      Michendorf:
+      Berlin-Spandau:
+      Berlin-Charlottenburg:
+      Greifswald:
+      Potsdam:
+    Eichstätt:
+      Büchenbach:
+      Neumarkt:
+      Wendelstein:
+      Roßtal:
+      Schwanstetten-Rednitzhembach:
+      Eichstätt:
+      Weißenburg:
+      Pleinfeld:
+      Treuchtlingen:
+      Spalt:
+      Gunzenhausen:
+      Ingolstadt:
+      Ingolstadt:
+    Essen:
+      Bezirk Borbeck & Frohnhausen:
+        Essen-Borbeck:
+        Essen-Frintrop:
+        Essen-Schönebeck:
+        Essen-Borbeck:
+        Essen-Frohnhausen:
+        Essen-Beding.:
+        Essen-Frohnhausen:
+      Bezirk Duisburg:
+        Duisburg-Huckin.:
+        Duisburg-Buchh.:
+        Duisburg-Großenbaum:
+        Duisburg-Serm:
+        Duisburg-Buchholz:
+        Duisburg-Hamborn:
+        Duisburg-Rahm:
+        Duisburg:
+        Duisburg-Buchholz:
+        Duisburg-Fahrn:
+      Bezirk Oberhausen:
+        Oberhausen:
+        Oberhausen:
+        Oberhausen-Mitte:
+        Oberhausen:
+        Oberhausen:
+        Oberhausen:
+        Oberhausen:
+      Bezirk Gladbeck/Bottrop:
+        Gladbeck-Mitte:
+        Gladbeck-Zweckel:
+        Bottrop-Eigen:
+        Bottrop:
+        Bottrop:
+        Gladbeck-Rentfort:
+        Bottrop:
+        Gladbeck-Ellinghorst:
+      Bezirk Ennepe-Ruhr:
+        Gevelsberg:
+        Schwelm:
+        Ennepetal:
+        Witten-Buchholz:
+        Sprockhövel:
+        Sprockhövel-Hasslinghausen:
+        Hattingen-Bredenscheid:
+        Hattingen-Mitte:
+        Wetter-Volmst.:
+        Hattingen-Niederbonsfeld:
+        Hattingen - Winz-Baak:
+        Hattingen-Niederwenigern:
+        DPSG Janusz Korczak Wetter-Wengern :
+        Hattingen-Welper:
+      Bezirk Gelsenkirchen:
+        Gelsenkirchen-Horst:
+        Gelsenkirchen-Ückendorf:
+        Gelsenkirchen-Feldmark:
+        Gelsenkirchen-Schalke:
+        Gelsenkirchen-Ückendorf:
+        Stamm Exodus:
+        Gelsenkirchen-Heßler:
+        Gelsenkirchen:
+        Gelsenkirchen-Buer:
+        Gelsenkirchen-Rotth-Düppel:
+        Gelsenkirchen:
+      Bezirk Sauerland:
+        Halver-Schalksmühle:
+        Neuenrade:
+        Werdohl:
+        Lüdenscheid:
+        Plettenberg:
+        Dahl/Rummenohl:
+        Breckerfeld:
+      Bezirk Bochum & Wattenscheid:
+        Bochum-Altenbochum:
+        Bochum-Langendreer:
+        Bochum:
+        Bochum-Gerthe:
+        Bochum:
+        Bochum:
+        Bochum-Eppendorf:
+        St. Johannes Bochum-Wiemelhausen:
+        Bochum-Dahlhausen:
+        Bochum-Leithe:
+        Bochum-Harpen:
+        Bochum-Weitmar:
+        Bochum-Hiltrop:
+        Bochum-Querenb:
+        Bochum-Weitmar:
+      Bezirk Mülheim / Ruhr:
+        Mülheim/Ruhr:
+        Mülheim:
+        Mülheim a. d. R.:
+        Mülheim:
+      Bezirk Essen Mitte-Nord-Ost:
+        Essen-Stoppenberg:
+        Essen-Steele-Freisenbruch:
+        Essen-Mitte:
+        Essen-Huttrop und Kray/Leithe:
+        Essen-Schonnebeck:
+      Bezirk Essen-Süd:
+        Essen-Relling.:
+        Essen-Horst:
+        Essen-Burgaltendorf:
+        Essen-Stadtwald:
+        Essen-Überr.:
+        Essen-Heisingen:
+        Essen-Haarzopf:
+    Freiburg:
+      Bezirk Mannheim-Bergstraße:
+        Mannheim:
+        Hemsbach:
+        Laudenbach:
+        Mannheim-Neckarau:
+        Weinheim-Sulzbach:
+        Mannheim-Friedrichsfeld:
+        Mannheim-Waldhof:
+        Hirschberg-Leutershausen:
+      Bezirk Karlsruhe:
+        Gaggenau-Bad Rotenfels:
+        Kuppenheim:
+        Baden-Baden:
+        Karlsruhe:
+        Karlsruhe-Neureut:
+        Karlsruhe-Daxlanden:
+      Bezirk Ortenau-Kinzigtal:
+        Hausach:
+        Offenburg:
+        Urloffen:
+        Bühl:
+        Offenburg:
+        Willstätt:
+        Rheinmünster:
+      Bezirk Wiesental-Hochrhein:
+        Wehr:
+        Lörrach-Stetten:
+        Weil am Rhein:
+        Lörrach-Brombach:
+        Dogern:
+        Kandern:
+        Grenzach-Wyhlen:
+      Bezirk Hohenzollern:
+        Sigmaringen:
+        Rosenfeld-H-Zimmern:
+        Hechingen:
+        Fischingen:
+        Bingen:
+        Melchingen:
+        Pfullendorf:
+        Haigerloch:
+        Ostrachtal:
+        Salmendingen:
+      Bezirk Bodensee:
+        Singen:
+        Überlingen:
+        Mühlhausen-Ehingen:
+        Steißlingen:
+        Radolfzell:
+        Daisendorf:
+        Hilzingen:
+        Konstanz:
+        Markdorf:
+        Höri:
+      Bezirk Baar:
+        Bad Dürrheim:
+        Villingen:
+        Bräunlingen:
+        Villingen-Schwenningen; Der Wolf:
+        Hattingen/Baden.:
+      Bezirk Kurpfalz:
+        Sinsheim-Rohrbach/Reihen:
+        Nussloch:
+        Plankstadt:
+        Sandhausen:
+        Heidelberg-Kirchheim:
+        Heidelberg-Wiebl.:
+        Neckarsteinach:
+        Heidelberg:
+        Ketsch:
+        Angelbachtal:
+        Bammental:
+        Stamm Sr. Felicitas Heidelberg-Ziegelhausen:
+      Bezirk Bruchsal:
+        Oberhausen:
+        Bad Schönborn-Langenbrücken:
+        Stutensee:
+        Waghäusel-Wiesental:
+        DPSG Stamm Rheinsheim:
+        Bretten:
+        Bruchsal:
+      Bezirk Pforzheim:
+        Pforzheim:
+        Pforzheim:
+        Remchingen:
+        Pforzheim:
+      Bezirk Odenwald-Tauber:
+        Mosbach:
+        Don Bosco:
+        Adelsheim:
+        Haßmersheim:
+        Obrigheim:
+        Mosbach-Waldstadt:
+      Bezirk Emmendingen:
+        Emmendingen:
+        Waldkirch:
+        Gutach:
+        Emmendingen:
+        Endingen:
+      Bezirk Breisgau:
+        Freiburg-Littenweiler:
+        Freiburg:
+        Gundelfingen:
+        Freiburg-Mitte:
+        Freiburg-Weing.:
+        Kirchzarten:
+        Freiburg-Opfingen:
+        Freiburg:
+        Breisach:
+        Bad Krozingen:
+        Staufen:
+        Freiburg-Vauban:
+        Freiburg-St. Georgen:
+    Fulda:
+      Kassel-Vellmar:
+      Hünfeld:
+      Marburg:
+      Witzenhausen:
+      Fulda-Neuenberg:
+      Melsungen:
+      Fulda-Johannesberg:
+      Wolfhagen:
+      Frankenberg/Eder:
+      Bad Orb:
+      Bad Soden-Salmünster-Ahl:
+      Stamm Shalom Bruchköbel :
+      Hanau:
+      Maintal:
+      Grossauheim:
+      Nidderau-Windecken:
+      Rodenbach:
+      Wächtersbach:
+      Biebergemünd-Wirtheim:
+      Niederdorfelden:
+    Hildesheim:
+      Bezirk Ludwig:
+        Harsum:
+        Elze:
+        Hildesheim-Drispenst.:
+        Diekholzen:
+        Peine:
+        Emmerke:
+      Bezirk Harz:
+        Duderstadt:
+        Osterode am Harz:
+        Seesen-Harz:
+        Herzberg:
+        Göttingen:
+        Northeim:
+        Gieboldehausen:
+      Bezirk Elm:
+        Celle:
+        Helmstedt:
+        Wendeburg-Vechelde:
+        Braunschweig:
+        Gifhorn:
+        Veltheim:
+        Braunschweig:
+      Bezirk Nord:
+        Seevetal-Hittfeld:
+        Zeven:
+        Bremen-Walle:
+        Bremen:
+        Buchholz:
+        Stade:
+        Franziskus:
+        St. Paulus:
+      Bezirk Hannover:
+        Hameln:
+        Wunstorf:
+        Wedemark:
+        Neustadt:
+        Hannover-Kirchrode:
+        Lehrte:
+        Hannover-Mühlenberg:
+    Köln:
+      Bezirk Bergisch Land:
+        Solingen-Ohligs:
+        Wuppertal:
+        Solingen-Weeg:
+        Solingen:
+        Solingen-Wald:
+        Remscheid-Lennep:
+        Solingen-Löhdorf:
+        Solingen-Mangenberg:
+      Bezirk Düsseldorf:
+        Langenfeld:
+        Hochdahl:
+        Düsseldorf:
+        Düsseldorf-Gerresheim:
+        Düsseldorf-Vennhausen:
+        Langenfeld-Richr.:
+        Düsseldorf-Bilk:
+        Düsseldorf:
+        Düsseldorf-Unterrath:
+        Düsseldorf-Bilk:
+        Erkrath:
+      Bezirk Erft:
+        Horrem:
+        Pulheim:
+        Brühl:
+        Reuschenberg Elsdorf:
+        Königsdorf:
+        Pulheim-Brauweiler:
+        Neubottenbroich:
+        Sinnersdorf:
+        Kerpen-Mödrath:
+        Erftstadt-Liblar:
+        Eisvögel:
+      Bezirk Köln Linksrheinisch:
+        Rochus Spiecker Brühl - Schwadorf:
+        Köln-Worringen:
+        Köln-Sülz:
+        Köln-Kriel:
+        Stamm St. Walburga:
+        Köln-Blumenberg:
+        Bornheim-Hersel+Widdig:
+        Köln-Rondorf:
+        Köln-Ehrenfeld:
+        Philipp Neri:
+        Köln-Seeberg:
+        Köln-Junkersdorf / Müngersdorf:
+      Bezirk Rhein - Erft:
+        Neuss-Dreikönigenviertel:
+        Dormagen-Delrath:
+        Grevenbroich-Gustorf:
+        Grevenbroich:
+        Neuss-Weckhoven:
+      Bezirk Niederberg:
+        Ratingen - West:
+        Velbert-Neviges:
+        Heiligenhaus:
+        Mettmann:
+        Wülfrath:
+        Lintorf:
+        Velbert:
+        Essen-Kettwig:
+      Bezirk Sieg:
+        Siegburg:
+        Siegburg - Kaldauen:
+        Niederkassel-Lülsdorf/Ranzel:
+        Troisdorf-Sieglar:
+        Lohmar:
+        Niederkassel:
+        St. Augustin-Menden:
+        Lohmar:
+        Gummersbach:
+      Bezirk Voreifel:
+        Euskirchen:
+        Rheinbach:
+        Meckenheim:
+        Euskirchen-Euenheim:
+        Zülpich:
+        Euskirchen-Stotzheim:
+      Bezirk Bonn:
+        Bonn-Hardtberg:
+        Bonn-Bad Godesb.:
+        Bonn-Stadtmitte:
+        Bonn-Beuel:
+      Bezirk Siebengebirge:
+        Königswinter:
+        Hennef-Warth:
+        Königswinter-Ittenbach:
+        Winterscheid:
+        Stamm Isenburg:
+        Rheinbreitbach:
+        Königswinter-Stieldorf:
+        Königswinter-Oberpleis:
+        Neunk.-Seelscheid:
+        Eitorf:
+        Waldbröl:
+      Bezirk Rhein-Berg:
+        Köln-Rath/Heumar:
+        Köln-Porz:
+        Köln-Kalk:
+        Köln-Brück:
+        Köln-Neubrück:
+        Köln-Stammheim:
+        Köln-Ensen:
+        Bensberg:
+        Bergisch Gladbach-Refr.:
+        Leverkusen:
+        Leverkusen-Schlebusch:
+        Höhenberg-Vingst:
+        Leichlingen:
+        Wipperfürth:
+    Limburg:
+      Frankfurt-Fechenheim:
+      Frankfurt Nord / Stamm Marcel Callo:
+      Frankfurt-Rödelheim:
+      Frankfurt:
+      Frankfurt-Heddernheim:
+      Frankfurt-Unterliederbach:
+      Frankfurt-Schwanheim:
+      Frankfurt-Niederrad:
+      Frankfurt-Sachsenhausen:
+      Frankfurt-Bornheim:
+      Wiesbaden-Schierstein:
+      Normannen Eltville:
+      Wiesbaden:
+      Idstein:
+      Bad Schwalbach:
+      Aarbergen:
+      Königstein:
+      Eschborn:
+      Hofheim:
+      Kelkheim:
+      Langenhain-Lorsbach:
+      Schloßborn:
+      Montabaur:
+      Simmern-Westewald:
+      Lahnstein-Oberlahnstein:
+      Lahnstein:
+      Hundsangen:
+      Wirges:
+      Eitelborn:
+      Stella Maris:
+      Weilburg:
+      Lahntal (Dietkirchen + Dehrn):
+      Eisenbach:
+      Wetzlar/Dom:
+      Limburg-Dom:
+      Dornburg Westerw.-Frickhofen:
+      Limburg-Lindenholzhausen:
+    Mainz:
+      Bezirk Oberhessen:
+        Rosbach:
+        Friedberg:
+        Lauterbach/Schlitz:
+        Sankt Marien Großen-Buseck:
+        Langgöns:
+        Nidderau-Heldenbergen:
+        DPSG St. Andreas Altenstadt e.V.:
+        Gießen:
+      Bezirk Rhein-Main-Hessen:
+        Rüsselsheim:
+        Mainz-Gonsenheim:
+        Klein-Winternheim:
+        Ingelheim:
+        Schwabenheim:
+        Budenheim:
+        Mainz-Finthen:
+        Mainz:
+        Rödermark-Urberach:
+        Dietzenbach:
+        Wöllstein:
+      Bezirk Heldon:
+        Seeheim-Jugenheim:
+        Seeheim-Jugenheim:
+        Breuberg-Höchst:
+        Darmstadt-Arheilgen:
+        Dieburg:
+        Gross-Zimmern:
+        Pfungstadt:
+        Münster:
+        Michelstadt / Odenwald:
+        Weiterstadt:
+        Heppenheim:
+        Viernheim:
+        Lorsch:
+        Bürstadt:
+        Guy de Larigaudie Lampertheim:
+        Darmstadt:
+        Einhausen:
+        Abtsteinach:
+    München:
+      Bezirk München-Isar:
+        München-Giesing:
+        Garching:
+        Stamm Mariahilf:
+        München-Schwabing:
+        Grosshesselohe:
+        München-Solln:
+        München-Olympiadorf:
+        Pfadfinderstamm Swapingo:
+        München-Lehel:
+        München-Grosshadern:
+        München Hl. Kreuz - Forstenried:
+      Bezirk München - Ost:
+        Ottobrunn:
+        Camilo Torres:
+        München-Riem:
+        Unterhaching:
+        Neukeferloh:
+        München-Waldtrudering:
+        Putzbrunn:
+        München-Perlach:
+      Bezirk Würm - Amper:
+        Olching:
+        Fürstenfeldbruck:
+        München-Pas.:
+        Germering:
+        Gröbenzell:
+        Puchheim:
+        Karlsfeld:
+        München-Neuhadern:
+        München-Laim:
+        München-Westend:
+      Bezirk Freising:
+        Freising:
+        Moosburg:
+        Langenbach:
+      Bezirk Ruperti - Mühldorf:
+        Freilassing:
+        Mühldorf:
+        Mitterfelden:
+        Laufen:
+        Polling:
+        Surberg:
+      Bezirk Ebersberg:
+        Rott am Inn:
+        Kirchseeon:
+        Anzing/Poing:
+        Grafing:
+        Hohenlinden:
+      Bezirk Rosenheim:
+        Kiefersfelden:
+        Prutting:
+        Rosenheim:
+        Mountain Scouts Aschau:
+        Degerndorf / Brannenburg:
+        Rosenheim-Oberwöhr:
+        Bad Aibling:
+        Kolbermoor:
+        Feldkirchen-Westerh.:
+        Grosskarolinenfeld:
+        St. Quirinus Fürstätt:
+      Bezirk Oberland:
+        Holzkirchen:
+        Baierbrunn:
+        St. Sixtus Schliersee:
+        Iffeldorf/Seeshaupt:
+        Benediktbeuern:
+    Münster:
+      Bezirk Niederrhein-Nord:
+        Xanten:
+        Emmerich:
+        Goch- Gaesdonck:
+        Kleve-Materborn:
+        Schermbeck:
+        Alpen:
+        Sonsbeck:
+        Wesel-Feldmark:
+        Wesel-Flüren:
+        Wesel:
+        Kalkar:
+        Geldern-Hartefeld:
+        Weeze:
+        Hamminkeln:
+        Hamminkeln-Dingden:
+        Geldern-Veert:
+        Geldern:
+        Hamminkeln:
+        Uedem:
+        Geldern-Kapellen:
+        Rheurdt:
+        Goch:
+      Bezirk Oldenburg:
+        Vechta:
+        Vechta:
+        Steinfeld:
+        Dinklage:
+        Wilhelmshaven:
+        Lohne:
+        Damme:
+        Oldenburg:
+        Varel:
+        Goldenstedt-Ellenstedt:
+        Wilhelmshaven:
+        Barssel:
+        Bakum:
+        Lindern:
+      Bezirk Borken:
+        Rhede:
+        Bocholt:
+        Bocholt:
+        Bocholt:
+        Bocholt:
+        Borken:
+        Epe:
+        Velen-Ramsdorf:
+        Isselburg:
+        Ahaus:
+        Stadtlohn:
+        Schöppingen:
+        Gescher:
+      Bezirk Recklinghausen:
+        Marl-Sinsen:
+        DPSG Hillerheide:
+        Dorsten:
+        Recklinghausen:
+        Dorsten:
+        Recklinghausen-Nord:
+        Marl- Lenkerbeck:
+        Marl-Sickingmühle:
+        Recklinghausen-Hochlar:
+        Oer-Erkenschwick:
+        Dorsten-Wulfen-Barkenberg:
+        Bottrop-Grafenwald:
+        Dorsten:
+      Bezirk Steinfurt:
+        Saerbeck:
+        Emsdetten:
+        Burgsteinfurt:
+        Nordwalde:
+        Wettringen:
+        Mettingen:
+        Greven:
+        Altenberge:
+        Hörstel:
+        Ladbergen:
+        Tecklenburg:
+        Greven-Reckenfeld:
+      Bezirk Warendorf:
+        Sassenberg:
+        Ostbevern:
+        Drensteinfurt:
+        Warendorf:
+        Ahlen/Westf.:
+        Oelde:
+        Beckum:
+        Ennigerloh:
+        Drensteinfurt-Rinkerode:
+        Hamm-Bockum-Hövel:
+        Sendenhorst:
+      Bezirk Münster:
+        Münster-Gievenbeck:
+        Münster-Handorf:
+        DPSG St. Liutger:
+        Münster-Wolbeck:
+        Münster:
+        Münster-Hiltrup:
+        St. Anna Mecklenbeck:
+        Münster:
+        Münster:
+      Bezirk Niederrhein-Süd:
+        Moers-Wesel:
+        Duisburg-Homberg:
+        Moers-Repelen:
+        Duisburg-Rheinhausen:
+        Dinslaken:
+        Duisburg-Homberg:
+        Duisburg:
+        Friedrichsfeld:
+        Rheinberg:
+        Kamp-Lintfort:
+        Voerde-Spellen:
+      Bezirk Coesfeld:
+        Dülmen:
+        Nordkirchen:
+        Lüdinghausen:
+        Lette:
+        Nottuln:
+        Buldern:
+        Selm:
+        Senden:
+        Olfen:
+        Coesfeld:
+    Osnabrück:
+      Pfadwind:
+      Haren:
+      Lathen:
+      Papenburg:
+      Lingen:
+      Haselüne-Lehrte:
+      Haren:
+      Nordhorn:
+      Melle-Gesmold:
+      Osnabrück:
+      Holzhausen-Ohrbeck:
+      Oesede:
+      Wallenhorst:
+      Neuenkirchen:
+      Stamm Maximilian Kolbe Rulle:
+    Paderborn:
+      Bezirk Dortmund:
+        Dortmund-Mitte:
+        Dortmund-Husen:
+        Dortmund-Wambel:
+        DPSG St. Remigius Dortmund-Mengede:
+        Dortmund-Lütgendortmund:
+        Dortmund-Soelde:
+        Dortmund-Obereving:
+        Dortmund-Huckarde:
+        Dortmund-Koerne:
+        Dortmund-Hörde:
+        Dortmund-Scharnhorst:
+        DPSG Dortmund-Barop (FRAXA):
+        Dortmund-Kirchlinde:
+        Dortmund-Aplerbeck:
+        Dortmund-Brünninghausen:
+        Dortmund-Lichtendorf/Sölderholz:
+        Lünen-Süd:
+        Dortmund-Berghofen:
+        Dortmund-Lanstrop:
+      Bezirk Ruhr-Sauerland:
+        Unna:
+        Hohenlimburg:
+        Hagen-Boele:
+        Schwerte-Ost:
+        Hagen:
+        Witten:
+        DPSG St. Urban Ende-Syburg (Stamm):
+        Fröndenberg-Warmen:
+        Herdecke:
+        Witten:
+        Iserlohn-Nussberg:
+        Witten-Bommern:
+      Bezirk Soest-Hamm:
+        Bad-Westernk.:
+        Möhnesee-Körbecke:
+        Geseke:
+        Hamm-Süden:
+        Hamm-Norden:
+        Soest:
+        Lippetal:
+        Warstein:
+        Rüthen:
+        Warstein-Belecke:
+        Heessen-Dasbeck:
+        Welver:
+        Hamm-Berge:
+        Lippetal:
+        Lippstadt:
+      Bezirk Hochsauerland:
+        Arnsberg-Neheim:
+        Arnsberg-Hüsten:
+        Herdringen:
+        Eslohe-Wenholthausen:
+        Arnsberg:
+        Meschede-Eversberg:
+        Brilon:
+        Eslohe-Kückelheim:
+        Meschede:
+      Bezirk Siegerland-Südsauerland:
+        Siegen:
+        Siegen:
+        Siegen-Hüttental:
+        Olpe:
+        Netphen:
+        Netphen-Dreis-Tiefenbach:
+        Attendorn-Ennest:
+        Wilnsdorf-Rudersdorf:
+        Wenden-Gerlingen/ Abt.  Anton.:
+        Freudenberg:
+      Bezirk Paderborn:
+        Paderborn-Schloß Neuhaus:
+        Paderborn:
+        Herford:
+        Bielefeld:
+        Nordborchen:
+        Gütersloh-Spexard:
+        Paderborn:
+        Lemgo:
+        Detmold:
+        Paderborn-Elsen:
+      Bezirk Herne-Castrop Rauxel:
+        Castrop-Rauxel:
+        Herne:
+        Herne:
+        Herne-Eickel:
+      Bezirk Corvey:
+        Höxter-Stadtmitte:
+        Lüchtringen:
+        Höxter-Stahle:
+        Brenkhausen:
+        Höxter-Ottbergen:
+    Passau:
+      Würding:
+      Hengersberg:
+      DPSG Fürstenstein-Nammering:
+      Salzweg:
+      Neuötting:
+      Winhöring:
+      Passau-Grubweg:
+      Passau-Neustift:
+      Hauzenberg:
+      Freyung:
+      Tittling:
+      Untergriesbach:
+      Kirchdorf:
+      Pocking:
+      Pfarrkirchen:
+      Vilshofen:
+      Rotthalmünster:
+      Fürstenzell:
+      Frauenau:
+      Grafenau:
+    Regensburg:
+      Fichtelbezirk:
+        Speichersdorf:
+        Kulmain:
+        Mitterteich:
+        Marktredwitz:
+        Tirschenreuth:
+      Burgenbezirk:
+        Eschenbach:
+        Weiden:
+        Neuhaus:
+        Windischeschenbach:
+      Hüttenbezirk:
+        Amberg:
+        Ammersricht:
+        Schnaittenbach:
+        Sulzbach-Rosenberg:
+        Poppenricht-Michaelspoppenricht:
+        Ensdorf:
+      Bezirk Niederbayern:
+        Puchhausen-Hüttenkofen:
+        Vilsbiburg:
+        Straßkirchen:
+        Landshut:
+        Landshut:
+        Viechtach:
+        Landshut:
+        Straubing:
+        Hohenthann:
+      Bezirk Dom:
+        Obertraubling:
+        Regensburg-Ziegetsdorf:
+        Regensburg-Kupfmühl:
+        Regensburg:
+        Sinzing:
+        Regensburg:
+        Regensburg-Steinweg:
+        Regensburg:
+        Wenzenbach:
+        Regensburg-Schwabelweis:
+        Hainsacker:
+        Regensburg-Burgweinting:
+        Pettendorf:
+      Bezirk Jura:
+        Parsberg:
+        Kelheim:
+        Saal:
+        Abensberg-Offenstetten:
+        Stamm Teugn:
+    Rottenburg-Stuttgart:
+      Bezirk Stuttgart:
+        Stuttgart-Obertürkheim:
+        Stuttgart-Möhringen:
+        Stuttgart-Hofen:
+        Oeffingen:
+        Stuttgart-Neugereut:
+        Stuttgart-Zuffenhausen:
+        Leonberg:
+      Bezirk Neckar/Filder:
+        Esslingen:
+        Neuhausen:
+        Nürtingen:
+        Plochingen:
+        Wernau/Neckar:
+      Bezirk Neckar:
+        Herrenberg:
+        Holzgerlingen:
+        Eningen:
+        Reutlingen-Nord/Orschel-Hagen:
+        Tübingen:
+        Frommern:
+        Böblingen:
+        Reutlingen-Mitte:
+        St. Peter & Paul Weil der Stadt:
+        Reutlingen Süd:
+        Kiebingen:
+        Ammerbuch-Entringen:
+      Bezirk Hohenstaufen:
+        Stamm Hl. Kreuz Deggingen:
+        Donzdorf:
+        Donzdorf-Winzingen:
+        Eislingen:
+        Göppingen:
+        Salach:
+        Uhingen:
+        Schwäbisch-Gmünd:
+      Bezirk Oberland:
+        Carpe Diem Ehingen:
+        Biberach:
+        Ravensburg:
+        Bad Waldsee:
+        Friedrichshafen:
+        Laupheim:
+        Schelklingen-Hütten:
+        Mengen:
+        Wolfegg:
+        Ennetach:
+        Sinningen:
+        Weingarten:
+      Bezirk Schwarzwald-Donau:
+        Balingen:
+        Rottweil:
+        Schramberg:
+        Tuttlingen:
+        Weigheim:
+      Bezirk Ostalb:
+        Aalen:
+        Bopfingen:
+        Ellwangen:
+        Giengen:
+        Heubach:
+        Schwäbisch Gmünd-Hussh:
+        Herbrechtingen:
+        Ulm-Nord:
+        Ulm-Söflingen:
+        Rammingen:
+        Ulm:
+      Bezirk Unterland:
+        Bietigheim-Bissingen:
+        Heilbronn-Böcklingen:
+        Erlenbach:
+        Ludwigsburg-Poppenweiler:
+        Kornwestheim:
+        Ludwigsburg:
+        Mühlacker:
+        St. Dionys Neckarsulm:
+        Brackenheim:
+        Heilbronn:
+        Oedheim:
+        Bad Wimpfen:
+        Heilbronn - Über dem Salzgrund:
+      Bezirk Hohenlohe:
+        Bad Mergentheim:
+        Künzelsau:
+        Öhringen:
+        Santiago Schrozberg:
+        Ingelfingen:
+        Bretzfeld:
+    Speyer:
+      Bezirk Trifels:
+        Hauenstein:
+        Waldfischbach-Burgalben:
+        Rodalben:
+        Kaiserslautern:
+        Pirmasens-Winzeln:
+        Rodalben:
+        Zweibrücken Stamm Heilige Elisabeth :
+      Bezirk Ludwigshafen:
+        Frankenthal:
+        Otterstadt:
+        Dannstadt-Schauernh.:
+        Ludwigshafen:
+        Ludwigshafen-Gartenstadt:
+        Ludwigshafen-Pfingstweide:
+        Ludwigshafen-Friesenheim:
+        Bobenheim:
+        Maxdorf/Birkenheide:
+        Ludwigshafen-Oggersh.:
+      Bezirk Saarpfalz:
+        St. Ingbert-Rohrbach:
+        St. Ingbert:
+        Mandelbachtal/Heckendalh.:
+        St. Ingbert-Mitte:
+        Homburg-Jägersb.:
+        Homburg:
+        Niederwürzbach:
+        Camino Homburg:
+        St. Ingbert:
+      Bezirk Haardt:
+        Edenkoben/Hainfeld:
+        Herxheim:
+        Landau:
+        Neustadt:
+        Neustadt-Lachen:
+        Winden:
+        Rülzheim:
+        Speyer:
+        Speyer:
+    Trier:
+      Bezirk Koblenz:
+        Kaltenengers:
+        Urmitz:
+        Koblenz-Castell-Niederberg:
+        Koblenz-Südliche Vorstadt:
+        Koblenz-Goldgrube:
+        Koblenz-Güls:
+        Rhens:
+        Bassenheim:
+        Koblenz-Asterstein:
+        Münstermaifeld:
+      Bezirk Mittelmosel:
+        Bernkastel-Kues:
+        Bernkastel-Kues:
+        Rachtig:
+        Kaisersesch:
+        Wittlich:
+      Bezirk Rhein-Hunsrück-Nahe:
+        Kirn-Sulzbach:
+        Bad Kreuznach:
+        Rheinböllen:
+        Waldalgesheim:
+        Sohren:
+        St. Rupertus Bingerbrück:
+        Stamm Shalom Windesheim:
+      Bezirk Rhein-Wied:
+        Neuwied-Oberbieber:
+        Kurtscheid:
+        Neuwied-Feldkirchen:
+        Neuwied City:
+        Rheinbrohl:
+        Bad Hönningen:
+        Neuwied-Engers:
+        Neuwied:
+        Neuwied-Gladbach:
+        Leutesdorf:
+      Bezirk Saarbrücken:
+        Dudweiler:
+        Köllerbach:
+        Friedrichsthal:
+        Klarenthal:
+        Ludweiler:
+        Saarbrücken:
+      Bezirk Saar-Hochwald:
+        DPSG Roden:
+        Perl:
+        Rehlingen-Siersburg:
+        DPSG Saarlouis Stamm Beaumarais:
+        Hülzweiler:
+      Bezirk Schaumberg-Blies:
+        Illingen:
+        Hasborn:
+        Neunkirchen:
+      Bezirk Sieg:
+        Kirchen:
+        Niederfischbach:
+        Betzdorf:
+        Niederschelderhütte/Birken:
+      Bezirk Trier:
+        Trier-Euren:
+        Trier-Pfalzel:
+        Saarburg-Beurig:
+        Trier-Tarforst:
+        Trier-Heiligkreuz:
+        Föhren:
+      Bezirk Eifel / Ahr:
+        Adenau:
+        Grafschaft Ringen:
+        Andernach:
+        Balu Hillesheim:
+        Weißenthurm/Kettig:
+        Kruft:
+        Andernach:
+    Würzburg:
+      Bezirk Untermain:
+        Aschaffenburg-Innenstadt:
+        Mainaschaff:
+        Stockstadt:
+        Aschaffenburg-Gailbach:
+        Großwallstadt:
+        Aschaffenburg/Schweinheim:
+        Heimbuchenthal:
+        Albstadt:
+        Mönchberg:
+        Elsenfeld:
+        Alzenau:
+        Großostheim:
+      Bezirk St. Kilian/Würzburg:
+        Würzburg-Lengfeld:
+        Würzburg-Sanderau:
+        Würzburg:
+        Würzburg-Rottenbauer:
+        Würzburg-Frauenland:
+        Würzburg:
+      Bezirk Genesis Nord:
+        Gerolzhofen:
+        Euerbach:
+        Schweinfurt:
+        Niederwerrn:
+        Ostheim:
+        Haßfurt:
+        Münnerstadt:
+        Bad Kissingen:
+        Nordheim/Rhön:
+        Stockheim:
+        Rödelmaier:
+        Oberelsbach:
+      Bezirk Main-Spessart:
+        Lohr-Sackenbach:
+        DPSG Stamm Roncalli Partenstein:
+        Lohr-Sendelbach:
+      Bezirk Mainfranken:
+        Randersacker:
+        Ochsenfurt:
+        Rimpar:
+        Reichenberg/Hattenhausen:
+        Stadtschwarzach:
+        Leinach:
+        Eisingen:
+        Wertheim:
+        Volkach:
+    Magdeburg:
+      Magdeburg:
+      Sangerhausen-Altstadt:
+      Badersleben:
+      Blankenburg:
+      Halle (Saale):
+      Burgenlandfalken Weißenfels:
+      Dresden-Löbtau:
+      Leipzig:
+    Erfurt:
+      Uder:
+      Heiligenstadt:
+      Erfurt:
+      Weimar:
+      Niederorschel:
+    Hamburg:
+      Kiel Damiano:
+      Hamburg-Rahlstedt:
+      Hamburg-Hamm:
+      Hamburg-Farmsen:
+      Hamburg-Blankenese:
+      Hamburg-Harburg:
+      Hamburg-Neugraben:
+      Hamburg-Poppenbüttel:
+      Hamburg-Volksdorf:
+      Ahrensburg:
+      Norderstedt:
+      Hamburg-Altona:
+      Hamburg-Eidelstedt:
+      Bad Schwartau:
+      Lübeck:
+      Rendsburg:
+      Bargteheide:
+      Quickborn:
+      Halstenbek:
+      Itzehoe-Edendorf:
+      Uetersen:
+  PSG:
+    Aachen:
+      Aachen-Burtscheid:
+      Aachen:
+      Aachen-Verlautenheide:
+      Venwegen olé olé:
+      Aachen:
+      Roetgen-Rott:
+      Roetgen:
+      Immerath:
+      Schwalmtal:
+      Krefeld:
+      Don Bosco Oberbruch:
+      Krefeld Traar:
+      Graf Gerhard - Wassenberg:
+    Augsburg:
+      Augsburg:
+      Krumbach:
+      Langerringen:
+      Friedberg:
+      Wulfertshausen:
+      Hiltenfingen:
+      Schwabegg:
+      Kaufbeuren:
+      Mindelheim:
+      Oberegg:
+      Lauchdorf:
+      Markt Rettenbach:
+      Donauwörth:
+    Bamberg:
+      Bamberg -Kunigund-:
+      Nürnberg:
+    Dresden-Meissen:
+    Essen:
+      Schwelm:
+      Bochum:
+      Bochum-Shenandoa:
+      Gelsenkirchen:
+      Mülheim/Ruhr:
+      Essen:
+      Essen -PTA-:
+    Freiburg:
+      Gengenbach:
+      Achern:
+      Bruchsal:
+      Freiburg:
+      Denzlingen:
+      Betty Clay:
+      Siedlung Dreisamblau - Freiburg Mitte:
+      Weil am Rhein:
+      Dogern:
+      Singen:
+      Karlsruhe-Süd:
+    Hamburg:
+      Bützower Schwäne:
+    Hildesheim:
+    Köln:
+      Düsseldorf-Eller:
+      Düsseldorf-Hamm:
+      Siegburg Deichhaus:
+      Euskirchen:
+    Wiesbaden:
+      Wiesbaden:
+    Mainz:
+      Budenheim:
+      Mainz-Bretzenheim:
+      KHG Mainz:
+      Lorsch:
+      Mainz - PTA:
+    München:
+      München - Neuhausen:
+      Bichl:
+      Hörlkofen:
+      Giesing:
+      Schulstamm München:
+      Olching:
+      Bruckmühl:
+      Traunstein:
+      Ruhpolding:
+    Münster:
+      Dülmen:
+      Dülmen:
+      Sendenhorst:
+      Stadtlohn:
+      Gronau:
+      Senden-Ottmarsbocholt:
+      Rheine:
+      Mettingen:
+      Xanten:
+    Osnabrück:
+      Eutin-Amazona Sol:
+    Paderborn:
+      JaM:
+      Dortmund-Kratzbürste:
+      Dortmund:
+      Olave - Dortmund:
+    Regensburg:
+      Weiden:
+      Amberg:
+      Passau:
+      Regensburg - St.Wolfgang:
+      Regensburg - St. Paul:
+      Regensburg - St.Josef:
+      Großberg:
+      Maxhütte-Haidhof:
+      Sulzbach-Rosenberg:
+    Rottenburg-Stuttgart:
+      Stuttgart-Hofen:
+      Stuttgart-Neugereut:
+      Allmersbach:
+      Enzberg:
+      Fellbach-Oeffingen:
+      Wernau:
+      Schulstamm Rottenburg:
+      Ostfildern-Nellingen:
+    Speyer:
+    Trier:
+      Wiesbach-Eppelborn:
+      Bernkastel:
+      Stadtgruppe Trier:
+      Waldalgesheim:
+      Weiler:
+    Würzburg:
+      Reichenberg - Hattenhausen:
+      Würzburg:
+      Greußenheim:
+      Aschaffenburg:
+      Niedernberg:
+      Stockstadt:
+      Aschaffenburg Schule:
+      Siedlung St. Elisabeth - Aschaffenburg:
+  BdP:
+    Baden-Württemberg:
+      Draconis:
+      Drágan:
+      Filderfüchse:
+      Taquena:
+      Adler:
+      Armer Konrad:
+      Bärengrund:
+      Beowulf:
+      Bergwolf:
+      Bundschuh:
+      Burg Karlsruhe:
+      der Elche:
+      der Raben:
+      Diadochen:
+      Einhorn:
+      Feuerreiter:
+      Grenzland:
+      Mammut:
+      Nibelgau:
+      Schwarze Wölfe:
+      Schwarzer Panter:
+      Silberreiher:
+      St. Jörg:
+      Sternfahrer:
+      Stettenfels:
+      Sueben:
+      Ulrich v. Hutten:
+      Weiße Rotte:
+      Yanktonai:
     Bayern:
-      VCP 1:
-    Schleho:
-      VCP 2:
-      VCP 3:
- 
- 
+      Adler:
+      Colmberg:
+      Merlin:
+      Phönix:
+      Seewölfe Lindau:
+      Thor Heyerdahl:
+      Weiße Wölfe:
+      Albatros:
+      Alemannen:
+      Artus:
+      Asgard:
+      Bären:
+      Barrakuda:
+      Berglöwen:
+      Burgund:
+      Bussard:
+      Castellum ad Luofi:
+      Cebolon:
+      Cosuaneten:
+      Don Bosco:
+      Eisvogel:
+      Eulen:
+      Excalibur:
+      Faber:
+      Fafnir:
+      Goldene Horde:
+      Goten:
+      Graf Gebhard:
+      Jakob Fugger:
+      Jean Monnet:
+      Kelten:
+      Kim:
+      Leones Oeni:
+      Löwe von Meissen:
+      Marco Polo:
+      Nacanapah:
+      Outpost:
+      Pegasus:
+      Robin Hood:
+      Schwarzer Haufen:
+      Schwarzer Mustang:
+      Seeadler Bamberg:
+      Seeadler Kirchheim:
+      Seeschwalben:
+      Shir Khan:
+      Sigena:
+      Sir Francis Drake:
+      Skythen:
+      Stamm 42:
+      Staufen:
+      Steinadler:
+      Steinadler Erlangen:
+      Truchseß:
+      Waräger:
+      Wittelsbach:
+    Berlin/Brandenburg:
+      Heveller:
+      Plejaden:
+      Alanen:
+      Askanier:
+      Burgund:
+      Grabowski:
+      Kelten:
+      Kimbern:
+      Normannen:
+      Stamm der Hunnen:
+      Teutonen:
+      Waringar:
+    Bremen:
+      de Poppenspeeler:
+      Goten:
+      Hanseaten:
+      Lesmona:
+      Phönix:
+      Rainbow:
+      Schevemoor:
+      Wilhelm Olbers:
+    Hessen:
+      Luchs:
+      Merlin:
+      Pioniere Darmstadt:
+      Arnsburg:
+      Artus:
+      Berglöwe:
+      Burgheldon:
+      Chatten:
+      Christophorus:
+      der Vaganten:
+      Deutschritter:
+      Eisvogel:
+      Excalibur:
+      Feuerreiter:
+      Fischreiher:
+      Graue Adler:
+      Graue Bären:
+      Graue Biber:
+      Graue Drachen:
+      Graue Wölfe:
+      Greif:
+      Greutungen:
+      Hagen von Tronje:
+      Hattstein:
+      Konradstein:
+      Löwenherz:
+      Plejaden:
+      Roter Milan:
+      Schinderhannes:
+      Seeadler:
+      Steinadler:
+      Turtle:
+      Wikinger:
+      Wildwasser:
+      Wilhelm Busch:
+      Wisent:
+      Wüstenfüchse:
+      Zugvögel:
+    Niedersachsen:
+      Adler:
+      Aldenburg:
+      Altai Maral:
+      Amelungen:
+      Askanier:
+      Ata Ulf:
+      Birkhahn:
+      Eiche:
+      Eisvogel:
+      Germanen:
+      Graf Walo:
+      Großer Jäger:
+      Hasko:
+      Helmburgis:
+      Horse:
+      Ikarus:
+      Leviatan:
+      Likedeeler:
+      Lunen:
+      Manninga:
+      Nujakin:
+      Oestringen:
+      Ordensritter:
+      Parzival:
+      Rotmilan:
+      Sankt Hubertus:
+      Sturmvogel:
+      Vaganten:
+      Voortrekker:
+      Weiße Rose:
+      Wikinger:
+      Wildgänse:
+    Nordrhein-Westfalen:
+      Bergluchse (Bergneustadt):
+      Korsaren:
+      Saint Josef:
+      Sirius:
+      Camelot:
+      Eisvogel Heljens:
+      Erdenburg:
+      Folke Bernadotte:
+      Gegenwind:
+      Hubertus:
+      Janusz Korczak:
+      Jupiter:
+      Kürten:
+      Langenberg:
+      Martin Luther King:
+      Molinero:
+      Nebelkrähen:
+      Nordlicht:
+      Oberon:
+      Orion:
+      Phönix:
+      Ritter vom Loe zum Loe:
+      Roter Löwe:
+      Skoten:
+      totila:
+      Vagabunden:
+      Weiße Möwen:
+      Weiße Rose:
+      Wichmarinchusen:
+      Wildkatzen:
+      Winrich von Kniprode:
+    Rheinland-Pfalz/Saar:
+      Ciconia:
+      Albert Schweitzer:
+      Bundschuh:
+      der Piraten:
+      Drache:
+      Falke:
+      Franz von Sickingen:
+      Goten:
+      Graf von Sponheim:
+      Idar-Oberstein:
+      Kurpfalz:
+      Luchs:
+      Pilgrim Falkoni:
+      Raugrafen:
+      Robin Hood:
+      Schwarzer Milan:
+      Sturmvogel:
+      Tscherkessen:
+      Vogt von Hunolstein:
+      von Helfenstein:
+    Sachsen:
+      der Jötnar:
+      Feuerland:
+      Ancalagon:
+      Goldener Reiter:
+      LEO:
+      Wildkatzen:
+    Sachsen-Anhalt:
+      Brizanen:
+      Peißnitz:
+    Schleswig-Holstein/Hamburg:
+      Carsten Niebuhr:
+      Uhlenhorst:
+      Albatros:
+      Domzoo:
+      Duburg:
+      Fealoce:
+      Geisterburg:
+      Inka:
+      Janus:
+      Kolibri:
+      Möwe:
+      Norwing:
+      Nydam:
+      Radwersdorp:
+      Reinholdsburg:
+      Sachsenwald:
+      St. Jürgen:
+      Störtebeker:
+      Torona:
+      Waldreiter:
+    Thüringen:
+      Arnstadt:
+      Bussarde vom Burgberg:
+      Columbus:
+      Falken vom Greifenstein:
+  VCP:
+    Hamburg:
+      Harburg:
+        Ulrich von Hutten:
+        Klaus Störtebeker Finkenwerder:
+        Bischof Ansgar Sinstorf:
+        Matthias Claudius:
+      West:
+        Simon von Utrecht:
+        Elbe:
+        Sankt Rafael:
+        St. Paulus:
+        Johannes Bugenhagen:
+        Weiße Rose :
+        Graf Adolf von Schauenburg:
+      Alster-Bille:
+        Astrid Lindgren :
+        Hohenstaufen:
+        Bapu:
+        Martin Luther King:
+        Charlotte Paulsen:
+        Graf Rantzau:
+        Dietrich Bonhoeffer :
+    Mecklenburg-Vorpommern:
+      Stamm Waldkauz:
+      Eric der Entdecker:
+      Die spähenden Falken:
+      Stamm Weitenhagen:
+      Groß Kleiner Elstern:
+      Wanderfalken:
+      Die Luchse:
+      Dargun + Stamm Levin/Zarnekow:
+      Biestower Braunbären:
+      Dierkower Erdmännchen:
+      Scouven Güstrow:
+      Turmfalken Remplin:
+      Stamm Vineta :
+      Stamm Luzin :
+      St. Jakobus Kavelstorf:
+      Wittenburg:
+      St. Georg:
+      Stamm Heinrich der Löwe:
+      Stamm Rügen:
+      Vellahner Pfauen:
+      Seeadler:
+      Warnemünder Wölfe:
+      Lichtenhäger Wüstenfüchse:
+      Rövershäger Eichhörnchen:
+    Sachsen:
+      Pingtrosse:
+      Sturmkrähen - Siedlung Zittau:
+      Schildbürger:
+      Karl May:
+      Heinrich Zille:
+      Stamm Morgenstern:
+      Drachentiere:
+      Heinrich von Berlepsch:
+      Schwarzkiefer:
+      Einsiedel Syhra:
+      Salomo:
+      Rotfuchs:
+      Wenceslai:
+      Johannes der Täufer:
+      Schleiereulen Radeberg:
+      St. Jakobus    :
+      Bad Lausick:
+      Neuostra - Heiliger Born:
+      Stamm Steinadler:
+      Turmfalken :
+      VCP Oberlungwitz:
+      VCP Limbach/Vogtland:
+      Pilgrim:
+      Stamm Eisvogel:
+      Trachenschlucht:
+      Stamm Gebirgsfalken:
+      Stamm Räuberhauptmann Karasek:
+      Stamm de Auenwaldräuber:
+      King Jesus friends :
+      VCP Moritzburg:
+    Berlin-Brandenburg:
+      Berlin:
+        Alexander von Humboldt:
+        Otto Witte:
+        Thomas Müntzer:
+        Weiße Rose-Mariendorf:
+        Stephanus:
+        Theodor Fontane:
+        Askanier:
+        VCP Siemensstadt:
+        Berlin Mitte:
+        Kreuzberg:
+        Nikolassee:
+      Brandenburg:
+        Aboriginees:
+        Rheinsberg:
+        Friedenstauben:
+        Dietrich-Bonhoeffer:
+        Spreewölfe:
+        Blankenfelde:
+        Saarmund:
+        Red Ants-Zossen:
+        Johannesstift:
+        Prenzlau:
+        Neugründung:
+        Neugründung:
+        Groß Kreutz/Stamm Krusevica:
+        Strausberg:
+    Schleswig-Holstein:
+      von Acken:
+      Aver Liekers:
+      St. Michael:
+      Wikinger:
+      Siedlung Lüneborg:
+      nordFlues:
+      Alderaan:
+      Normannen:
+      Vicelin:
+      Nimrod:
+      Mori:
+      11 oben:
+      Kopernikus:
+      Steve Biko:
+      St. Georg:
+      Cassiopeia:
+      Stamm Gosharde:
+      Stamm Heide:
+      Ritter von Barmstede :
+      Dunedain:
+      Ansgar:
+      Cartoons:
+      Aspasia:
+      Die Falken:
+      Markus Löwen:
+      Wisent :
+      Likedeeler:
+      Martje Flor:
+      Stamm Briganten:
+      Swentana:
+    Mitteldeutschland:
+      Sachsen-Anhalt:
+        Stamm Jakobus:
+        Fratres Tiliae:
+        Cracau Citz:
+        Stamm Surf:
+        Die Schweden:
+        Wilde Kreaturen:
+        Roter Milan:
+        Dietrich Bonhoeffer :
+        Tom Bombadil:
+        Die fuchsschlauen Wölfe:
+        Stamm St. Georg:
+        Franziskus von Assisi:
+        Saale-Wiesel:
+        VCP Schkopau Alexandra von Trotha:
+        VCP Werben:
+        Harzer Luchse:
+      Thüringen:
+        Die Wölfe:
+        Siedlung Arnstadt:
+        Hainleite:
+        Siedlung Erfurt:
+        Thüringer Wanderfalken :
+        Stamm Drei Gleichen:
+        Stamm Drei Gleichen:
+        Stamm Drei Gleichen:
+        Stamm Drei Gleichen:
+        Stamm Drei Gleichen:
+        Stamm Am Gottlob:
+        VCP Rastenberger Orgelpfeifen:
+    Niedersachsen:
+      Hannover:
+        Altwarmbüchen:
+        Hannover Süd:
+        Paulus :
+        Buchholz-Kleefeld:
+        Mechthild von Lona:
+        Raoul Wallenberg:
+        VCP Wettbergen:
+        Stephanus:
+      Süntel:
+        Chico Mendes :
+        VCP Beusterburg:
+        Bilche:
+        Aboriginals:
+        Grafen von Hallermundt:
+        Kreuzfähnlein:
+        Florian Geyer:
+        Gruppe Tönebön (Kein Stamm):
+        VCP Hämelschenburg:
+        Eversteiner Löwen:
+      Heide:
+        Langobarden:
+        Astrid Lindgren:
+        Stamm Elvert:
+        Hermann Billung:
+        Julius Neuendorff  :
+        Florian Geyer:
+        Heinrich der Löwe:
+        Buchholz:
+        Ritter von Soltowe:
+      Bremen:
+        Bonifatius :
+        Daniel von Büren:
+        Siedlung St. Petri:
+        Querflieger Werschenrege:
+      Friesen:
+        Friesen:
+      Osning:
+        Stamm Ichthys:
+        Die Arche:
+        Siedlung Hermann Bonnus:
+      Ems:
+        Eberhard von Danckelmann:
+        Wassergeusen:
+      Oldenburg:
+        Kranich:
+        Tjalken:
+        Wilke Steding:
+        Stamm Assini Essen:
+        Franziskus:
+        Jadeburg:
+        Likedeeler:
+        de butjenter Friesen:
+        Wildgänse:
+        Boreas:
+        Die Brückenbiber:
+      Teufelsmoor:
+        Jan Torf:
+        J.C. Findorff:
+      Elm:
+        Braunschweig Stadt:
+        Johann Hinrich Wichern:
+        Philipp Spitta:
+        St. Thomas:
+        Janusz Korczak:
+      Paul Schneider:
+        Dietrich Bonhoeffer:
+        Maria von Maltzan:
+        Paul Schneider ohne Stammeszugehörigkeit:
+      Wasserkante:
+        Christopherus:
+        VCP Cadenberge:
+        Kleiner Prinz:
+        VCP Stamm Adiko Hammah:
+      Harz:
+        Nikolaus von Amstorf:
+        Eomir :
+        Aragon:
+        Walkenried:
+      Homburg:
+        VCP Alfeld:
+        VCP Hehlen:
+        Deutschritter:
+        Stamm Hullersen:
+        VCP Laurentius:
+        Martin Luther King:
+        Stamm Northeim:
+        Stamm Salzderhelden:
+        Stamm Silberkranich:
+      Ostfalen:
+        Wipshausen :
+        St. Andreas:
+        VCP Hildesheim:
+      Wilhelm Busch:
+        Diogenes:
+        Akropolis:
+        VCP Mariensee:
+        Dietrich Bonhoeffer:
+    Westfalen:
+      Stamm Bega:
+      Abraham Jacobi:
+      VCP Löhne:
+      Zone Bethel:
+      Cherusker:
+      Asgard:
+      Stamm Johannes:
+      Arbalo:
+      Bonhoeffer:
+      Stamm Hucriti :
+      Paul Gerhardt:
+      Pankratius:
+      Wildpferde:
+      VCP Marl-Hamm:
+      Stamm David:
+      Albert Schweitzer:
+      VCP Bochum:
+      VCP Bochum-Melanchthon:
+      Nodan:
+      VCP Wattenscheid:
+      Ulrich von Hutten:
+      Hagen-Emst:
+      Wittekind:
+      Stamm Thingslinde:
+      Schwelm:
+      Junker Jörg:
+      Stamm Humbold:
+      Stamm Elijah:
+      Stamm Schmallenberg:
+      VCP Hattingen:
+    Nordrhein:
+      Düsseldorf-West:
+        Stamm Dormagen:
+        Stamm de Arfa:
+        Stamm Meister Ponzelar:
+        Stamm Mönchengladbach:
+        Stamm Langenfeld:
+        Dietrich Bonhoeffer:
+        Schwalmtal:
+      Aachen:
+        Stamm Minas Anor:
+        VCP Hückelhoven Die Tauben:
+        VCP Merode Chico Mendes:
+        VCP Roetgen Stamm Rott:
+      Ruhr-Wupper:
+        Stamm Eberhard Wittgen:
+        Stamm Essen-Holsterhausen :
+        Stamm Legolas:
+        Weiße Rose:
+        Dag Hammarskjöld:
+      Köln-Bonn:
+        Thor Heyerdahl:
+        Hermann von Wied:
+      Wesel:
+        Dompfadfinder Wesel:
+      Kaarst:
+        VCP Kaarst:
+      Monheim:
+        Janusz Korczak Monheim :
+      Wuppertal:
+        VCP Wuppertal Eiserner Drachen:
+      Remscheid:
+        Stamm Remscheid:
+    Hessen:
+      Kurhessen:
+        Goten:
+        Weiße Rose:
+        Marco Polo :
+        Weiße Taube:
+        Mückenstürmer:
+        Martin Luther Lumdatal:
+        Elisabeth v. Thüringen:
+        St. Georg:
+        Graf Folke Bernadotte:
+        Gottfried v. Ebersberg:
+        Diemelfüchse:
+        Martin von Tours:
+        VCP Niestetal:
+      Wetterau:
+        VCP Bad Nauheim:
+        VCP Friedberg:
+        Zecke:
+        Dietrich Bonhoeffer:
+        Krähenhorst:
+        Kojoten:
+        Johann Textor:
+      Starkenburg:
+        von Falkenstein:
+        Staufen:
+        Wikinger:
+        Weiße Rose:
+        Zugvögel:
+        Massila Messel:
+        Duborn:
+        Martin Luther King:
+        Eldar:
+        Eldar:
+        Densiwiniwasitu:
+        Hermann von Salza:
+        VCP Ginsheim:
+        Christopherus:
+        Neugründung:
+      Rhein-Main:
+        Ottheinrich v. d. Pfalz:
+        Schinderhannes:
+        Dietrich von Bern:
+        Totila:
+        Johannes Opilio de Elss:
+        Parzival:
+        Franken:
+        Robin Hood:
+        Ansgar:
+        Johann Friedrich Oberlin:
+        Sophie Scholl:
+        Ulrich von Hutten:
+      Main-Kinzig:
+        Hohenburg:
+        Schwarzer Panther:
+        Barbarossa:
+        Ulrich von Hutten:
+        VCP Eschersheim:
+        Adlerauge  :
+        Abe Lincoln:
+        Die Sterne:
+    Bayern:
+      Allgäu:
+        VCP Sonthofen/Stamm Alemannen:
+        VCP Füssen/Stamm Waldläufer:
+      Donau:
+        VCP Hemau/Stamm Falken:
+        VCP Neutraubling/Stamm Fridtjof Nansen:
+        VCP Passau/Stamm Kelten:
+      Fichtelgebirge:
+        VCP Bayreuth/Stamm Dietrich Bonhoeffer:
+        VCP Coburg/Stamm Albatros:
+        VCP Kulmbach/Stamm Johann Eck:
+        VCP Rehau Zugvögel:
+        VCP Weiden/Stamm Markomannen:
+        VCP Himmelkron/Stamm Graf Otto von Orlamünde:
+        VCP Wüstenselbitz/Stamm Markgraf Georg :
+        VCP Hof/Stamm Heinrich von Plauen:
+        VCP Trebgast:
+      Frankenjura:
+        VCP Hallstadt/Stamm Nordstamm:
+        VCP Erlangen/Stamm Florian Geyer:
+        VCP Gräfenberg:
+        VCP Hemhofen:
+        VCP Kalchreuth/Stamm Jakob von Haller:
+        VCP Pegnitz:
+        VCP Höchstadt/Stamm Ritter von Spix:
+        VCP Bamberg:
+        VCP Eckental:
+        VCP Nürnberg-Ziegelstein/Stamm Philipp Schwarzert:
+        VCP Forchheim/Stamm Weiße Rose:
+        VCP Vestenbergsgreuth:
+        VCP Uttenreuth/Stamm Johann Friedrich Esper:
+        VCP Streitberg:
+        VCP Erlangen/Stamm Johann Hinrich Wichern:
+      Isar:
+        VCP München-Moosach/Stamm Monseñor Óscar Arnulfo Romero:
+        VCP Fürstenfeldbruck/Stamm Claus Graf Schenk von Stauffenberg:
+        VCP München-Harlaching/Stamm Heinrich der Löwe:
+        VCP Lechrain:
+        VCP Landshut/Stamm Wilhelm Löhe:
+        VCP Söcking:
+        VCP Berg/Stamm Franz Kreis:
+        VCP Ingolstadt/Stamm Martin von Tours - Spitalhof:
+        VCP Landsberg/Stamm Dominikus Zimmermann:
+        VCP Karlshuld/Stamm Totila:
+        VCP Tutzing/Stamm Druiden:
+        VCP Hörlkofen/Stamm Nemeta:
+        VCP Allershausen/Stamm Graf v. Moltke :
+        VCP Ehekirchen:
+        Thor Heyerdahl Erding:
+        VCP Sendling:
+      Mainfranken:
+        VCP Königsberg/Stamm Regiomontanus:
+        VCP Würzburg/Stamm Walther von der Vogelweide:
+        VCP Karlstadt:
+        VCP Zell/Stamm Friedrich Emmert:
+        VCP Haibach:
+        VCP Zeitlofs:
+        VCP Mainstockheim:
+        VCP Rieneck:
+        VCP Niederwerrn:
+      Mitte:
+        VCP Roth-Eckersmühlen:
+        VCP Fürth/Stamm Franken:
+        VCP Lichtenau Impessa:
+        VCP Nürnberg-Katzwang/Stamm Geusen:
+        VCP Diespeck/Stamm Veit vom Berg:
+        VCP Schwaig/Stamm St. Lorenz:
+        VCP Schwabach/Stamm Astrid Lindgren:
+        VCP MTA62:
+        VCP Bruckberg/Stamm Bruckberger Heime:
+        VCP Röthenbach bei St. Wolfgang:
+        VCP Marktbergel/Stamm St. KIlian:
+        VCP Oberferrieden/Stamm Martin Luther King:
+        VCP Neumarkt Taizé:
+        VCP Heideck:
+      Schwaben:
+        VCP Augsburg/Stamm Augusta Vindelicum:
+        VCP Nördlingen/Stamm Dietrich Bonhoeffer:
+        VCP Senden/Stamm Hägar der Schreckliche:
+        VCP Höchstädt an der Donau:
+        Stamm Mering:
+    Württemberg:
+      Schönbuch-Würm:
+        Christoph Kolumbus:
+        Christoph Kolumbus:
+        Christoph Kolumbus:
+        Schönbuchtrapper:
+        Abt Johann:
+        Abt Johann:
+        Seattle:
+        Seattle:
+        Seattle:
+      Gau Hohenlohe:
+        Siedlung Lichteneck:
+        Die beinharten Gallier :
+        Israel Landauer :
+        Limestor :
+        Ritter des schwarzen Kreuzes :
+        Stamm Rosenberger Pfadfinder :
+        Jona :
+      Gau Unterland:
+        Vulkan:
+        Martin Luther:
+        Römer:
+        Gustav Adolf :
+        Hans Riesser:
+        Blauer Turm:
+        Geronimo:
+        Weiße Rose :
+        Stamm Passat:
+        Wolf:
+        Albert Schweitzer:
+        Albrecht von Lichtenberg:
+        Avalon:
+        Paul Schneider:
+        Älterenschaft:
+        Götz von Berlichingen:
+        Stamm Wildeck:
+      Gau Rems-Murr:
+        St. Georg:
+        Heinrich von Waldau:
+        Rudgerus de Herlekoven:
+        Hiltisnot von Roth:
+        Albrecht von Limpurg:
+        Stamm Spraitbach:
+        VCP Hohnweiler:
+        Stamm Steinbach:
+      Gau Teck:
+        Friedrich v. Bodelschwingh:
+        Ritter vom Ordenskreuz :
+        Stamm Geislingen:
+        Alemannen :
+        Ritter von Lichteneck :
+        Kreuzfahrer:
+        St. Michael :
+        Martin Luther King:
+        Francesco Petrarca:
+      Gau Strohgäu:
+        Kreuzfahrer:
+        Arche Noah:
+        Stamm Aldingen :
+        Friedrich Schiller:
+        Stamm Ludwigsburg:
+        Henri Arnaud:
+        Stamm Neckargröningen :
+      Gau Stuttgart:
+        Dietrich von Bern:
+        St. Michael:
+        Stamm Kreuzritter:
+        Stamm Kreuzfahrer:
+        Stamm Stuttgart-Gänsheide:
+      Gau Alb-Donau:
+        Leintal:
+        Beimerstetten :
+        Ulrich von Hutten:
+        Albrecht Ludwig Berblinger :
+      Gau Achalm:
+        St. Martin Ebingen:
+        Jizchak Schwersenz :
+        Sueben :
+        Burladingen :
+        Greenhorns:
+        Stamm Tübingen:
+      Gau Oberland:
+        Stamm Altshausen:
+        Graf Montfort:
+        Heinrich der Löwe :
+      Gau Schwarzwald:
+        Stamm Königsboten:
+        Stamm Adalbert von Zollern:
+        Stamm Hopfau:
+        Weiße Rose :
+        Stamm Luthersche Jugend:
+        Stamm Mettstett:
+        Stamm Schwenningen:
+        Stamm Trichtingen:
+      CVJM-Esslingen:
+        CVJM-Esslingen:
+    Baden:
+      Kurpfalz:
+        Dietrich Bonhoeffer:
+        Birger Forell:
+        Alfons Beil:
+        Häuptling Seattle - jetzt 801008 - frei:
+        Badisch Sibirien:
+        Dunedain Waldläufer:
+        VCP Weinheim - Stamm Zwei Burgen:
+      Franken:
+        Paul Gerhardt:
+        Toyohiko Kagawa:
+        Häuptling Geronimo:
+        Geschwister Scholl:
+        Landstreicher:
+        Chiricahua:
+        Kleiner Prinz :
+        John Rabe:
+        Francesco:
+        Olave St. Clair:
+        CVJM Waldheim:
+      Ortenau:
+        Martin Bucer:
+        Regenbogen :
+      Breisgau:
+        Albert Schweitzer:
+        Alemannen:
+        Arche Noah:
+        Jesus Sirach:
+        Globetrotter:
+        Friedensgemeinde Freiburg:
+      Grenzland:
+        Martin Luther:
+        Konrad von Rötteln:
+        Konrad von Rötteln:
+        Die Brücke:
+      Bodensee:
+        Jan Hus :
+        Florian Geyer:
+        Kon Tiki:
+        Regenbogenbaum:
+        Stamm Kirneck Unterkirnach:
+    Rheinland-Pfalz/Saar:
+      Neu-Burgund:
+        Franz von Sickingen:
+        St. Nikolaus:
+        Salier:
+        Hohenstaufen:
+        Hasalaha:
+        Ritter von Dalberg:
+        Hunnen:
+        Siedlung Freinsheim:
+        Siedlung Heinrich Lützel:
+      Pfälzer-Wald:
+        Franz von Sickingen:
+        Albert Schweitzer:
+        Dagobert:
+        Siedlung Schloß Dhaun:
+      Tomburger Schar:
+        Herigar:
+        Pfalzgraf Ezzo:
+        Richeza:
+        Bad Münstereifel:
+      Nassau-Oranienburg:
+        Ulrich von Hutten:
+        Heinrich von Plauen  :
+        Erwachsenenrunde Dampf 90:
+        Kleiner Prinz:
+        Brandan:
+        Franz von Sickingen:
+        Vasqua:
+        Siedlung Yakima:
+        Albert Schweitzer:
+      Rheinfranken:
+        John-F.-Kennedy:
+        Martin Luther King:
+        Wangari Maathai:
+        Nikolaus Graf von Zinzendorf:
+        Albert Schweitzer:
+        Franz von Assisi:
+        Nelson Mandela:
+      Tronje:
+        Die Spartaner :
+        Perceval:
+        Siedlung Richard Löwenherz :
+        Stamm Daun under:
+      Hammersteiner Ring:
+        Otto von Hammerstein:
+        Philipp Melanchthon:
+        Reichenstein:
+      Saar:
+        Römer:
+        Scheidterhaufen:
+        Sankt Georg    :
+        Siedlung Löwe von Juda:
+      Alt-Burgund:
+        Dietrich Bonhoeffer:
+        Nibelungen:
+        Grafen von Eberstein:
+        Siedlung Sindilo :
+        Siedlung Johannes Gutenberg :
+        Colugo:
+        Leiningen:
+        Lutra:
+        Lohengrin:
+        Parzival:
+        Cassiopeia :
+  BMPPD:
+    Bergisch Gladbach:
+    Dortmund:
+    Duisburg/Essen:
+    Hamburg:
+    Hanau:
+    Mainz:
+    Monheim am Rhein:
+    Rüsselsheim:
+    Wiesbaden:
