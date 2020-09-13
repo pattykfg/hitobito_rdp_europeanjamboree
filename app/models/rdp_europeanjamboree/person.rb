@@ -13,6 +13,7 @@ module RdpEuropeanjamboree::Person
         :old_id,
         :rdp_association,
         :rdp_association_region,
+        :rdp_association_sub_region,
         :rdp_association_group,
         :rdp_association_number,
         :role,

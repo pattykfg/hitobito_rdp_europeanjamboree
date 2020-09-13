@@ -78,7 +78,8 @@ de:
         email_dummy: baden.powell@europeanjamboree.de
         old_id: ID Alte Anmeldung
         rdp_association: Verband
-        rdp_association_region: Land, Diözese, Bezirk
+        rdp_association_region: Land, Diözese
+        rdp_association_sub_region: Bezirk, Region
         rdp_association_group: Stamm, Ortsgruppe
         rdp_association_number: Mitgliedsnummer
         role: Rolle im Kontingent

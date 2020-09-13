@@ -1,25 +1,54 @@
-= f.labeled_input_fields :old_id,
-    :rdp_association_number,
-    :role,
-    :tour,
-    :sepa_name,
-    :sepa_address,
-    :sepa_zip_code,
-    :sepa_town,
-    :sepa_iban,
-    :registration_pdf_path,
-    :registration_locked,
-    :registration_print_date,
-    :sepa_signature,
-    :sepa_date,
-    :contract_signature,
-    :media_agreement,
-    :registration_accepted_date,
-    :payment_problem,
-    :payment_recieved
-= f.labeled_select(:rdp_association, raw("<option></option>"))
-= f.labeled_select(:rdp_association_region, raw("<option></option>"))
-= f.labeled_select(:rdp_association_group, raw("<option></option>"))
+= f.labeled_input_fields :rdp_association_number
+= f.labeled_select(:rdp_association, raw("<option>#{raw @person.rdp_association}</option>"))
+= f.labeled_select(:rdp_association_region, raw("<option>#{raw @person.rdp_association_region}</option>"))
+= f.labeled_select(:rdp_association_sub_region, raw("<option>#{raw @person.rdp_association_sub_region}</option>"))
+= f.labeled_select(:rdp_association_group, raw("<option>#{raw @person.rdp_association_group}</option>"))
+
+= f.labeled_input_fields :role, :tour
+= f.labeled_input_fields :sepa_name, :sepa_address, :sepa_zip_code, :sepa_town, :sepa_iban
+= f.labeled_input_fields :old_id, :registration_pdf_path, :registration_locked, :registration_print_date, :sepa_signature, :sepa_date, :contract_signature, :media_agreement, :registration_accepted_date, :payment_problem, :payment_recieved
+
 
 :javascript
   var association_tree = JSON.parse('#{raw @association_tree.to_json}');
+  var rdp_association = '#{@person.rdp_association}'
+  $(document).ready(function() {
+
+    $("select#person_rdp_association").empty().append(`<option>`+ rdp_association + `</option>`);
+    for (const [key, value] of Object.entries(association_tree)) {
+        $("select#person_rdp_association").append(`<option>${key}</option>`);
+    }
+
+    $("select#person_rdp_association").click(function(){
+        var association = $("select#person_rdp_association").val();
+        
+        $("select#person_rdp_association_region").empty().append(`<option></option>`);
+        $("select#person_rdp_association_sub_region").empty().append(`<option></option>`);
+        $("select#person_rdp_association_group").empty().append(`<option></option>`);
+        for (const [key, value] of Object.entries(association_tree[association])) {
+            $("select#person_rdp_association_region").append(`<option>${key}</option>`);
+        }
+    })
+
+    $("select#person_rdp_association_region").click(function(){
+        var association = $("select#person_rdp_association").val();
+        var association_region = $("select#person_rdp_association_region").val();
+        
+        $("select#person_rdp_association_sub_region").empty().append(`<option></option>`);
+        $("select#person_rdp_association_group").empty().append(`<option></option>`);
+        for (const [key, value] of Object.entries(association_tree[association][association_region])) {
+            $("select#person_rdp_association_sub_region").append(`<option>${key}</option>`);
+        }
+    })
+
+    $("select#person_rdp_association_sub_region").click(function(){
+        var association = $("select#person_rdp_association").val();
+        var association_region = $("select#person_rdp_association_region").val();
+        var association_sub_region = $("select#person_rdp_association_sub_region").val();
+        
+        $("select#person_rdp_association_group").empty().append(`<option></option>`);
+        for (const [key, value] of Object.entries(association_tree[association][association_region][association_sub_region])) {
+            $("select#person_rdp_association_group").append(`<option>${key}</option>`);
+        }
+    })
+  });

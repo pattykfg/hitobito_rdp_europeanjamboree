@@ -3,6 +3,7 @@ class AddPeopleAttrs < ActiveRecord::Migration[4.2]
       add_column :people, :old_id, :string
       add_column :people, :rdp_association, :string
       add_column :people, :rdp_association_region, :string
+      add_column :people, :rdp_association_sub_region, :string
       add_column :people, :rdp_association_group, :string
       add_column :people, :rdp_association_number, :string
 
