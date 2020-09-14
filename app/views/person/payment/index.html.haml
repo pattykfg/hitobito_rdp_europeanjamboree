@@ -1,3 +1,17 @@
+- if can?(:edit, @person)
+    = action_button(t('bearbeiten'),
+                  './payment/edit',
+                  :edit,
+                  remote: false,
+                  method: :get,
+                  rel: :tooltip,
+                  title: "Paketdetials bearbeiten")
+
+
 #main.row-fluid
-%article.span5
-%h2= ('Print ')
+= render_attrs(@person, 
+            :sepa_name,
+            :sepa_address,
+            :sepa_zip_code,
+            :sepa_town,
+            :sepa_iban)  

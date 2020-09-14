@@ -85,7 +85,7 @@ de:
         role: Rolle im Kontingent
         tour: Tour
         sepa_name: Name 
-        sepa_address: Adresse
+        sepa_address: Anschrift
         sepa_zip_code: Postleitzahl
         sepa_town: Stadt
         sepa_iban: IBAN
@@ -103,6 +103,7 @@ de:
     
     header:
       registration_header: Für die Anmeldung zum European Jamboree hier registrieren
+      sepa_header: Zahlungsdetails für das SEPA Lastschriftmandat
 
     button:
       register: Registrieren
