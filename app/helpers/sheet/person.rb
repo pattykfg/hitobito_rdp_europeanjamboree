@@ -35,17 +35,21 @@ module Sheet
             if: :show_details
       end
   
-      tab 'people.tabs.invoices',
-          :invoices_group_person_path,
-          if: (lambda do |view, group, person|
-            person.finance_groups.present? &&
-              (view.can?(:index_invoices, group) || view.can?(:index_invoices, person))
-          end)
+      if Settings.people.invoices
+        tab 'people.tabs.invoices',
+            :invoices_group_person_path,
+            if: (lambda do |view, group, person|
+              person.finance_groups.present? &&
+                (view.can?(:index_invoices, group) || view.can?(:index_invoices, person))
+            end)
+      end 
   
-      tab 'people.tabs.history',
-          :history_group_person_path,
-          if: :history
-  
+      if Settings.people.history
+        tab 'people.tabs.history',
+            :history_group_person_path,
+            if: :history
+      end 
+    
       tab 'people.tabs.log',
           :log_group_person_path,
           if: (lambda do |view, group, person|

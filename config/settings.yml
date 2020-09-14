@@ -18,6 +18,12 @@ application:
 # to this address to set a password.
 root_email: development@smeky.de
 
+people:
+  # either name or role
+  default_sort: role
+  abos: false
+  invoices: false
+  history: false
 
 person:
   type:
