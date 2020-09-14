@@ -15,19 +15,19 @@ class Group::Root < ::Group
 
   ### ROLES
   class Administrator < ::Role
-    self.permissions = [:layer_and_below_full, :admin]
+    self.permissions = [:layer_and_below_full, :admin, :finance]
   end
 
   class Head < ::Role
-    self.permissions = [:layer_and_below_full]
+    self.permissions = [:layer_and_below_full, :finance]
   end
 
   class Registration < ::Role
-    self.permissions = [:layer_and_below_full]
+    self.permissions = [:layer_and_below_full, :finance]
   end
   
   class Finance < ::Role
-    self.permissions = [:layer_and_below_full]
+    self.permissions = [:layer_and_below_full, :finance]
   end
 
   class Member < ::Role

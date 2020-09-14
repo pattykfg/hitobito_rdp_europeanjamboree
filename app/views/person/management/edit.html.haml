@@ -1,0 +1,16 @@
+#main.row-fluid
+- title t('activerecord.header.management_header')
+
+- if can?(:index_invoices, @person)
+  = standard_form(@person, {url: '/groups/' + params[:group_id] + '/people/'+ params[:id] + '/management',  method: :put}) do |f|
+    = f.error_messages
+    = f.labeled_input_fields(:registration_locked,
+      :sepa_signature, 
+      :sepa_date, 
+      :contract_signature, 
+      :media_agreement, 
+      :registration_accepted_date,     
+      :payment_problem,
+      :payment_recieved)
+    = form_buttons(f, submit_label: t('activerecord.button.save'), cancel_url: person_path(@person))
+

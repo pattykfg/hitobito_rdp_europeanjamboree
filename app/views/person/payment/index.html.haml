@@ -1,17 +1,17 @@
-- if can?(:edit, @person)
-    = action_button(t('bearbeiten'),
-                  './payment/edit',
-                  :edit,
-                  remote: false,
-                  method: :get,
-                  rel: :tooltip,
-                  title: "Paketdetials bearbeiten")
-
-
 #main.row-fluid
-= render_attrs(@person, 
-            :sepa_name,
-            :sepa_address,
-            :sepa_zip_code,
-            :sepa_town,
-            :sepa_iban)  
+- if can?(:show, @person)
+    = render_attrs(@person, 
+                :sepa_name,
+                :sepa_address,
+                :sepa_zip_code,
+                :sepa_town,
+                :sepa_iban)  
+
+- if can?(:edit, @person)
+    = action_button(t('activerecord.button.edit'),
+                    '/groups/' + params[:group_id] + '/people/'+ params[:id] + '/payment/edit',
+                    :edit,
+                    remote: false,
+                    method: :get,
+                    rel: :tooltip,
+                    title: t('activerecord.button.edit_hint'))

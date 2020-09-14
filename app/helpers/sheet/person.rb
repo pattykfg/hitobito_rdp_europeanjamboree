@@ -24,7 +24,10 @@ module Sheet
           
       tab 'people.tabs.management',
           :management_group_person_path,
-          if: :show
+          if: (lambda do |view, group, person|
+            person.finance_groups.present? &&
+              (view.can?(:index_invoices, group) || view.can?(:index_invoices, person))
+          end)
 
       if Settings.people.abos
         tab 'people.tabs.subscriptions',
@@ -45,7 +48,10 @@ module Sheet
   
       tab 'people.tabs.log',
           :log_group_person_path,
-          if: :log
+          if: (lambda do |view, group, person|
+            person.finance_groups.present? &&
+              (view.can?(:index_invoices, group) || view.can?(:index_invoices, person))
+          end)
   
       tab 'people.tabs.colleagues',
           :colleagues_group_person_path,

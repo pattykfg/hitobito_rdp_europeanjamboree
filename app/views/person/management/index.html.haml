@@ -1,3 +1,21 @@
 #main.row-fluid
-%article.span5
-%h2= ('Management ')
+- if can?(:index_invoices, @person)
+    = render_attrs(@person,   
+                    :registration_locked,
+                    :registration_print_date,
+                    :sepa_signature, 
+                    :sepa_date, 
+                    :contract_signature, 
+                    :media_agreement, 
+                    :registration_accepted_date,     
+                    :payment_problem,
+                    :payment_recieved)
+
+- if can?(:index_invoices, @person)
+    = action_button(t('activerecord.button.edit'),
+                    '/groups/' + params[:group_id] + '/people/'+ params[:id] + '/management/edit',
+                    :edit,
+                    remote: false,
+                    method: :get,
+                    rel: :tooltip,
+                    title: t('activerecord.button.edit_hint'))

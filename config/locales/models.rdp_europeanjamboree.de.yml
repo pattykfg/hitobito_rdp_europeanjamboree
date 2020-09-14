@@ -103,10 +103,14 @@ de:
     
     header:
       registration_header: Für die Anmeldung zum European Jamboree hier registrieren
+      magement_header: Teilnehmer bestätigen 
       sepa_header: Zahlungsdetails für das SEPA Lastschriftmandat
 
     button:
       register: Registrieren
+      edit: Bearbeiten
+      edit_hint: Details bearbeiten
+      save: Speichern
 
     text:
       registration_end: Der Anmeldeschluss war am
