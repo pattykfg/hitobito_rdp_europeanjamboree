@@ -16,6 +16,29 @@ Rails.application.routes.draw do
     get '/registration', to: "registration#index"
     post '/registration', to: "registration#index"
     put '/registration', to: "registration#index"
-  end
 
+    resources :groups do
+      resources :people, except: [:new, :create] do
+        member do
+          post :send_password_instructions
+          put :primary_group
+
+          get 'payment' => 'person/payment#index'
+          put 'payment' => 'person/payment#index'
+          get 'payment/edit' => 'person/payment#edit'
+          put 'payment/edit' => 'person/payment#edit'
+
+          get 'print' => 'person/print#index'
+          put 'print' => 'person/print#index'
+          get 'print/preview' => 'person/print#preview'
+          get 'print/submit' => 'person/print#submit'
+
+          get 'management' => 'person/management#index'
+          put 'management' => 'person/management#index'
+          get 'management/edit' => 'person/management#edit'
+          put 'management/edit' => 'person/management#edit'
+        end 
+      end 
+    end
+  end
 end

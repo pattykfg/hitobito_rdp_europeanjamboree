@@ -100,7 +100,7 @@ de:
         payment_problem: Zahlungsprobleme
         payment_recieved: Zahlung vollständig erhalten
         type: Teilnehmen als
-  
+    
     header:
       registration_header: Für die Anmeldung zum European Jamboree hier registrieren
 
@@ -119,3 +119,10 @@ de:
       last_name:  Bitte gib deinen vollständigen Nachnamen ein.
       email: Bitte gib deine Mailadresse ein.
       email_exists: Es existiert schon ein Account mit dieser e-Mail Adresse. Du kannst dein Passwort über 'Passwort vergessen?' zurücksetzen.
+  
+  people:
+    tabs:
+      general: Kontaktdaten
+      payment: Zahlungsdetails
+      print: Anmeldung Drucken 
+      management: Management
