@@ -12,6 +12,7 @@ zeus.json
 .generators
 .idea
 .rakeTasks
+.DS_Store
 
 # ignore Gemfile.lock for wagons
 Gemfile.lock
@@ -21,3 +22,5 @@ spec/coverage
 spec/reports
 brakeman-output.tabs
 rubocop-results.xml
+
+
