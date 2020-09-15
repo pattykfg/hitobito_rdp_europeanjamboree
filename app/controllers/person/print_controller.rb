@@ -30,14 +30,3 @@ class Person::PrintController < ApplicationController
     authorize!(:edit, entry)
   end
 end
-
-class Participation
-  def initialize(person)
-      @person = person
-  end
-
-  def person
-    @person
-  end
-end
-  

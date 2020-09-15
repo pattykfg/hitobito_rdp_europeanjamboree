@@ -1,3 +1,10 @@
+# encoding: utf-8
+
+#  Copyright (c) 2012-2020, European Jamboree Contingent of Ringe deutscher Pfadfinderinnen- und Pfadfinderverbände e.V.. This file is part of
+#  hitobito_rdp_europeanjamboree and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/smeky42/hitobito_rdp_europeanjamboree.
+
 module RdpEuropeanjamboree
   module Export::Pdf
     module Registration
@@ -11,6 +18,8 @@ module RdpEuropeanjamboree
                                     page_layout: :portrait,
                                     margin: 2.cm,
                                     bottom_margin: 1.cm)
+
+          sections.each { |section| section.new(pdf, person).render }
           
           #define header & footer variables
           imagePath = "../hitobito_rdp_europeanjamboree/app/assets/images/"
@@ -57,7 +66,7 @@ module RdpEuropeanjamboree
               pdf.text "10115 Berlin", :size => 8
             end
 
-            pdf.bounding_box [235, pdf.bounds.bottom + 75], :width => pdf.bounds.width do
+            pdf.bounding_box [235, pdf.bounds.bottom + 80], :width => pdf.bounds.width do
               pdf.text "info@europeanjamboree.de", :size => 8
               pdf.text "www.europeanjamboree.de", :size => 8
               pdf.text "Kontingentsleitung:", :size => 8
@@ -81,11 +90,8 @@ module RdpEuropeanjamboree
           pdf
         end
 
-        # def sections_TN
-        #     [FrontPage, Package, Signature, AGB ]
-	      # end
-        def sections_else
-            [FrontPage, Package, Signature, AGB]
+        def sections
+            [FrontPage]
         end
       end
       mattr_accessor :runner
