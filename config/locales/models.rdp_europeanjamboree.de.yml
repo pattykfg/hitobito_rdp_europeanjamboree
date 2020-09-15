@@ -111,6 +111,10 @@ de:
       edit: Bearbeiten
       edit_hint: Details bearbeiten
       save: Speichern
+      print_preview: Vorschau anzeigen
+      print_preview_hint: Zur Kontrolle der Anmeldung
+      print_submit: Verbindlich drucken
+      print_submit_hint: Sperrt bestimmte Felder für weitere bearbeitung
 
     text:
       registration_end: Der Anmeldeschluss war am
