@@ -27,10 +27,10 @@ people:
 
 person:
   type:
-    - Teilnehmer
+    - Unitteilnehmer
     - Unit Leitung
-    - IST
-    - Kontingentsteam
+    - International Service Team (IST)
+    - Kontingentsteam (CMT)
 
 date:
   registration_end: 2020-10-15T23:59:59
