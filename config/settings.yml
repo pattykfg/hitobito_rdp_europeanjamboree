@@ -26,11 +26,11 @@ people:
   history: false
 
 person:
-  type:
-    - Unitteilnehmer
-    - Unit Leitung
-    - International Service Team (IST)
-    - Kontingentsteam (CMT)
+  role:
+    ut: Unitteilnehmer
+    ul: Unit Leitung
+    ist: International Service Team (IST)
+    cmt: Kontingentsteam (CMT)
 
 date:
   registration_end: 2020-10-15T23:59:59
@@ -46,6 +46,13 @@ countries:
     - LI
     - FR
     - IT
+
+tour:
+  vt: Vortour
+  nt: Nachtour
+no_tour:
+  so: Selbst organisierte Tour
+  kt: Keine Tour
 
 association_tree:
   DPSG:

@@ -18,12 +18,32 @@ class Person::ManagementController < ApplicationController
             @person.registration_accepted_date = params["person"]["registration_accepted_date"]
             @person.payment_problem = params["person"]["payment_problem"]
             @person.payment_recieved = params["person"]["payment_recieved"]
+            @person.role = params["person"]["role"]
+            @person.tour = params["person"]["tour"]
             @person.save
         end 
     end
 
     def edit 
         @person ||= group.people.find(params[:id])
+        @possible_roles = "" 
+        Settings.person.role.each { |role|
+            role[1].to_s == @person.role ? selected = "selected='selected'" : selected = ""
+            @possible_roles += "<option id='" + role[0].to_s + "' " + selected + " >" + role[1].to_s + "</option>"
+        }  
+
+        @possible_tour = ""
+        if :role == Settings.person.role.ul or :role == Settings.person.role.ut
+            Settings.tour.each { |tour|
+                tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
+                @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
+            }  
+        else 
+            Settings.no_tour.each { |tour|
+                tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
+                @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
+            }  
+        end 
     end
 
     private

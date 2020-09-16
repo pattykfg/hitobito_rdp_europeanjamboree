@@ -1,6 +1,12 @@
 #main.row-fluid
 - if can?(:index_invoices, @person)
-    = render_attrs(@person,   
+    = render_attrs(@person,
+                    :id, 
+                    :old_id,
+                    :first_name,
+                    :last_name,
+                    :role,
+                    :tour,    
                     :registration_locked,
                     :registration_print_date,
                     :sepa_signature, 

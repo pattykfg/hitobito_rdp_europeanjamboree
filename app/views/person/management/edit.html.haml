@@ -4,6 +4,18 @@
 - if can?(:index_invoices, @person)
   = standard_form(@person, {url: '/groups/' + params[:group_id] + '/people/'+ params[:id] + '/management',  method: :put}) do |f|
     = f.error_messages
+    = f.labeled_input_fields(:first_name,
+      :last_name,
+      :birthday)
+    = field_set_tag do
+      = f.labeled_select(:role, raw(@possible_roles))
+      = f.labeled_select(:tour, options_for_select(raw(@possible_tour)))
+    = field_set_tag do
+      = f.labeled_input_fields(:sepa_name,
+        :sepa_address,
+        :sepa_zip_code,
+        :sepa_town,
+        :sepa_iban)
     = f.labeled_input_fields(:registration_locked,
       :sepa_signature, 
       :sepa_date, 

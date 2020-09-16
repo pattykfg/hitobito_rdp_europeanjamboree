@@ -73,6 +73,7 @@ de:
 
     attributes:
       person:
+        nickname: Spitzname / Fahrtenname
         first_name_dummy: Baden
         last_name_dummy: Powell
         email_dummy: baden.powell@europeanjamboree.de
@@ -96,7 +97,7 @@ de:
         sepa_date: SEPA unterschrieben am 
         contract_signature: Anmeldung unterschrieben
         media_agreement: Zustimmung Medienverwendung
-        registration_accepted_date: Anmeldung geprüft am
+        registration_accepted_date: Anmeldung vollständig am
         payment_problem: Zahlungsprobleme
         payment_recieved: Zahlung vollständig erhalten
         type: Teilnehmen als

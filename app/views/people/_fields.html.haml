@@ -1,12 +1,61 @@
+-#  Copyright (c) 2012-2013, Jungwacht Blauring Schweiz. This file is part of
+-#  hitobito and licensed under the Affero General Public License version 3
+-#  or later. See the COPYING file at the top-level directory or at
+-#  https://github.com/hitobito/hitobito.
+
+
+-# BEWARE: This partial is used from different places (e.g. event/register/register).
+-#         Make sure not to use relative partial paths here or in any extensions
+-#         unless these partials also exist in all folders referencing this file here.
+
+- without_relations ||= false
+
+= field_set_tag do
+  - if @person.registration_locked
+    = render_attrs(entry, :first_name, :last_name)
+  - else
+    = f.labeled_input_fields :first_name, :last_name
+  = f.labeled_input_fields :nickname
+
+  = render_extensions :name_fields, locals: { f: f }
+
+= render 'contactable/fields', f: f
+
+= field_set_tag do
+  - if @person.registration_locked
+    = f.labeled(:gender) do
+      - (Person::GENDERS + ['']).each do |key|
+        = f.inline_radio_button(:gender, key, entry.gender_label(key))
+    = render_attrs(entry, :birthday)
+  - else
+    = f.labeled_string_field(:birthday,
+                            value: f.date_value(:birthday),
+                            help_inline: t('.format_birthday'),
+                            class: 'span2')
+
+= render_extensions :fields, locals: { f: f }
+
+- if !without_relations && PeopleRelation.possible_kinds.present?
+  = field_set_tag do
+    = f.labeled_inline_fields_for :relations_to_tails,
+                                  'people_relation_fields',
+                                  entry.relations_to_tails.includes(:tail)
+
+
 = f.labeled_input_fields :rdp_association_number
 = f.labeled_select(:rdp_association, raw("<option>#{raw @person.rdp_association}</option>"))
 = f.labeled_select(:rdp_association_region, raw("<option>#{raw @person.rdp_association_region}</option>"))
 = f.labeled_select(:rdp_association_sub_region, raw("<option>#{raw @person.rdp_association_sub_region}</option>"))
 = f.labeled_select(:rdp_association_group, raw("<option>#{raw @person.rdp_association_group}</option>"))
 
-= f.labeled_input_fields :role, :tour
-= f.labeled_input_fields :old_id, :registration_pdf_path, :registration_locked, :registration_print_date, :sepa_signature, :sepa_date, :contract_signature, :media_agreement, :registration_accepted_date, :payment_problem, :payment_recieved
+= field_set_tag do
+  - if @person.registration_locked
+    = render_attrs(entry, :tour)
+  - else
+    = f.labeled_select(:tour, options_for_select(raw(@possible_tour)))
 
+= field_set_tag do
+  = f.labeled_input_field(:additional_information, help: t('.no_sensitive_information'))
 
 :javascript
   var association_tree = JSON.parse('#{raw @association_tree.to_json}');
