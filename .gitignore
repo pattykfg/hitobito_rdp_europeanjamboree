@@ -13,6 +13,7 @@ zeus.json
 .idea
 .rakeTasks
 .DS_Store
+*.sql
 
 # ignore Gemfile.lock for wagons
 Gemfile.lock
@@ -24,3 +25,4 @@ brakeman-output.tabs
 rubocop-results.xml
 
 
+bin/associations.sql
