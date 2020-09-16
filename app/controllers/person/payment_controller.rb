@@ -5,6 +5,8 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/smeky42/hitobito_rdp_europeanjamboree.
 
+require 'iban-tools'
+
 class Person::PaymentController < ApplicationController
     before_action :authorize_action
 
@@ -15,13 +17,17 @@ class Person::PaymentController < ApplicationController
         @person ||= group.people.find(params[:id])
 
 
-        if (request.put?)
+        if (request.put?) and not @person.registration_locked
             @person.sepa_name = params["person"]["sepa_name"]
             @person.sepa_address = params["person"]["sepa_address"]
             @person.sepa_zip_code = params["person"]["sepa_zip_code"]
             @person.sepa_town = params["person"]["sepa_town"]
             @person.sepa_iban = params["person"]["sepa_iban"]
             @person.save
+
+            if not check_iban(@person.sepa_iban) 
+                flash[:alert] = (I18n.t 'errors.iban')
+            end
         end 
     end
 
@@ -41,5 +47,10 @@ class Person::PaymentController < ApplicationController
     def authorize_action
         authorize!(:edit, entry)
     end
+
+    def check_iban(sepa_iban)
+        return IBANTools::IBAN.valid?(sepa_iban)
+    end
+
 end
   

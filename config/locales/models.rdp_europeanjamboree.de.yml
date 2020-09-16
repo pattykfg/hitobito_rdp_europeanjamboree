@@ -136,3 +136,6 @@ de:
       payment: Zahlungsdetails
       print: Anmeldung Drucken 
       management: Management
+  
+  errors:
+    iban: Deine IBAN ist Fehlerhaft, bitte überprüfe diese noch einmal!

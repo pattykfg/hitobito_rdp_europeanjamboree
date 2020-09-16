@@ -7,7 +7,7 @@
                 :sepa_town,
                 :sepa_iban)  
 
-- if can?(:edit, @person)
+- if can?(:edit, @person) and not @person.registration_locked
     = action_button(t('activerecord.button.edit'),
                     '/groups/' + params[:group_id] + '/people/'+ params[:id] + '/payment/edit',
                     :edit,
