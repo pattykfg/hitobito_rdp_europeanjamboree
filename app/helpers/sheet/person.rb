@@ -24,9 +24,11 @@ module Sheet
           
       tab 'people.tabs.management',
           :management_group_person_path,
-          if: (lambda do |view, group, person|
-            person.finance_groups.present? &&
-              (view.can?(:index_invoices, group) || view.can?(:index_invoices, person))
+          if: (lambda do |_view, _group, current_user|
+            current_user.has_role("Group::Root::Administrator") or
+            current_user.has_role("Group::Root::Head") or
+            current_user.has_role("Group::Root::Registration") or
+            current_user.has_role("Group::Root::Finance")
           end)
 
       if Settings.people.abos
@@ -52,9 +54,11 @@ module Sheet
     
       tab 'people.tabs.log',
           :log_group_person_path,
-          if: (lambda do |view, group, person|
-            person.finance_groups.present? &&
-              (view.can?(:index_invoices, group) || view.can?(:index_invoices, person))
+          if: (lambda do |_view, _group, current_user|
+            current_user.has_role("Group::Root::Administrator") or
+            current_user.has_role("Group::Root::Head") or
+            current_user.has_role("Group::Root::Registration") or
+            current_user.has_role("Group::Root::Finance")
           end)
   
       tab 'people.tabs.colleagues',
@@ -66,7 +70,7 @@ module Sheet
       def link_url
         view.group_person_path(parent_sheet.entry.id, entry.id)
       end
-  
+
     end
   end
   

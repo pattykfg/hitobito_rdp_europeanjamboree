@@ -18,6 +18,11 @@ class RegistrationController < ActionController::Base
       @registration_online = (Date.today < @registration_end_date)
     end
 
+    @possible_roles = "" 
+    Settings.person.role.each { |role|
+        @possible_roles += "<option id='" + role[0].to_s + "'>" + role[1].to_s + "</option>"
+    }  
+
     if request.post? && @registration_online
       if params[:firstname].length < 2
          flash[:alert] = I18n.translate('activerecord.failure.first_name')

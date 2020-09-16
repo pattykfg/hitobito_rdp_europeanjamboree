@@ -12,9 +12,8 @@
       = text_field_tag :name, nil, placeholder: t('activerecord.attributes.person.last_name_dummy')
       = label_tag :mail, t('activerecord.attributes.person.email')
       = email_field_tag :mail, nil, placeholder: t('activerecord.attributes.person.email_dummy')
-      = label_tag :type, t('activerecord.attributes.person.type')
-      = select_tag(:type,
-                   options_for_select(@possible_types))
+      = label_tag :role, t('activerecord.attributes.person.role')
+      = select_tag(:role, raw(options_for_select(@possible_roles)))
       %br
       = submit_tag t('activerecord.button.register'), class: "btn btn-primary"
 -else
