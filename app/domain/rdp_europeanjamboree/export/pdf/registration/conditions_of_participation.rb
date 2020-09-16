@@ -10,13 +10,11 @@ module RdpEuropeanjamboree
       class ConditionsOfParticipation < Section
   
         def render
-      pdf.y = bounds.height - 60
+          pdf.y = bounds.height - 60
           bounding_box([0, 230.mm], width: bounds.width, height: bounds.height - 200) do
             font_size(8) do
               text list, style: :italic, width: bounds.width
-          #pdf.stroke_bounds
             end
-        #    render_image
           end
         end
   
