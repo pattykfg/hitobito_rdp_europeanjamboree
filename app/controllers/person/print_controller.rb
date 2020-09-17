@@ -39,12 +39,12 @@ class Person::PrintController < ApplicationController
 
   def get_not_printable_reason
     reason = ""
-    @person.first_name.length < 2 ? reason += "\n - " + (I18n.t 'activerecord.attributes.person.first_name') : "" 
-    @person.last_name.length < 2 ? reason += "\n - " + (I18n.t 'activerecord.attributes.person.last_name') : "" 
-    @person.address.length < 2 ? reason += "\n - " + (I18n.t 'activerecord.attributes.person.adress') : "" 
-    @person.zip_code.length < 2 ? reason += "\n - " + (I18n.t 'activerecord.attributes.person.zip_code') : "" 
-    @person.town.length < 2 ? reason += "\n - " + (I18n.t 'activerecord.attributes.town.last_name') : "" 
-    (not IBANTools::IBAN.valid?(@person.sepa_iban)) ? reason += "\n - " + (I18n.t 'activerecord.attributes.person.sepa_iban') : "" 
+    @person.first_name.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.first_name') 
+    @person.last_name.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.last_name') 
+    @person.address.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.address') 
+    @person.zip_code.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.zip_code') 
+    @person.town.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.town') 
+    IBANTools::IBAN.valid?(@person.sepa_iban) ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.sepa_iban')
     
     return reason
   end 
