@@ -37,15 +37,14 @@ class RegistrationController < ActionController::Base
         registerPerson = RegisterPerson.new
         group = Group.find_by_name(Settings.group.registration)
  
-        #TODO role Mappen und Registrieren
-        case params[:type]
-        when "Teilnehmer"
+        case params[:role]
+        when Settings.person.role.ut
           role = Group::Unassigned::UnitMember
-        when "Unit Leitung"
+        when Settings.person.role.ul
           role = Group::Unassigned::UnitHead
-        when "IST"
+        when Settings.person.role.ist
           role = Group::Unassigned::Ist
-        when "Kontingentsteam"
+        when Settings.person.role.cmt
           role = Group::Unassigned::Cmt 
         else
           role = Group::Unassigned::Member
