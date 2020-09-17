@@ -22,7 +22,8 @@ module HitobitoRdpEuropeanjamboree
     config.to_prepare do
       # rubocop:disable SingleSpaceBeforeFirstArg
       # extend application classes here
-      Group.send        :include, RdpEuropeanjamboree::Group
+      Group.send :include, RdpEuropeanjamboree::Group
+      Person.send :include, RdpEuropeanjamboree::Person
       PeopleController.send :include, RdpEuropeanjamboree::PeopleController
       # TODO if Export is needed Export::Tabular::People::PeopleAddress.send :include, RdpEuropeanjamboree::Export::Tabular::People::PeopleAddress
       PersonSerializer.send :include, RdpEuropeanjamboree::PersonSerializer
@@ -39,6 +40,7 @@ module HitobitoRdpEuropeanjamboree
         # inflect.irregular 'census', 'censuses'
       end
     end
+
 
     private
 
