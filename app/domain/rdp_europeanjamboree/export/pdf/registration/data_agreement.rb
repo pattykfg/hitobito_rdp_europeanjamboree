@@ -128,7 +128,7 @@ module RdpEuropeanjamboree
                     pdf.make_table([
                         [{:content => @person.town + " den " + Date.today.strftime("%d.%m.%Y"), :height => 30}],
                                 ["______________________________", "______________________________"],
-                        [{:content => "@person.rdp_parent_a_name", :height => 30}, "@person.rdp_parent_b_name"],
+                        [{:content => "Erziehungsberechtigte*r", :height => 30}, "Erziehungsberechtigte*r"],
                         ["______________________________", ""],
                         [{:content => @person.full_name, :height => 30}, ""]],
                             :cell_style => {:width => 240, :padding => 1,  :border_width => 0, :inline_format => true}).draw 
