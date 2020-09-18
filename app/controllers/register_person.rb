@@ -9,18 +9,19 @@ require Rails.root.join('db', 'seeds', 'support', 'person_seeder')
 
 class RegisterPerson < PersonSeeder
 
-    def seed_person(mail, first, last, group, role)
-      Rails.logger.debug("== Initially Seed Person" + first + " " + last)
+    def seed_person(mail, first, last, role, group, role_type)
+      Rails.logger.debug("== Initially Seed Person" + first + " " + last + " " + role)
       attrs = { email: mail,
               first_name: first,
-              last_name: last
+              last_name: last,
+              role: role
               }
 
       Person.seed_once(:email, attrs)
       Rails.logger.debug("== Initially Seed Person add mail:" + mail)
       person = Person.find_by_email(attrs[:email])
 
-      role_attrs = { person_id: person.id, group_id: group.id, type: role.sti_name }
+      role_attrs = { person_id: person.id, group_id: group.id, type: role_type.sti_name }
       Role.seed_once(*role_attrs.keys, role_attrs)
 
       return person

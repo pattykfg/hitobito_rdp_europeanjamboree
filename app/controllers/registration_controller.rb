@@ -39,18 +39,18 @@ class RegistrationController < ActionController::Base
  
         case params[:role]
         when Settings.person.role.ut
-          role = Group::Unassigned::UnitMember
+          role_type = Group::Unassigned::UnitMember
         when Settings.person.role.ul
-          role = Group::Unassigned::UnitHead
+          role_type = Group::Unassigned::UnitHead
         when Settings.person.role.ist
-          role = Group::Unassigned::Ist
+          role_type = Group::Unassigned::Ist
         when Settings.person.role.cmt
-          role = Group::Unassigned::Cmt 
+          role_type = Group::Unassigned::Cmt 
         else
-          role = Group::Unassigned::Member
+          role_type = Group::Unassigned::Member
         end   
         
-        person = registerPerson.seed_person(params[:mail],params[:firstname], params[:name], group, role)
+        person = registerPerson.seed_person(params[:mail],params[:firstname], params[:name], params[:role], group, role_type)
 
         WelcomeMailer.welcome_email(person).deliver_now
         flash[:notice] = "Eine Mail mit deinen Login Daten wurde an " + params[:mail] + " versandt!"
