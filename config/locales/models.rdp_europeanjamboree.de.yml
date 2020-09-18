@@ -116,6 +116,8 @@ de:
       print_preview_hint: Zur Kontrolle der Anmeldung
       print_submit: Verbindlich drucken
       print_submit_hint: Sperrt bestimmte Felder für weitere bearbeitung
+      print_review: Anmeldung einsehen
+      print_review_hint: Dokument einsehen
 
     text:
       registration_end: Der Anmeldeschluss war am
@@ -140,3 +142,6 @@ de:
   errors:
     iban: Deine IBAN ist Fehlerhaft, bitte überprüfe diese noch einmal!
     print: Deine Anmeldung ist noch nicht vollständig bitte vervollständige noch folgende Angaben
+
+  info:
+    print: Deine Anmeldung wurde schon gedruckt und kann daher nicht mehr verändert werden. Falls du dennoch etwas ändern musst wende dich an info@europeanjamboree.de
