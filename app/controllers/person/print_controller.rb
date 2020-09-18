@@ -51,6 +51,7 @@ class Person::PrintController < ApplicationController
     @person.rdp_association_sub_region.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.rdp_association_sub_region') 
     @person.rdp_association_group.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.rdp_association_group') 
     @person.rdp_association_number.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.rdp_association_number') 
+    @person.sepa_name.present? ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.sepa_name') 
     IBANTools::IBAN.valid?(@person.sepa_iban) ? "" : reason += "\n - " + (I18n.t 'activerecord.attributes.person.sepa_iban')
     return reason
   end 

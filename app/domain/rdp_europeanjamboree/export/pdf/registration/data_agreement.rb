@@ -19,6 +19,7 @@ module RdpEuropeanjamboree
             end
 
             def list 
+                pdf.start_new_page
                 of_legal_age = @person.years.to_i >= 18
 
                 text "Datenschutzerklärung", :size => 14

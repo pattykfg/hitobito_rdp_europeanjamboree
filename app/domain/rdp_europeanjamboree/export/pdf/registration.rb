@@ -91,7 +91,7 @@ module RdpEuropeanjamboree
         end
 
         def sections
-            [FrontPage, DataAgreement, ConditionsOfParticipation, ParticipationContract]
+            [FrontPage, ConditionsOfParticipation, DataAgreement, ParticipationContract, Payment]
         end
       end
       mattr_accessor :runner
