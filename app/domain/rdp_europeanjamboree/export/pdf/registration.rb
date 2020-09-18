@@ -82,6 +82,7 @@ module RdpEuropeanjamboree
 
           pdf.number_pages "S. <page> von <total>",
             :at => [pdf.bounds.right - 55, pdf.bounds.bottom + 10 ], :size => 8
+            
           return pdf
         end
 

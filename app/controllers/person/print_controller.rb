@@ -21,19 +21,41 @@ class Person::PrintController < ApplicationController
   end
 
   def preview
-    if self.printable
+    @group ||= Group.find(params[:group_id])
+    @person ||= group.people.find(params[:id])
+    if @person.registration_locked
+      send_data File.read( generate_file_path + @person.registration_pdf_path), type: :pdf, disposition: 'inline', filename: @person.registration_pdf_path, title: @person.registration_pdf_path
+    elsif  self.printable
       pdf = RdpEuropeanjamboree::Export::Pdf::Registration.render(@person,true)
-
       send_data pdf, type: :pdf, disposition: 'inline', filename: "Anmeldung-EJ-Vorschau.pdf"
     end
   end
 
 
   def submit
-    if self.printable
-      pdf = RdpEuropeanjamboree::Export::Pdf::Registration.render(@person,false)
+    @group ||= Group.find(params[:group_id])
+    @person ||= group.people.find(params[:id])
+    
+    if @person.registration_locked
+      flash[:notice] = (I18n.t 'info.print')
+      return
+    end
 
-      send_data pdf, type: :pdf, disposition: 'inline', filename: person.id.to_s + "-Anmeldung-EJ-" + Date.today.to_s + ".pdf"
+    if self.printable
+      pdf = RdpEuropeanjamboree::Export::Pdf::Registration.new_pdf(@person,false)
+      filename = Time.now.strftime("%Y-%m-%d--%H-%M-%S--") + @person.id.to_s + "-" + @person.last_name + "-" + @person.first_name + "-Registration.pdf"
+      full_path =  generate_file_path + filename
+      dir = File.dirname(full_path)
+      FileUtils.mkdir_p(dir) unless File.directory?(dir)
+      pdf.render_file(full_path)
+
+      @person.registration_locked = true 
+      @person.registration_print_date = Time.now
+      @person.sepa_date = Time.now  
+      @person.registration_pdf_path = filename
+      @person.save 
+
+      send_data File.read(full_path), type: :pdf, disposition: 'inline', filename: filename
     end
   end
 
@@ -68,6 +90,10 @@ class Person::PrintController < ApplicationController
 
   def authorize_action
     authorize!(:edit, entry)
+  end
+
+  def generate_file_path
+    return "#{Rails.root}/private/uploads/person/registration/" + @person.id.to_s + "/"
   end
 
 

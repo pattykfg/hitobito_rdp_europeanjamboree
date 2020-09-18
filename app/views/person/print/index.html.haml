@@ -1,5 +1,5 @@
 #main.row-fluid
-- if @printable
+- if @printable and not @person.registration_locked
     - if can?(:edit, @person)
         = action_button(t('activerecord.button.print_preview'),
                         '/groups/' + params[:group_id] + '/people/'+ params[:id] + '/print/preview',
@@ -17,4 +17,15 @@
                         method: :get,
                         rel: :tooltip,
                         title: t('activerecord.button.print_submit_hint'))
+- else
+    -if @person.registration_locked
+        - if can?(:edit, @person)
+            = action_button(t('activerecord.button.print_review'),
+                            '/groups/' + params[:group_id] + '/people/'+ params[:id] + '/print/preview',
+                            :envelope,
+                            remote: false,
+                            method: :get,
+                            rel: :tooltip,
+                            title: t('activerecord.button.print_review_hint'))
+        
     
