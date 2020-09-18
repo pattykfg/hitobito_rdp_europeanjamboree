@@ -19,10 +19,9 @@ module RdpEuropeanjamboree
             end
 
             def list 
-                pdf.start_new_page
                 of_legal_age = @person.years.to_i >= 18
 
-                text "Teilnahmevertrag", :size => 16
+                text "Teilnahmevertrag", :size => 14
     
                 text "Hiermit " + (of_legal_age ? "melde ich mich " : "melden wir unsere Tochter*unseren Sohn ") + @person.full_name + ", geboren am " + @person.birthday.strftime("%d.%m.%Y") + " verbindlich als " + @person.role + " zum European Jamboree 2020 an. Mit " + (of_legal_age ? "meiner Unterschrift bestätige ich" : "unserer Unterschrift bestätigen wir") + " die Kenntnis- und Annahme der Teilnahmebedingungen des Veranstalters, rdp e.V., zum European Jamboree 2020."
                 pdf.move_down 3.mm

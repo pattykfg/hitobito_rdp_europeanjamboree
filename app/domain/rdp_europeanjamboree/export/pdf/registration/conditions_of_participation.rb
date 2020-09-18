@@ -21,6 +21,7 @@ module RdpEuropeanjamboree
         private
   
         def list
+            pdf.start_new_page
             text "Teilnahmebedingungen", :size => 14
             text "Teilnahme- und Reisebedingungen zur Teilnahme im Deutschen Kontingent zum European Jamboree 2020+1 in Danzig, Polen"
             pdf.move_down 3.mm

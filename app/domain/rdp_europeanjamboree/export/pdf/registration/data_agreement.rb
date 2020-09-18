@@ -19,8 +19,43 @@ module RdpEuropeanjamboree
             end
 
             def list 
-                pdf.start_new_page
                 of_legal_age = @person.years.to_i >= 18
+
+                pdf.start_new_page
+                
+                text "Zustimmung zur Datenschutzerklärung zur Teilnahme am deutschen Kontingent zum European Jamboree 2020", :size => 14
+                pdf.move_down 3.mm
+                if of_legal_age
+                    text "Hiermit stimme ich, " + @person.full_name + ", zu, dass meine Daten wie in der Datenschutzerklärung erklärt verarbeitet werden dürfen." 
+                    pdf.move_down 3.mm
+                    text "Die Datenschutzerklärung liegt mir vor."
+                    pdf.move_down 3.mm
+                    text "Ich habe verstanden, dass ich jederzeit Widerspruch einlegen kann. Mir ist klar, dass nur erforderliche Daten erhoben werden und daher bei Widerspruch die Einhaltung des Vertrages (die Teilnahme am European Jamboree im deutschen Kontingent) nicht möglich ist."
+                    pdf.move_down 5.mm
+                    text ""
+                    pdf.make_table([
+                        [{:content => @person.town + " den " + Date.today.strftime("%d.%m.%Y"), :height => 30}],
+                                ["______________________________", ""],
+                            [{:content => @person.full_name, :height => 30}, ""]],
+                            :cell_style => {:width => 240, :padding => 1,  :border_width => 0, :inline_format => true}).draw
+                else
+                    text "Hiermit stimme*n ich*wir zu, dass die Daten meines*r/unserer*s Tochter*Sohn, " + @person.full_name + ", wie in der Datenschutzerklärung erklärt verarbeitet werden dürfen." 
+                    text "Die Datenschutzerklärung liegt mir*uns vor."
+                    text "Ich*Wir habe*n verstanden, dass ich jederzeit Widerspruch einlegen kann*können. Mir*Uns ist klar, dass nur erforderliche Daten erhoben werden und daher bei Widerspruch die Einhaltung des Vertrages (die Teilnahme am European Jamboree im deutschen Kontingent) nicht möglich ist."
+                    pdf.move_down 5.mm
+                    text ""
+                    pdf.make_table([
+                        [{:content => @person.town + " den " + Date.today.strftime("%d.%m.%Y"), :height => 30}],
+                                ["______________________________", "______________________________"],
+                        [{:content => "Erziehungsberechtigte*r", :height => 30}, "Erziehungsberechtigte*r"],
+                        ["______________________________", ""],
+                        [{:content => @person.full_name, :height => 30}, ""]],
+                            :cell_style => {:width => 240, :padding => 1,  :border_width => 0, :inline_format => true}).draw 
+                end
+                text ""
+
+
+                pdf.start_new_page
 
                 text "Datenschutzerklärung", :size => 14
                 if of_legal_age
@@ -104,37 +139,7 @@ module RdpEuropeanjamboree
                 pdf.move_down 3.mm
                 text "Diese Vorlage wurde mit dem kostenlosen Kunden-Informationsschreiben-Generator der activeMind AG erstellt (Version: 2018-07-31)"
                 
-                pdf.start_new_page
-                text "Zustimmung zur Datenschutzerklärung zur Teilnahme am deutschen Kontingent zum European Jamboree 2020", :size => 12
-                pdf.move_down 3.mm
-                if of_legal_age
-                    text "Hiermit stimme ich, " + @person.full_name + ", zu, dass meine Daten wie in der Datenschutzerklärung erklärt verarbeitet werden dürfen." 
-                    pdf.move_down 3.mm
-                    text "Die Datenschutzerklärung liegt mir vor."
-                    pdf.move_down 3.mm
-                    text "Ich habe verstanden, dass ich jederzeit Widerspruch einlegen kann. Mir ist klar, dass nur erforderliche Daten erhoben werden und daher bei Widerspruch die Einhaltung des Vertrages (die Teilnahme am European Jamboree im deutschen Kontingent) nicht möglich ist."
-                    pdf.move_down 5.mm
-                    text ""
-                    pdf.make_table([
-                        [{:content => @person.town + " den " + Date.today.strftime("%d.%m.%Y"), :height => 30}],
-                                ["______________________________", ""],
-                            [{:content => @person.full_name, :height => 30}, ""]],
-                            :cell_style => {:width => 240, :padding => 1,  :border_width => 0, :inline_format => true}).draw
-                else
-                    text "Hiermit stimme*n ich*wir zu, dass die Daten meines*r/unserer*s Tochter*Sohn, " + @person.full_name + ", wie in der Datenschutzerklärung erklärt verarbeitet werden dürfen." 
-                    text "Die Datenschutzerklärung liegt mir*uns vor."
-                    text "Ich*Wir habe*n verstanden, dass ich jederzeit Widerspruch einlegen kann*können. Mir*Uns ist klar, dass nur erforderliche Daten erhoben werden und daher bei Widerspruch die Einhaltung des Vertrages (die Teilnahme am European Jamboree im deutschen Kontingent) nicht möglich ist."
-                    pdf.move_down 5.mm
-                    text ""
-                    pdf.make_table([
-                        [{:content => @person.town + " den " + Date.today.strftime("%d.%m.%Y"), :height => 30}],
-                                ["______________________________", "______________________________"],
-                        [{:content => "Erziehungsberechtigte*r", :height => 30}, "Erziehungsberechtigte*r"],
-                        ["______________________________", ""],
-                        [{:content => @person.full_name, :height => 30}, ""]],
-                            :cell_style => {:width => 240, :padding => 1,  :border_width => 0, :inline_format => true}).draw 
-                end
-                text ""
+                
             end 
         end
     end
