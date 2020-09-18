@@ -30,7 +30,7 @@ module RdpEuropeanjamboree
                     pdf.move_down 3.mm
                 end 
 
-                if @person.role == "International Service Team (IST)" #Settings.person.type.ist #TODO Settings key value
+                if @person.role == Settings.person.role.ist 
                     text "Mir ist bekannt, dass ich mich zusätzlich zu dieser Anmeldung selbstständig auf einer mit noch bekannt zu gebenden Internetseite anmelden muss."
                     pdf.move_down 3.mm
                 end 
