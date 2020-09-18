@@ -23,11 +23,11 @@
 
 = field_set_tag do
   - if @person.registration_locked
+    = render_attrs(entry, :gender, :birthday)
+  - else
     = f.labeled(:gender) do
       - (Person::GENDERS + ['']).each do |key|
         = f.inline_radio_button(:gender, key, entry.gender_label(key))
-    = render_attrs(entry, :birthday)
-  - else
     = f.labeled_string_field(:birthday,
                             value: f.date_value(:birthday),
                             help_inline: t('.format_birthday'),
