@@ -1,0 +1,185 @@
+#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
+#  hitobito_generic and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_generic.
+
+application:
+  name: european jambore  # set same name in email.sender and email.mass_recipient
+  logo:
+    image: logo.png # put under app/assets/images
+    height: 30 # pixel, has to bet set as the logo is a background image,
+    width: 230 # pixel, will also set the minimal width of the navigation
+    background_color: none # optional backgroundcolor, creates a box around the logo, if changed from 'none'
+  footer:
+    #logo_image: logo_hitobito.png
+    logo_url: http://europeanjamboree.de 
+    links: {}
+
+  # The languages available in the menu
+  languages:
+    de: Deutsch
+
+<% mail_domain = ENV['RAILS_MAIL_DOMAIN'].presence ||
+                 ENV['RAILS_HOST_NAME'].presence ||
+                 'europeanjamboree.de' %>
+currency:
+  unit: EUR
+
+email:
+  # Sender for all emails sent by the application
+  sender: <%= "european jamboree <noreply@#{mail_domain}>" %>
+
+  # If mass emails are sent, this recipient is used in the to field,
+  # while the actual recipients go in the bcc field.
+  mass_recipient: <%= "european jamboree <noreply@#{mail_domain}>" %>
+
+  # domain where mailing lists are located
+  list_domain: <%= mail_domain %>
+
+  # configuration for retrieving email
+  retriever:
+    # interval to check for new mails in minutes
+    interval: 1
+    type: <%= ENV['RAILS_MAIL_RETRIEVER_TYPE'].presence || 'pop3' %>
+    config:
+      <% if ENV['RAILS_MAIL_RETRIEVER_CONFIG'].present? %>
+        <%= "{ #{ENV['RAILS_MAIL_RETRIEVER_CONFIG']} }" %>
+      <% end %>
+  bulk_mail:
+    bulk_size: <%= ENV['RAILS_BULK_MAIL_SIZE'].presence || 15 %>
+    batch_timeout: <%= ENV['RAILS_BULK_MAIL_BATCH_TIMEOUT'].presence || 5 %>
+
+# The person with this email has root access to everything
+# This person should only be used by the operators of the application, not the customers.
+# Initially, a password reset token may be mailed from the application to this address to set a password.
+root_email: <%= ENV['RAILS_ROOT_USER_EMAIL'].presence || 'hitobito@smeky.de' %>
+
+sphinx:
+  index:
+    # interval to index for full-text search in minutes
+    interval: 10
+
+phone_number:
+  predefined_labels:
+    - Teilnehmer
+    - Privat
+    - Mobil
+    - Arbeit
+    - Vater
+    - Mutter
+    - Fax
+    - Andere
+  default_country: DE
+
+social_account:
+  predefined_labels:
+    - Facebook
+    - Instagram
+    - TikTok
+    - Snapchat
+    - Skype
+    - Twitter
+    - Webseite
+    - Andere
+
+additional_email:
+  predefined_labels:
+    - Teilnehmer
+    - Privat
+    - Arbeit
+    - Vater
+    - Mutter
+    - Andere
+
+# Presets for PDF labels
+pdf:
+  font_size: 9
+  labels:
+    # Minimum border on the right and bottom of each label
+    min_border: 4 #mm
+    font_name: Helvetica
+
+
+countries:
+  prioritized:
+    - DE
+    - AT
+    - CH
+    - LI
+    - FR
+    - IT
+
+# Presets for CSV export
+csv:
+  # optimized for M$ Excel
+  separator: ;
+  encoding: ISO-8859-1
+
+# Presets for XLSX export
+xlsx:
+  font_name: Calibri
+  label_background: C0C0C0
+
+
+role:
+  # If a role last less than this number of days, it is not archived
+  minimum_days_to_archive: 7
+
+# Default sort for people lists (group members, event participations)
+people:
+  # either name or role
+  default_sort: name
+  abos: true
+
+event:
+  attachments:
+    file_extensions: jpg jpeg png pdf txt rtf doc docx xls xlsx ppt pptx odt ods odp zip
+    max_file_size: 10 # MB
+
+downloads:
+  folder: <%= Rails.root.join('tmp', 'downloads') %>
+
+impersonate:
+  notify: true
+
+help_text_blacklist:
+  event/kind:
+    - precondition_qualification_kinds
+  event/participation:
+    - answers_attributes
+  event:
+    - hidden_contact_attrs
+    - required_contact_attrs
+  group:
+    - phone_numbers_attributes
+    - remove_logo
+  invoice_config:
+    - payment_reminder_configs_attributes
+  invoice:
+    - invoice_items_attributes
+    - recipient_id
+  mailing_list:
+    - anyone_may_post
+    - delivery_report
+  oauth_application:
+    - confidential
+    - redirect_uris
+    - scopes
+  person:
+    - household_people_ids
+    - relations_to_tails_attributes
+    - phone_numbers_attributes
+
+worker_heartbeats:
+  check_job:
+    # Interval in seconds between detection and unlocking of hanging jobs
+    interval: 60
+
+oidc:
+  issuer: <%= ENV['RAILS_HOST_NAME'].presence || 'http://europeanjamboree.de' %>
+  signing_key: <%= ENV['JWT_SIGNING_KEY'].to_s.lines %>
+
+table_displays: true
+
+mailchimp:
+  max_attempts: 25
