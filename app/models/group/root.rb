@@ -34,5 +34,5 @@ class Group::Root < ::Group
     self.permissions = []
   end
 
-  roles Administrator, Head, Registration, Finance
+  roles Administrator, Head, Registration, Finance, Member 
 end
