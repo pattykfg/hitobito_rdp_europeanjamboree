@@ -51,8 +51,8 @@ tour:
   vt: Vortour
   nt: Nachtour
 no_tour:
-  so: Selbst organisierte Tour
   kt: Keine Tour
+  so: Selbst organisierte Tour
 
 association_tree:
   DPSG:

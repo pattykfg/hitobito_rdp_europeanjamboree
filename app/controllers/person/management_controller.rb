@@ -33,17 +33,14 @@ class Person::ManagementController < ApplicationController
         }  
 
         @possible_tour = ""
-        if :role == Settings.person.role.ul or :role == Settings.person.role.ut
-            Settings.tour.each { |tour|
-                tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
-                @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
-            }  
-        else 
-            Settings.no_tour.each { |tour|
-                tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
-                @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
-            }  
-        end 
+        Settings.tour.each { |tour|
+            tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
+            @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
+        }  
+        Settings.no_tour.each { |tour|
+            tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
+            @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
+        }  
     end
 
     private

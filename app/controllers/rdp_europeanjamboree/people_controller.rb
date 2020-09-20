@@ -40,7 +40,7 @@ module RdpEuropeanjamboree
         @association_tree = Settings.association_tree
         @possible_tour = ""
         # TODO must be a better way to select from settings.yml
-        if :role == Settings.person.role.ul or :role == Settings.person.role.ut
+        if @person.role == Settings.person.role.ul or @person.role == Settings.person.role.ut
             Settings.tour.each { |tour|
                 tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
                 @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
@@ -50,8 +50,6 @@ module RdpEuropeanjamboree
                 tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
                 @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
             }  
-            Rails.logger.debug("====> " + @possible_tour)
-
         end 
         respond_with(entry, &block)
       end
