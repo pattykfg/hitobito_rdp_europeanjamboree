@@ -1375,48 +1375,55 @@ association_tree:
       Uetersen:
   PSG:
     Aachen:
-      Aachen-Burtscheid:
-      Aachen-Hörn:
-      Aachen-Verlautenheide:
-      Venwegen olé olé:
-      Aachen Kornelimünster:
-      Roetgen-Rott:
-      Roetgen:
-      Immerath:
-      Schwalmtal:
-      Krefeld:
-      Don Bosco Oberbruch:
-      Krefeld Traar:
-      Graf Gerhard - Wassenberg:
+      Keine Bezirksebene:
+        Aachen-Burtscheid:
+        Aachen-Hörn:
+        Aachen-Verlautenheide:
+        Venwegen olé olé:
+        Aachen Kornelimünster:
+        Roetgen-Rott:
+        Roetgen:
+        Immerath:
+        Schwalmtal:
+        Krefeld:
+        Don Bosco Oberbruch:
+        Krefeld Traar:
+        Graf Gerhard - Wassenberg:
     Augsburg:
-      Augsburg-Oberhausen:
-      Krumbach:
-      Langerringen:
-      Augsburg-Stadtmitte:
-      Friedberg:
-      Wulfertshausen:
-      Hiltenfingen:
-      Schwabegg:
-      Kaufbeuren:
-      Mindelheim:
-      Oberegg:
-      Lauchdorf:
-      Markt Rettenbach:
-      Donauwörth:
+      Keine Bezirksebene:
+        Augsburg-Oberhausen:
+        Krumbach:
+        Langerringen:
+        Augsburg-Stadtmitte:
+        Friedberg:
+        Wulfertshausen:
+        Hiltenfingen:
+        Schwabegg:
+        Kaufbeuren:
+        Mindelheim:
+        Oberegg:
+        Lauchdorf:
+        Markt Rettenbach:
+        Donauwörth:
     Bamberg:
-      Bamberg -Kunigund-:
-      Nürnberg:
-      Siedlung Schwaig:
-      Siedlung Neuendettelsau:
+      Keine Bezirksebene:  
+        Bamberg -Kunigund-:
+        Nürnberg:
+        Siedlung Schwaig:
+        Siedlung Neuendettelsau:
     Dresden-Meissen:
+      Keine Bezirksebene:
+        Keine Stammesebene:
     Essen:
-      Schwelm:
-      Bochum:
-      Bochum-Shenandoa:
-      Gelsenkirchen:
-      Mülheim/Ruhr:
-      Essen -PTA-:
+      Keine Bezirksebene:
+        Schwelm:
+        Bochum:
+        Bochum-Shenandoa:
+        Gelsenkirchen:
+        Mülheim/Ruhr:
+        Essen -PTA-:
     Freiburg:
+     Keine Bezirksebene:
       Gengenbach:
       Achern:
       Bruchsal:
@@ -1428,78 +1435,94 @@ association_tree:
       Singen:
       Karlsruhe-Süd:
     Hamburg:
-      Bützower Schwäne:
+      Keine Bezirksebene:
+        Bützower Schwäne:
     Hildesheim:
+      Keine Bezirksebene:
+        Keine Stammesebene:
     Köln:
-      Düsseldorf-Eller:
-      Düsseldorf-Hamm:
-      Siegburg Deichhaus:
-      Euskirchen:
+      Keine Bezirksebene:
+        Düsseldorf-Eller:
+        Düsseldorf-Hamm:
+        Siegburg Deichhaus:
+        Euskirchen:
     Wiesbaden:
-      Wiesbaden:
+      Keine Bezirksebene:
+        Wiesbaden:
     Mainz:
-      Budenheim:
-      Mainz-Bretzenheim:
-      Lorsch:
-      Mainz - PTA:
+      Keine Bezirksebene:
+        Budenheim:
+        Mainz-Bretzenheim:
+        Lorsch:
+        Mainz - PTA:
     München:
-      München - Neuhausen:
-      Bichl:
-      Hörlkofen:
-      Giesing:
-      Schulstamm München:
-      Olching:
-      Bruckmühl:
-      Traunstein:
-      Ruhpolding:
+      Keine Bezirksebene:
+        München - Neuhausen:
+        Bichl:
+        Hörlkofen:
+        Giesing:
+        Schulstamm München:
+        Olching:
+        Bruckmühl:
+        Traunstein:
+        Ruhpolding:
     Münster:
-      Dülmen Hlg. Kreuz:
-      Dülmen St. Josef:
-      Sendenhorst:
-      Stadtlohn:
-      Gronau:
-      Senden-Ottmarsbocholt:
-      Rheine:
-      Mettingen:
-      Xanten:
+      Keine Bezirksebene:
+        Dülmen Hlg. Kreuz:
+        Dülmen St. Josef:
+        Sendenhorst:
+        Stadtlohn:
+        Gronau:
+        Senden-Ottmarsbocholt:
+        Rheine:
+        Mettingen:
+        Xanten:
     Osnabrück:
-      Eutin-Amazona Sol:
+      Keine Bezirksebene:
+        Eutin-Amazona Sol:
     Paderborn:
-      JaM:
-      Dortmund-Kratzbürste:
-      Dortmund:
-      Olave - Dortmund:
+      Keine Bezirksebene:
+        JaM:
+        Dortmund-Kratzbürste:
+        Dortmund:
+        Olave - Dortmund:
     Regensburg:
-      Weiden:
-      Amberg:
-      Passau:
-      Regensburg - St.Wolfgang:
-      Regensburg - St. Paul:
-      Regensburg - St.Josef:
-      Großberg:
-      Maxhütte-Haidhof:      
+      Keine Bezirksebene:
+        Weiden:
+        Amberg:
+        Passau:
+        Regensburg - St.Wolfgang:
+        Regensburg - St. Paul:
+        Regensburg - St.Josef:
+        Großberg:
+        Maxhütte-Haidhof:      
     Rottenburg-Stuttgart:
-      Stuttgart-Hofen:
-      Allmersbach:
-      Enzberg:
-      Fellbach-Oeffingen:
-      Wernau:
-      Schulstamm Rottenburg:
-      Ostfildern-Nellingen:
+      Keine Bezirksebene:
+        Stuttgart-Hofen:
+        Allmersbach:
+        Enzberg:
+        Fellbach-Oeffingen:
+        Wernau:
+        Schulstamm Rottenburg:
+        Ostfildern-Nellingen:
     Speyer:
+      Keine Bezirksebene:
+        Keine Stammesebene:
     Trier:
-      Wiesbach-Eppelborn:
-      Waldalgesheim:
-      Weiler:
+      Keine Bezirksebene:
+        Wiesbach-Eppelborn:
+        Waldalgesheim:
+        Weiler:
     Würzburg:
-      Reichenberg - Hattenhausen:
-      Würzburg:
-      Greußenheim:
-      Aschaffenburg:
-      Niedernberg:
-      Stockstadt:
-      Aschaffenburg Schule:
-      Siedlung St. Elisabeth - Aschaffenburg:
+      Keine Bezirksebene:
+        Reichenberg - Hattenhausen:
+        Würzburg:
+        Greußenheim:
+        Aschaffenburg:
+        Niedernberg:
+        Stockstadt:
+        Aschaffenburg Schule:
+        Siedlung St. Elisabeth - Aschaffenburg:
   BdP:
     Baden-Württemberg:
       Draconis:
