@@ -39,18 +39,27 @@ module RdpEuropeanjamboree
       def edit(&block)
         @association_tree = Settings.association_tree
         @possible_tour = ""
+
         # TODO must be a better way to select from settings.yml
-        if @person.role == Settings.person.role.ul or @person.role == Settings.person.role.ut
+        if @person.role == Settings.person.role.ul or @person.role == Settings.person.role.ut or not @person.role.present?
             Settings.tour.each { |tour|
                 tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
                 @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
             }  
-        else 
+        end 
+        if @person.role == Settings.person.role.cmt or @person.role == Settings.person.role.ist or not @person.role.present?
             Settings.no_tour.each { |tour|
                 tour[1].to_s == @person.tour ? selected = "selected='selected'" : selected = ""
                 @possible_tour += "<option id='" + tour[0].to_s + "' " + selected + " >" + tour[1].to_s + "</option>"
             }  
         end 
+
+        @possible_roles = "" 
+        Settings.person.role.each { |role|
+            role[1].to_s == @person.role ? selected = "selected='selected'" : selected = ""
+            @possible_roles += "<option id='" + role[0].to_s + "' " + selected + " >" + role[1].to_s + "</option>"
+        }  
+        
         respond_with(entry, &block)
       end
      end
