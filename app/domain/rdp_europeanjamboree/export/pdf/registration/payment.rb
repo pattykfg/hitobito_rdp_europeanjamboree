@@ -35,7 +35,7 @@ module RdpEuropeanjamboree
                         attendee_data = pdf.make_table([
                         [{:content => "IBAN:", :width => 150}, @person.sepa_iban],
                         ["Mandatsreferenz:", "ejrdp" + @person.id.to_s],
-                        ["Gläubiger*innen-Identifikationsnummer:", "DE81 WSJ 0000 2017 275"],
+                        ["Gläubiger*innen-Identifikationsnummer:", "DE81 ESJ 0000 2017 275"],
                         ["Kontoinhaber*in:", @person.sepa_name]],
                         :cell_style => {:padding => 1, :border_width => 0, :inline_format => true})
                         attendee_data.draw
