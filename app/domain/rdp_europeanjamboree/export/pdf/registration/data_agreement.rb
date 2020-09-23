@@ -23,7 +23,7 @@ module RdpEuropeanjamboree
 
                 pdf.start_new_page
                 
-                text "Zustimmung zur Datenschutzerklärung zur Teilnahme am deutschen Kontingent zum European Jamboree 2020", :size => 14
+                text "Zustimmung zur Datenschutzerklärung zur Teilnahme am deutschen Kontingent zum European Jamboree 2020+1", :size => 14
                 pdf.move_down 3.mm
                 if of_legal_age
                     text "Hiermit stimme ich, " + @person.full_name + ", zu, dass meine Daten wie in der Datenschutzerklärung erklärt verarbeitet werden dürfen." 
@@ -75,7 +75,7 @@ module RdpEuropeanjamboree
                 text "Ringe deutscher Pfadfinderinnen- und Pfadfinderverbände e.V."
                 text "Chausseestr. 128/129"
                 text "10115 Berlin"	
-                text "Dadurch beauftragt:	Deutsches Kontingent zum European Jamboree 2020	Vertreten durch Günther Bäte (Head of Contingent)"
+                text "Dadurch beauftragt:	Deutsches Kontingent zum European Jamboree 2020+1	Vertreten durch Günther Bäte (Head of Contingent)"
                 pdf.move_down 3.mm
                 text "In der Bearbeitung der eingegangenen Unterlagen:"
                 text "Bund der Pfadfinderinnen und Pfadfinder e.V. (BdP)" 
@@ -86,7 +86,7 @@ module RdpEuropeanjamboree
                 pdf.move_down 3.mm
                 text "2. Art der erhobenen personenbezogenen Daten", :size => 12 
                 pdf.move_down 3.mm
-                text "Wir verarbeiten die personenbezogenen Daten, die wir im Rahmen " + (of_legal_age ? "deiner" : "Ihrer") + "  Anmeldung und Teilnahme  " + (of_legal_age ? "" : "Ihrer*s Tochter*Sohnes") + "  am deutschen Kontingent zum European Jamboree 2020 erhalten." 	
+                text "Wir verarbeiten die personenbezogenen Daten, die wir im Rahmen " + (of_legal_age ? "deiner" : "Ihrer") + "  Anmeldung und Teilnahme  " + (of_legal_age ? "" : "Ihrer*s Tochter*Sohnes") + "  am deutschen Kontingent zum European Jamboree 2020+1 erhalten." 	
                 pdf.move_down 3.mm
                 text "Diese personenbezogenen Daten sind:"
                 text "-	Name und Anschrift"
@@ -115,7 +115,7 @@ module RdpEuropeanjamboree
                 text "Sämtliche Personen sind vertraglich gebunden und insbesondere schriftlich dazu verpflichtet, " + (of_legal_age ? "deine" : "Ihre") + "  Daten vertraulich zu behandeln." 
                 text "Eine Weitergabe von Daten an Empfänger*innen außerhalb unseres Kontingentes und des rdp e.V. erfolgt nur unter Beachtung der anzuwendenden Vorschriften zum Datenschutz."
                 pdf.move_down 3.mm
-                text "Empfänger personenbezogener Daten sind die Organisatoren des European Jamborees 2020. ISTs geben ihre Daten selbstständig an diese weiter durch die Anmeldung bei den Organisatoren. 	" + (of_legal_age ? "Deine" : "Ihre") + "  Daten werden nur innerhalb der Europäischen Union und Staaten innerhalb des Europäischen Wirtschaftsraums (EWR) verarbeitet."
+                text "Empfänger personenbezogener Daten sind die Organisatoren des European Jamborees 2020+1. ISTs geben ihre Daten selbstständig an diese weiter durch die Anmeldung bei den Organisatoren. 	" + (of_legal_age ? "Deine" : "Ihre") + "  Daten werden nur innerhalb der Europäischen Union und Staaten innerhalb des Europäischen Wirtschaftsraums (EWR) verarbeitet."
                 pdf.move_down 3.mm
                 text "4.	Wie lange werden meine Daten gespeichert?", :size => 12
                 text"Wir verarbeiten und speichern " + (of_legal_age ? "deine" : "Ihre") + "  personenbezogenen Daten, solange dies für die Erfüllung unserer vertraglichen und gesetzlichen Pflichten erforderlich ist. Sind die Daten für die Erfüllung vertraglicher oder gesetzlicher Pflichten nicht mehr erforderlich, werden diese regelmäßig gelöscht (Gem. Art. 17 Abs. 1 lit. a DSGVO)." 
