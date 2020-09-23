@@ -131,7 +131,7 @@ module RdpEuropeanjamboree
             text "-	Teilnahme am European Jamboree 2020 in Gdansk (Danzig)/Polen mit An- und Abreise (außer IST) aus Deutschland nach Polen und zurück."
             text "-	Zentraler Transport des Unit- und Kontingentsmaterials aus Deutschland nach Polen und zurück. Nach Verfügbarkeit können sich IST dem zentralen Materialtransport anschließen."
             pdf.move_down 3.mm
-            text "Folgende zusätzliche Leistungen sind bei Buchung Vor- oder Nachtour enthalten:", :size =>10
+            text "Folgende zusätzliche Leistungen sind bei einer Buchung Vor- oder Nachtour enthalten:", :size =>10
             text "-	5 Nächte (6 Tage) nach individueller Reiseplanung durch die jeweiligen Unitleitungen mit Unterkunft (Zelt, Hostel, etc. sowie Verpflegung, Programm und Reisekosten)."
             pdf.move_down 3.mm
             text "Im Teilnehmer/innenbeitrag sind nicht enthalten:"

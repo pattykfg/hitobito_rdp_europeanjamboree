@@ -86,7 +86,7 @@ module RdpEuropeanjamboree
                 pdf.move_down 3.mm
                 text "2. Art der erhobenen personenbezogenen Daten", :size => 12 
                 pdf.move_down 3.mm
-                text "Wir verarbeiten die personenbezogenen Daten, die wir im Rahmen " + (of_legal_age ? "deiner" : "Ihrer") + "  Anmeldung und Teilnahme  " + (of_legal_age ? "" : "Ihrer*s Tochter*Sohnes") + "  am deutschen Kontingent zum European Jamboree 2020+1 erhalten." 	
+                text "Wir verarbeiten die personenbezogenen Daten, die wir im Rahmen " + (of_legal_age ? "deiner" : "Ihrer") + " Anmeldung und Teilnahme  " + (of_legal_age ? "" : "Ihrer*s Tochter*Sohnes") + "  am deutschen Kontingent zum European Jamboree 2020+1 erhalten." 	
                 pdf.move_down 3.mm
                 text "Diese personenbezogenen Daten sind:"
                 text "-	Name und Anschrift"
@@ -100,6 +100,7 @@ module RdpEuropeanjamboree
                 text "-	IST Jobauswahl"
                 text "-	Kluft/Blusen Größe"
                 text "-	Lebensmittelunverträglichkeiten"
+                text "-	Daten zur Verwaltung deines Profils, wie z.B. letzer Login, Änderungen und Notizen"
                 pdf.move_down 3.mm
                 text "Rechtsgrundlage ist Art. 6 Abs. 1 S. 1 lit. b und lit. f DSGVO."
                 pdf.move_down 3.mm
