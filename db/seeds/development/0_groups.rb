@@ -27,7 +27,18 @@ Group::Unassigned.seed(:name, :parent_id,
     zip_code: "10178",
     town: "Berlin",
     country: "DE",
-    email: "unassigned@europeanjamboree.de",
+    email: "info@europeanjamboree.de",
+    parent_id: root.id
+  }
+)
+Group::Unassigned.seed(:name, :parent_id,
+  {
+    name: 'Import Anmeldung 2020',
+    address: "Mühlendamm 3",
+    zip_code: "10178",
+    town: "Berlin",
+    country: "DE",
+    email: "info@europeanjamboree.de",
     parent_id: root.id
   }
 )
@@ -47,21 +58,21 @@ Group::UnitSupport.seed(:name, :parent_id,
 unit_support = Group.find_by_name('Unit Betreuer')
 Group::Unit.seed(:name, :parent_id,
   {
-    name: 'Unit Franken',
+    name: 'Unit A',
     address: "Äußere Bayreuther Straße 1234",
     zip_code: "90411",
     town: "Nürnberg",
     country: "DE",
-    email: "unit-franken@europeanjamboree.de",
+    email: "unita@europeanjamboree.de",
     parent_id: unit_support.id
   },
   {
-    name: 'Unit Hamburg',
+    name: 'Unit B',
     address: "Reeperbahn 63",
     zip_code: "20359",
     town: "Hamburg",
     country: "DE",
-    email: "unit-hamburg@europeanjamboree.de",
+    email: "unitb@europeanjamboree.de",
     parent_id: unit_support.id
   }
 )
