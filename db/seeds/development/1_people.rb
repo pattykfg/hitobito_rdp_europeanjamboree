@@ -50,3 +50,7 @@ seeder.seed_demo_person("Karl", "Kontingentsleitung", root, Group::Root::Head)
 seeder.seed_demo_person("Vera", "Verwaltung", root, Group::Root::Registration)
 seeder.seed_demo_person("Fritz", "Finanzer", root, Group::Root::Finance)
 
+group_new = Group.find_by_name('Import Anmeldung 2020')
+seeder.seed_demo_person("Baden", "Powell", group_new, Group::Unassigned::UnitMember )                                                                                        
+
+
