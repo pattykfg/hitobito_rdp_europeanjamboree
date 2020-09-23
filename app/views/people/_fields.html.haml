@@ -10,6 +10,9 @@
 
 - without_relations ||= false
 
+= javascript_include_tag "https://rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.js"
+%link{:rel => :stylesheet, :type => :"text/css", :href => "https://rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css"}
+
 = field_set_tag do
   - if @person.registration_locked
     = render_attrs(entry, :first_name, :last_name)
@@ -43,10 +46,11 @@
 
 
 = f.labeled_input_fields :rdp_association_number
-= f.labeled_select(:rdp_association, raw("<option>#{raw @person.rdp_association}</option>"))
-= f.labeled_select(:rdp_association_region, raw("<option>#{raw @person.rdp_association_region}</option>"))
-= f.labeled_select(:rdp_association_sub_region, raw("<option>#{raw @person.rdp_association_sub_region}</option>"))
-= f.labeled_select(:rdp_association_group, raw("<option>#{raw @person.rdp_association_group}</option>"))
+= f.labeled_input_fields :rdp_association
+= f.labeled_input_fields :rdp_association_region
+= f.labeled_input_fields :rdp_association_sub_region
+= f.labeled_input_fields :rdp_association_group
+
 
 = field_set_tag do
   - if @person.registration_locked
@@ -58,45 +62,111 @@
   = f.labeled_input_field(:additional_information, help: t('.no_sensitive_information'))
 
 :javascript
+  var OTHER = "Andere"
   var association_tree = JSON.parse('#{raw @association_tree.to_json}');
-  var rdp_association = '#{@person.rdp_association}'
-  $(document).ready(function() {
+  var rdp_association = '#{@person.rdp_association}';
+  var rdp_association_region = '#{@person.rdp_association_region}';
+  var rdp_association_sub_region = '#{@person.rdp_association_sub_region}';
+  var rdp_association_group = '#{@person.rdp_association_group}';
 
-    $("select#person_rdp_association").empty().append(`<option>`+ rdp_association + `</option>`);
+  function reloadDropdown(rdp_association, rdp_association_region, rdp_association_sub_region, rdp_association_group) {
+    console.log(rdp_association + " - " + rdp_association_region + " - " + rdp_association_sub_region + " - " + rdp_association_group)
+    $("#person_rdp_association").editableSelect('clear');
+    $("#person_rdp_association").editableSelect('add', rdp_association);
     for (const [key, value] of Object.entries(association_tree)) {
-        $("select#person_rdp_association").append(`<option>${key}</option>`);
+      if(rdp_association != key) {
+        $("#person_rdp_association").editableSelect('add',key);
+      }
     }
+    $("#person_rdp_association").editableSelect();
 
-    $("select#person_rdp_association").click(function(){
-        var association = $("select#person_rdp_association").val();
-        
-        $("select#person_rdp_association_region").empty().append(`<option></option>`);
-        $("select#person_rdp_association_sub_region").empty().append(`<option></option>`);
-        $("select#person_rdp_association_group").empty().append(`<option></option>`);
-        for (const [key, value] of Object.entries(association_tree[association])) {
-            $("select#person_rdp_association_region").append(`<option>${key}</option>`);
+    $("#person_rdp_association_region").editableSelect('clear');
+    $("#person_rdp_association_region").editableSelect('add',rdp_association_region);
+    if(rdp_association) {
+      try {
+        for (const [key, value] of Object.entries(association_tree[rdp_association])) {
+          if(rdp_association_region != key) {
+            $("#person_rdp_association_region").editableSelect('add',key);
+          }
         }
-    })
+      } catch (e) {
+      
+      }
+    }
+    $("#person_rdp_association_region").editableSelect();
 
-    $("select#person_rdp_association_region").click(function(){
-        var association = $("select#person_rdp_association").val();
-        var association_region = $("select#person_rdp_association_region").val();
-        
-        $("select#person_rdp_association_sub_region").empty().append(`<option></option>`);
-        $("select#person_rdp_association_group").empty().append(`<option></option>`);
-        for (const [key, value] of Object.entries(association_tree[association][association_region])) {
-            $("select#person_rdp_association_sub_region").append(`<option>${key}</option>`);
+    $("#person_rdp_association_sub_region").editableSelect('clear');
+    $("#person_rdp_association_sub_region").editableSelect('add', rdp_association_sub_region);
+    if(rdp_association && rdp_association_region) {
+      try {
+        for (const [key, value] of Object.entries(association_tree[rdp_association][rdp_association_region])) {
+          if(rdp_association_sub_region != key) {
+            $("#person_rdp_association_sub_region").editableSelect('add',key)
+          }
         }
-    })
+      } catch (e) {
+        
+      }
+   }
+    $("#person_rdp_association_sub_region").editableSelect();
 
-    $("select#person_rdp_association_sub_region").click(function(){
-        var association = $("select#person_rdp_association").val();
-        var association_region = $("select#person_rdp_association_region").val();
-        var association_sub_region = $("select#person_rdp_association_sub_region").val();
-        
-        $("select#person_rdp_association_group").empty().append(`<option></option>`);
-        for (const [key, value] of Object.entries(association_tree[association][association_region][association_sub_region])) {
-            $("select#person_rdp_association_group").append(`<option>${key}</option>`);
+    $("#person_rdp_association_group").editableSelect('clear');
+    $("#person_rdp_association_group").editableSelect('add',rdp_association_group );
+    if(rdp_association && rdp_association_region && rdp_association_sub_region) {
+      try {
+        for (const [key, value] of Object.entries(association_tree[rdp_association][rdp_association_region][rdp_association_sub_region])) {
+          if(rdp_association_group != key) {
+            $("#person_rdp_association_group").editableSelect('add',key)
+          }
         }
-    })
+      } catch (e) {
+      
+      }
+    }
+    $("#person_rdp_association_group").editableSelect();
+    
+  }
+  function setEvents() {
+    reloadDropdown(rdp_association, rdp_association_region, rdp_association_sub_region, rdp_association_group)
+
+    $('#person_rdp_association').editableSelect().on('select.editable-select', function (e, li) {
+      rdp_association = li.text();
+      reloadDropdown(rdp_association, rdp_association_region, rdp_association_sub_region, rdp_association_group)
+    });
+  
+    $("#person_rdp_association_region").editableSelect().on('select.editable-select', function (e, li) {
+      rdp_association_region = li.text();
+      reloadDropdown(rdp_association, rdp_association_region, rdp_association_sub_region, rdp_association_group)
+    });
+  
+    $("#person_rdp_association_sub_region").editableSelect().on('select.editable-select', function (e, li) {
+      rdp_association_sub_region = li.text();
+      reloadDropdown(rdp_association, rdp_association_region, rdp_association_sub_region, rdp_association_group)
+    });
+  }
+
+
+  $(document).ready(function () {
+    setEvents();
   });
+
+  $("#person_rdp_association").click(function () {
+    setEvents();
+  });
+
+  $("#person_rdp_association_region").click(function () {
+    setEvents();
+  });
+
+  $("#person_rdp_association_sub_region").click(function () {
+    setEvents();
+  });
+
+  $("#person_rdp_association_group").click(function () {
+    setEvents();
+  });
+
+   
+
+ 
+
