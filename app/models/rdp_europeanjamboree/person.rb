@@ -31,7 +31,12 @@ module RdpEuropeanjamboree::Person
         :media_agreement << 
         :registration_accepted_date << 
         :payment_problem << 
-        :payment_recieved   
+        :payment_recieved <<
+        :sepa_first <<
+        :sepa_second <<
+        :sepa_third  <<
+        :sepa_comment <<
+        :old_phone
     end
     
    def has_role(role)

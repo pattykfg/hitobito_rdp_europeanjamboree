@@ -26,6 +26,13 @@ class AddPeopleAttrs < ActiveRecord::Migration[4.2]
       add_column :people, :registration_accepted_date, :date
             
       add_column :people, :payment_problem, :boolean
+      add_column :people, :sepa_first, :boolean    
+      add_column :people, :sepa_second, :boolean    
+      add_column :people, :sepa_third, :boolean    
+      add_column :people, :sepa_comment, :boolean    
       add_column :people, :payment_recieved, :boolean    
+
+      add_column :people, :old_phone, :string
+
     end
 end
