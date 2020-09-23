@@ -70,7 +70,7 @@
   var rdp_association_group = '#{@person.rdp_association_group}';
 
   function reloadDropdown(rdp_association, rdp_association_region, rdp_association_sub_region, rdp_association_group) {
-    console.log(rdp_association + " - " + rdp_association_region + " - " + rdp_association_sub_region + " - " + rdp_association_group)
+    // console.log(rdp_association + " - " + rdp_association_region + " - " + rdp_association_sub_region + " - " + rdp_association_group)
     $("#person_rdp_association").editableSelect('clear');
     $("#person_rdp_association").editableSelect('add', rdp_association);
     for (const [key, value] of Object.entries(association_tree)) {
@@ -150,21 +150,10 @@
     setEvents();
   });
 
-  $("#person_rdp_association").click(function () {
+  $(window).load(function () {
     setEvents();
   });
 
-  $("#person_rdp_association_region").click(function () {
-    setEvents();
-  });
-
-  $("#person_rdp_association_sub_region").click(function () {
-    setEvents();
-  });
-
-  $("#person_rdp_association_group").click(function () {
-    setEvents();
-  });
 
    
 
