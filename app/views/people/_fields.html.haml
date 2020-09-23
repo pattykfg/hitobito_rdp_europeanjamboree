@@ -149,11 +149,24 @@
 
 
   $(document).ready(function () {
-    setEvents();
+    try {
+      setEvents();
+    } catch (e) {
+      console.log("Failed on Document Ready")
+      setTimeout(
+        function() 
+        {
+          setEvents();
+        }, 5000);
+    }
   });
 
   $(window).load(function () {
-    setEvents();
+    try {
+      setEvents();
+    }catch (e) {
+      console.log("Failed on Window load")
+    }
   });
 
 
