@@ -1376,10 +1376,10 @@ association_tree:
   PSG:
     Aachen:
       Aachen-Burtscheid:
-      Aachen:
+      Aachen-Hörn:
       Aachen-Verlautenheide:
       Venwegen olé olé:
-      Aachen:
+      Aachen Kornelimünster:
       Roetgen-Rott:
       Roetgen:
       Immerath:
@@ -1389,9 +1389,10 @@ association_tree:
       Krefeld Traar:
       Graf Gerhard - Wassenberg:
     Augsburg:
-      Augsburg:
+      Augsburg-Oberhausen:
       Krumbach:
       Langerringen:
+      Augsburg-Stadtmitte:
       Friedberg:
       Wulfertshausen:
       Hiltenfingen:
@@ -1405,6 +1406,8 @@ association_tree:
     Bamberg:
       Bamberg -Kunigund-:
       Nürnberg:
+      Siedlung Schwaig:
+      Siedlung Neuendettelsau:
     Dresden-Meissen:
     Essen:
       Schwelm:
@@ -1412,17 +1415,15 @@ association_tree:
       Bochum-Shenandoa:
       Gelsenkirchen:
       Mülheim/Ruhr:
-      Essen:
       Essen -PTA-:
     Freiburg:
       Gengenbach:
       Achern:
       Bruchsal:
       Freiburg:
-      Denzlingen:
+      Menina:
       Betty Clay:
       Siedlung Dreisamblau - Freiburg Mitte:
-      Weil am Rhein:
       Dogern:
       Singen:
       Karlsruhe-Süd:
@@ -1439,7 +1440,6 @@ association_tree:
     Mainz:
       Budenheim:
       Mainz-Bretzenheim:
-      KHG Mainz:
       Lorsch:
       Mainz - PTA:
     München:
@@ -1453,8 +1453,8 @@ association_tree:
       Traunstein:
       Ruhpolding:
     Münster:
-      Dülmen:
-      Dülmen:
+      Dülmen Hlg. Kreuz:
+      Dülmen St. Josef:
       Sendenhorst:
       Stadtlohn:
       Gronau:
@@ -1477,11 +1477,9 @@ association_tree:
       Regensburg - St. Paul:
       Regensburg - St.Josef:
       Großberg:
-      Maxhütte-Haidhof:
-      Sulzbach-Rosenberg:
+      Maxhütte-Haidhof:      
     Rottenburg-Stuttgart:
       Stuttgart-Hofen:
-      Stuttgart-Neugereut:
       Allmersbach:
       Enzberg:
       Fellbach-Oeffingen:
@@ -1491,8 +1489,6 @@ association_tree:
     Speyer:
     Trier:
       Wiesbach-Eppelborn:
-      Bernkastel:
-      Stadtgruppe Trier:
       Waldalgesheim:
       Weiler:
     Würzburg:
