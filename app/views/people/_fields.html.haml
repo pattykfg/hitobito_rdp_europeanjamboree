@@ -54,8 +54,10 @@
 
 = field_set_tag do
   - if @person.registration_locked
+    = render_attrs(entry, :role)
     = render_attrs(entry, :tour)
   - else
+    = f.labeled_select(:role, raw(@possible_roles))
     = f.labeled_select(:tour, options_for_select(raw(@possible_tour)))
 
 = field_set_tag do
