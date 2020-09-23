@@ -6,4 +6,4 @@
 #  https://github.com/smeky42/hitobito_rdp_europeanjamboree.
 
 
-Group::Root.seed_once(:parent_id, name: 'Kontingentsteam')
+Group::Root.seed_once(:parent_id, name: 'Kontingent')
