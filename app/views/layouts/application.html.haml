@@ -1,0 +1,130 @@
+-#  Copyright (c) 2012-2013, Jungwacht Blauring Schweiz. This file is part of
+-#  hitobito and licensed under the Affero General Public License version 3
+-#  or later. See the COPYING file at the top-level directory or at
+-#  https://github.com/hitobito/hitobito.
+
+!!! 5
+
+%html{lang: I18n.locale}
+  %head
+    %meta{charset: 'utf-8'}
+    %title= "#{Settings.application.name} - #{title}"
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+    %meta{name: 'turbolinks-cache-control', content: 'no-cache'}
+
+    = csrf_meta_tag
+    = favicon_link_tag 'favicon.ico'
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    = stylesheet_link_tag 'ie.css', media: 'all', 'data-turbolinks-track' => true
+    <![endif]-->
+
+    <!--[if IE 7]>
+    = stylesheet_link_tag 'ie7.css', media: 'all', 'data-turbolinks-track' => true
+    <![endif]-->
+
+    = stylesheet_link_tag 'application.css', media: :screen, 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'print.css', media: :print
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
+    = yield(:head)
+
+  %body{class: ('is-logged-out' unless current_user) }
+    #modal-placeholder
+    %main
+      = render 'layouts/file_download' if current_user
+      = render 'layouts/synchronization' if current_user
+      - if origin_user
+        = render 'layouts/user_impersonation'
+
+    = header_logo_css
+    %header.logo
+      = link_to Settings.application.name, root_path, class: 'logo-image'
+
+    #page
+      - if current_user
+        %nav.nav-left
+          = render 'layouts/nav'
+      .container-fluid
+        #page-header
+          - if current_user
+            = link_to(icon('bars') + t('navigation.menu'), '#', class: 'toggle-nav visible-phone')
+            = render 'layouts/quicksearch'
+            = link_to current_user, person_home_path(current_user), class: 'hidden-phone'
+            = link_to t('layouts.nav.sign_out'), sign_out_path, method: "delete", class: 'hidden-phone'
+          - elsif current_user.nil? # nil without login, false on error
+            = render 'layouts/unauthorized'
+
+        = render_sheets do
+          .content-header
+            %h1
+              = title
+              = help_text_renderer.action_trigger
+            = help_text_renderer.action_text
+
+            = sheet.render_main_tabs
+
+          = yield :filter
+          - if content_for?(:toolbar)
+            .btn-toolbar= yield :toolbar
+
+          -# div must always exist to insert flash messages with ajax
+          #flash
+            = render partial: 'layouts/flash', collection: [:notice, :alert], as: :level
+
+          = content_for?(:content) ? yield(:content) : yield
+
+    %footer#page-footer
+      .container-fluid
+        .row
+          - footer = Settings.application.footer
+          .span3
+            - if footer.logo_image.present?
+              = link_to image_tag(footer.logo_image), footer.logo_url, target: '_blank'
+          .footer_content.span9
+            %p
+              - footer.links.to_hash.fetch(I18n.locale, footer.links.to_hash).each do |label, url|
+                = link_to label, url, target: '_blank'
+                %br/
+            %p
+              - if Wagons.app_version.to_s > '0.0'
+                = link_to "Version #{Wagons.app_version}", changelog_path
+
+                %br/
+              = app_version_links
+
+              %p
+              = "Du hast Fragen zur Anmeldung: Dann informiere dich auf "
+              = link_to 'www.europeanjamboree.de', 'www.europeanjamboree.de', target: '_blank'
+              = " oder schreib uns eine E-Mail an"
+              = mail_to 'info@europeanjamboree.de', 'info@europeanjamboree.de'
+              %br/
+            %p
+              = "Die Anmeldung zum Europeanjamboree des deutschen Kontingents wird ehrenamtlich von "
+              %br/
+              = "Peter Neubauer weiterentwickelt."
+              %br/
+              = "Bei technischen Problemen und für Anregungen zur Weiterentwicklung erreichst du uns unter"
+              = mail_to 'it@europeanjamboree.de', 'it@europeanjamboree.de'
+            %p
+              = "Den Source Code findest du hier: "
+              = link_to 'https://github.com/smeky42/hitobito_rdp_europeanjamboree', 'https://github.com/smeky42/hitobito_rdp_europeanjamboree', target: '_blank'
+            %p
+              = "Die Anwendung baut auf der Open Source Software Hitobito auf:"
+              %br/
+            %p
+              = app_version_changelog_link
+              %br/
+
+              = link_to t('.source_code'), 'https://github.com/hitobito', target: '_blank'
+              = t('.available_under_license')
+              = link_to 'GNU Affero General Public License', 'http://www.gnu.org/licenses/agpl-3.0.html', target: '_blank'
+              %br/
+              = t('.developed_by')
+              = link_to 'Hitobito', 'http://hitobito.ch', target: '_blank'
+              2012 -
+              = Time.zone.now.year
+
+  = javascript_tag yield(:javascripts) if content_for?(:javascripts)
