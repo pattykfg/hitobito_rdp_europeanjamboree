@@ -66,7 +66,7 @@ association_tree:
         Krefeld-Uerdingen/Ostgoten:
         Krefeld-Forstwald:
         Krefeld-Lindenthal, Michael:
-      Krefeld-Hüls, Raubritter:
+        Krefeld-Hüls, Raubritter:
         Krefeld, Kreuz-Ritter:
         Krefeld-Oppum, Zu den Hl. Schutzengeln, Die Brücke:
       Bezirk Grenzland:
@@ -92,7 +92,7 @@ association_tree:
         Jüchen-Bedburdyck, St. Martinus:
         Mönchengladbach, Rabenhorst:
         Mönchengladbach, Bettrath-Neuwerk:
-      Mönchengladbach-Holt, Martin-Luther-King:
+        Mönchengladbach-Holt, Martin-Luther-King:
         Mönchengladbach-Eicken, Trotzenburg:
         Stamm Otzenrath:
         Stamm Salier Meerkamp eV:
@@ -158,7 +158,7 @@ association_tree:
         Augsburg-Hochzoll, St. Exupéry:
         Augsburg-Universitätsviertel, Salomon-Idler:
         Augsburg, St. Konrad:
-      Augsburg, St. Ulrich & Afra:
+        Augsburg, St. Ulrich & Afra:
         Friedberg, Konradin:
         Augsburg-Haunst., Weiße Rose:
         Kissing, Guy de Larigaudie:
@@ -258,7 +258,7 @@ association_tree:
         Duisburg-Buchh., Jud. Th./K.Martin:
         Duisburg-Großenbaum, St. Franziskus:
         Duisburg-Serm,  Herz Jesu:
-      Duisburg-Buchholz, Hl. Geist:
+        Duisburg-Buchholz, Hl. Geist:
         Duisburg-Hamborn, St. Peter Marxloh:
         Duisburg-Rahm, St. Hubertus:
         Duisburg, Abtei Hamborn:
@@ -277,7 +277,7 @@ association_tree:
         Bottrop-Eigen, St. Pius / Philippo Neri:
         Bottrop, St. Peter:
         Bottrop, Herz Jesu, St. Barbara:
-      Gladbeck-Rentfort, St. Josef:
+        Gladbeck-Rentfort, St. Josef:
         Bottrop, Impeesa:
         Gladbeck-Ellinghorst, Elisabeth:
       Bezirk Ennepe-Ruhr:
@@ -290,7 +290,7 @@ association_tree:
         Hattingen-Bredenscheid, St. Mariä Empfängnis:
         Hattingen-Mitte, Peter und Paul:
         Wetter-Volmst., Augustinus und Monika:
-      Hattingen-Niederbonsfeld, Isenburg:
+        Hattingen-Niederbonsfeld, Isenburg:
         Hattingen - Winz-Baak, Heilig Geist:
         Hattingen-Niederwenigern, "Die Wennischen":
         DPSG Janusz Korczak Wetter-Wengern:
@@ -326,7 +326,7 @@ association_tree:
         Bochum-Eppendorf, St. Theresia:
         St. Johannes Bochum-Wiemelhausen:
         Bochum-Dahlhausen, St. Engelbert:
-      St. Johannes der Täufer Wattenscheid-Leithe:
+        St. Johannes der Täufer Wattenscheid-Leithe:
         Bochum-Harpen, A. Frank & M.-L. King:
         Bochum-Weitmar, Vierzehnheiligen:
         Bochum-Hiltrop, Geschwister Scholl:
@@ -402,7 +402,7 @@ association_tree:
         Mühlhausen-Ehingen, Peter und Paul:
         Steißlingen, St. Remigius:
         Radolfzell, Impeesa:
-      Daisendorf, St. Martin:
+        Daisendorf, St. Martin:
         Hilzingen, Alfred Delp:
         Konstanz, Bruder Klaus:
         Markdorf, St. Nikolaus:
@@ -467,13 +467,14 @@ association_tree:
         Freiburg-Vauban, Kassiopeia:
         Freiburg-St. Georgen, Betty Clay:
     Fulda:
+      Keine Bezirksebene:
         Kassel-Vellmar, Folke Bernadotte:
         Hünfeld, St. Jakobus:
         Marburg, St. Michael:
         Witzenhausen, Witta:
         Fulda-Neuenberg, St. Andreas:
         Melsungen, Mariä Himmelfahrt:
-      Bachrain, Maria Hilf:
+        Bachrain, Maria Hilf:
         Fulda-Johannesberg, Mirjam:
         Wolfhagen, Heimerad, St. Maria:
         Bad Orb, St. Martin:
@@ -484,7 +485,7 @@ association_tree:
         Grossauheim, St. Paul:
         Nidderau-Windecken, Wartbaum:
         Rodenbach, Barbarossa:
-      Wächtersbach, St. Bonifatius:
+        Wächtersbach, St. Bonifatius:
         Biebergemünd-Wirtheim, St. Jakobus:
         Niederdorfelden:
     Hildesheim:
@@ -527,7 +528,7 @@ association_tree:
         Wunstorf, St. Bonifatius:
         Wedemark, Arche Noah:
         Neustadt, St. Peter & Paul:
-      Hannover-Kirchrode, Hl. Engel:
+        Hannover-Kirchrode, Hl. Engel:
         Lehrte, Maximilian Kolbe:
         Hannover-Mühlenberg, St. Maximilian Kolbe:
     Köln:
@@ -560,7 +561,7 @@ association_tree:
         Königsdorf, Hildebold:
         Pulheim-Brauweiler, Bernhard von Clairvaux:
         Neubottenbroich, Glückauf:
-      Sinnersdorf, Maximilian Kolbe:
+        Sinnersdorf, Maximilian Kolbe:
         Kerpen-Mödrath, St. Quirinus:
         Erftstadt-Liblar, St. Barbara, Las Casas:
         Eisvögel:
@@ -591,7 +592,7 @@ association_tree:
         Wülfrath, Franken:
         Lintorf:
         Velbert, Johannes Bosco:
-      Essen-Kettwig, Kattwiga:
+        Essen-Kettwig, Kattwiga:
       Bezirk Sieg:
         Siegburg, St. Anno:
         Siegburg - Kaldauen, eXodus:
@@ -600,7 +601,7 @@ association_tree:
         Lohmar, St. Johannes:
         Niederkassel, Roncalli:
         St. Augustin-Menden:
-      Lohmar, Ichtys-Neuhonrath:
+        Lohmar, Ichtys-Neuhonrath:
         Gummersbach, St. Felizitas:
       Bezirk Voreifel:
       Bezirk Bonn:
@@ -618,7 +619,7 @@ association_tree:
         Rheinbreitbach, Terra Nova:
         Königswinter-Stieldorf, Romero:
         Königswinter-Oberpleis:
-      Neunk.-Seelscheid, Edelweiss:
+        Neunk.-Seelscheid, Edelweiss:
         Eitorf, Shamrock:
         Waldbröl, St. Georg:
       Bezirk Rhein-Berg:
@@ -631,12 +632,13 @@ association_tree:
         Köln-Ensen, St. Laurentius:
         Bensberg, Ommerborn:
         Bergisch Gladbach-Refr., Widukind:
-      Leverkusen-Steinbüchel, Woodstock:
+        Leverkusen-Steinbüchel, Woodstock:
         Leverkusen-Schlebusch, Gezelin:
         Höhenberg-Vingst, Elisodor:
         Leichlingen, Wippera, St. Johannes Baptist:
         Wipperfürth:
     Limburg:
+      Keine Bezirksebene:
         Frankfurt-Fechenheim, Normannen:
         Frankfurt Nord / Stamm Marcel Callo:
         Frankfurt-Rödelheim, Damian de Veuster:
@@ -658,7 +660,7 @@ association_tree:
         Hofheim, St. Bonifatius:
         Kelkheim, Johannes Bosco:
         Langenhain-Lorsbach, St. Franziskus:
-      Schloßborn, Taunus-Wölfe:
+        Schloßborn, Taunus-Wölfe:
         Montabaur:
         Stamm St. Rochus Simmern:
         Lahnstein-Oberlahnstein, St. Martin:
@@ -690,11 +692,11 @@ association_tree:
         Ingelheim, Nikolaus von Flüe:
         Schwabenheim, Greifenklau:
         Budenheim, Don Bosco:
-      Mainz-Finthen, Bruder Franz:
+        Mainz-Finthen, Bruder Franz:
         Mainz, Don Greif:
         Rödermark-Urberach, Gralsritter:
         Dietzenbach, St. Martin:
-      Wöllstein, St. Franziskus-Rheinhessische Schweiz:
+        Wöllstein, St. Franziskus-Rheinhessische Schweiz:
       Bezirk Heldon:
         Seeheim-Jugenheim, Bonifatius:
         Seeheim-Jugenheim, Ulrich von Münzenberg:
@@ -723,7 +725,7 @@ association_tree:
         Grosshesselohe, Maximilian Kolbe:
         München-Solln, St. Ansgar:
         München-Olympiadorf, Frieden Christi:
-      Pfadfinderstamm Swapingo:
+        Pfadfinderstamm Swapingo:
         München-Lehel, St. Anna:
         München-Grosshadern, St. Canisius:
         München Hl. Kreuz - Forstenried:
@@ -773,7 +775,7 @@ association_tree:
         Mountain Scouts Aschau:
         Degerndorf / Brannenburg, Christkönig:
         Rosenheim-Oberwöhr, St. Josef d. Arbeiter:
-      Bad Aibling, St. Franziskus:
+        Bad Aibling, St. Franziskus:
         Kolbermoor, St. Franziskus:
         Feldkirchen-Westerh., Phoenix:
         Grosskarolinenfeld, Christophorus:
@@ -796,13 +798,13 @@ association_tree:
         Geldern-Hartefeld:
         Weeze, St. Cyriakus:
         Hamminkeln, St. Maria Himmelfahrt:
-      Geldern-Veert, St. Martin:
+        Geldern-Veert, St. Martin:
         Geldern, St. Maria Magdalena:
         Hamminkeln, Wertherbruch:
         Uedem:
         Geldern-Kapellen:
         Rheurdt, St. Nikolaus:
-      Goch, Edelweiß:
+        Goch, Edelweiß:
       Bezirk Oldenburg:
         Vechta, Füchtel:
         Vechta, St. Georg:
@@ -827,7 +829,7 @@ association_tree:
         Borken, St. Remigius:
         Epe, St. Antonius:
         Velen-Ramsdorf:
-      Isselburg:
+        Isselburg:
         Ahaus, St. Marien:
         Stadtlohn:
         Schöppingen:
@@ -844,7 +846,7 @@ association_tree:
         Recklinghausen-Hochlar:
         Oer-Erkenschwick:
         Dorsten-Wulfen-Barkenberg, St. Barbara:
-      Bottrop-Grafenwald, Hl. Familie:
+        Bottrop-Grafenwald, Hl. Familie:
         Dorsten, St. Bonifatius:
         Waltrop:
       Bezirk Steinfurt:
@@ -854,7 +856,7 @@ association_tree:
         Nordwalde, St. Dionysius:
         Wettringen, St. Petronilla:
         Mettingen, Tüöttenstamm:
-      Greven, St. Josef:
+        Greven, St. Josef:
         Altenberge, St. Johannes:
         Hörstel, St. Antonius:
         Ladbergen:
@@ -866,7 +868,7 @@ association_tree:
         Warendorf:
         Ahlen/Westf.:
         Oelde, Der kleine Bach:
-      Beckum, St. Stephanus:
+        Beckum, St. Stephanus:
         Ennigerloh, Enniger:
         Drensteinfurt-Rinkerode, St. Pankratius:
         Hamm-Bockum-Hövel, Impeesa-HeiligGeist:
@@ -901,10 +903,11 @@ association_tree:
         Nottuln, St. Martin:
         Buldern, St. Pankratius:
         Selm, St. Josef:
-      Senden:
+        Senden:
         Olfen, St. Vitus:
         Coesfeld:
     Osnabrück:
+      Keine Bezirksebene:
         Emden, Regenbogen:
         Haren, Nordlicht Altharen:
         Lathen, Polarstern:
@@ -918,7 +921,7 @@ association_tree:
         Holzhausen-Ohrbeck:
         Oesede, Hl. Geist:
         Wallenhorst, St. Alexander:
-      Neuenkirchen, St. Laurentius:
+        Neuenkirchen, St. Laurentius:
         Stamm Maximilian Kolbe Rulle:
     Paderborn:
       Bezirk Dortmund:
@@ -929,7 +932,7 @@ association_tree:
         Dortmund-Lütgendortmund:
         Dortmund-Soelde, St. Marien:
         Dortmund-Obereving, St. Marien:
-      Dortmund-Huckarde, St. Urbanus:
+        Dortmund-Huckarde, St. Urbanus:
         St. Liborius - Dortmund-Körne:
         Dortmund-Hörde, Marcel Callo:
         Dortmund-Scharnhorst, St. Franziskus:
@@ -988,7 +991,7 @@ association_tree:
         Netphen, St. Martini:
         Netphen-Dreis-Tiefenbach:
         Attendorn-Ennest, St. Margaretha:
-      Wilnsdorf-Rudersdorf, St. Laurentius:
+        Wilnsdorf-Rudersdorf, St. Laurentius:
         Siegen, Dautenbach:
         Wenden-Gerlingen/ Abt.  Anton.:
         Freudenberg, St. Marien:
@@ -1000,7 +1003,7 @@ association_tree:
         Nordborchen:
         Gütersloh-Spexard:
         Paderborn, Auf der Lieth, St. Hedwig:
-      Lemgo:
+        Lemgo:
         Detmold, Hl. Kreuz:
         Paderborn-Elsen, St. Dionysius Elsen:
       Bezirk Herne-Castrop Rauxel:
@@ -1014,6 +1017,7 @@ association_tree:
         Brenkhausen, St. Johannes:
         Höxter-Ottbergen:
     Passau:
+      Keine Bezirksebene:
         Hengersberg:
         DPSG Fürstenstein-Nammering:
         Salzweg, Sophie Scholl:
@@ -1103,12 +1107,12 @@ association_tree:
         Eningen:
         Reutlingen-Nord/Orschel-Hagen:
         Tübingen:
-      Frommern, St. Paulus:
+        Frommern, St. Paulus:
         Böblingen:
         Reutlingen-Mitte:
         St. Peter & Paul Weil der Stadt:
         Reutlingen Süd:
-      Kiebingen, Heilig Geist:
+        Kiebingen, Heilig Geist:
         Ammerbuch-Entringen:
       Bezirk Hohenstaufen:
         Stamm Hl. Kreuz Deggingen:
@@ -1118,7 +1122,7 @@ association_tree:
         Göppingen, St. Maria:
         Salach, St. Margaretha:
         Uhingen:
-      Gingen/Fils:
+        Gingen/Fils:
         Schwäbisch-Gmünd, Hl. Kreuz:
       Bezirk Oberland:
         Carpe Diem Ehingen:
@@ -1180,7 +1184,7 @@ association_tree:
         Pirmasens-Winzeln, Christ König - St. Anton:
         Rodalben, St. Josef:
         Ludwigswinkel:
-      Zweibrücken Stamm Heilige Elisabeth:
+        Zweibrücken Stamm Heilige Elisabeth:
       Bezirk Ludwigshafen:
         Frankenthal, St. Jakobus-Pilgerpfad:
         Otterstadt:
@@ -1200,7 +1204,7 @@ association_tree:
         Mandelbachtal/Heckendalh., St. Josef:
         St. Ingbert-Mitte:
         Homburg-Jägersb., St. Josef:
-      Homburg, Johanneum:
+        Homburg, Johanneum:
         Niederwürzbach:
         Camino Homburg:
         St. Ingbert, Eulenspiegel:
@@ -1212,7 +1216,7 @@ association_tree:
         Neustadt-Lachen, Franz von Assisi:
         Winden, Marco Polo:
         Rülzheim, St. Diethardt:
-      Lambrecht:
+        Lambrecht:
         Speyer, Dompfarrei:
         Speyer, St. Konrad:
     Trier:
@@ -1222,7 +1226,7 @@ association_tree:
         Koblenz-Castell-Niederberg:
         Koblenz-Südliche Vorstadt, St. Josef:
         Koblenz-Goldgrube, St. Franziskus:
-      Koblenz-Güls, Seepfadfinder:
+        Koblenz-Güls, Seepfadfinder:
         Rhens, St. Theresia:
         Bassenheim, St. Martin:
         Koblenz-Asterstein:
@@ -1248,7 +1252,7 @@ association_tree:
         Neuwied City:
         Rheinbrohl:
         Bad Hönningen:
-      Peterslahr:
+        Peterslahr:
         Neuwied-Engers, St. Martin:
         Neuwied, Heimbach-Weis:
         Neuwied-Gladbach:
@@ -1281,7 +1285,7 @@ association_tree:
         Trier-Pfalzel, Pankratius:
         Saarburg-Beurig, St. Franziskus:
         Trier-Tarforst, Centarburs:
-      Trier-Heiligkreuz, Santa Cruz:
+        Trier-Heiligkreuz, Santa Cruz:
         Föhren, Don Bosco:
       Bezirk Eifel / Ahr:
         Saffig Pellenzbande:
@@ -1295,7 +1299,7 @@ association_tree:
         Großwallstadt, Impeesa:
         Aschaffenburg/Schweinheim:
         Heimbuchenthal, Schwarzkittel:
-      Albstadt:
+        Albstadt:
         Mönchberg, Aubachtal:
         Elsenfeld, Germania:
         Alzenau:
@@ -1306,7 +1310,7 @@ association_tree:
         Würzburg, Tilly:
         Würzburg-Rottenbauer, Wolfskeel:
         Würzburg-Frauenland, Greiffenclau:
-      Würzburg, St. Johannes:
+        Würzburg, St. Johannes:
       Bezirk Genesis Nord:
         Gerolzhofen, Gralsritter:
         Euerbach, St. Michael:
@@ -1331,6 +1335,7 @@ association_tree:
         Wertheim:
         Volkach, St. Bartholomäus:
     Magdeburg:
+      Keine Bezirksebene:
         Magdeburg, Unser lieben Frauen:
         Sangerhausen-Altstadt, St. Jutta:
         Badersleben, Sankt Martin e.V.:
@@ -1340,8 +1345,15 @@ association_tree:
         Dresden-Löbtau, Drachentöter:
         Leipzig, Tilia:
     Erfurt:
+      Keine Bezirksebene:
+        Jena, St. Michael:
+        Uder, St. Jakobus:
+        Heiligenstadt, St. Aegidien:
+        Erfurt, St. Elisabeth:
+        Weimar, Marcel Callo:
         Niederorschel, St. Marien:
     Hamburg:
+      Keine Bezirksebene:
         Hamburg-Rahlstedt, Mutter Teresa:
         Hamburg-Hamm, Charles de Foucauld:
         Hamburg-Farmsen, St. Ansgar:
@@ -1349,7 +1361,7 @@ association_tree:
         Hamburg-Harburg, Kardinal Graf  v. Galen:
         Hamburg-Neugraben, Störtebeker:
         Hamburg-Poppenbüttel, Don Bosco:
-      Hamburg-Volksdorf, St. Martin:
+        Hamburg-Volksdorf, St. Martin:
         Ahrensburg, Camilo Torres:
         Norderstedt, St. Hedwig:
         Hamburg-Altona, Große Freiheit:
